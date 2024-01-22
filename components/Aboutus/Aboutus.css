@@ -1,0 +1,38 @@
+/* created by shubham patil */
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #6da644;
+  text-align: center;
+  font-family: "Cabin Sketch", Helvetica, Arial, sans-serif;
+}
+.content {
+  display: flex;
+  padding-left: 100px;
+  margin-top: 50px;
+}
+.text-content {
+  width: 692px;
+  height: 310px;
+  padding-top: 10px;
+  padding-left: 30px;
+  color: #7c7b79;
+  font-size: 19px;
+}
+.video {
+  border-width: 3px;
+  border-color: #6da644;
+  box-shadow: none;
+  border-radius: 5px;
+}
+.about-us {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.hrline
+{
+  padding-left: 39rem;
+}

@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ffffff; */
+    padding: 10px 20px;
+    margin:2px 2px;
+    font-family: "Cabin Sketch",Helvetica,Arial,sans-serif;
+    font-size: larger;
+  }
+  
+  .logo {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    background-color: #ffffff;
+    margin-left:10%;
+    padding-left: 1%;
+    color: #108110;
+    font-size: 1.8rem; /* Set the font size as needed */
+    font-weight: 470;
+  }
+  
+  .nav-links {
+    padding-right: 5%;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    font-style: unset;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem; /* Set the font size as needed */
+  }
+  
+  /* Style the links on hover if needed */
+  .nav-links a:hover {
+    color: #66c2ff; /* Change the color as desired */
+  }

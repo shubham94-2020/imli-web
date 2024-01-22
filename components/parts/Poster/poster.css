@@ -1,0 +1,44 @@
+.counier-style
+{
+    height: 500px;
+    position: relative;
+    margin: 0;
+}
+.description
+{
+    width: 600px;
+    position: absolute;
+    z-index: 999;
+    color: aliceblue;
+    top: 20%;
+    left: 20%;
+}
+.description h1
+{
+    text-align:unset;
+    font-size: 46px;
+    color: aliceblue;
+}
+.description p
+{
+
+    font-size: 22px;
+}
+.carousal-boullt
+{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   margin-right: 40rem;
+   margin-top: 2rem;
+   width: 15rem;
+
+}
+.carousal-boullt span
+{
+    width: 45px;
+    height: 12px;
+    background-color:aliceblue;
+    margin-left: 10px;
+    border-radius: 10px;
+}
