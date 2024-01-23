@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-          <img className="home" src="https://pehlayakshar.org/wp-content/uploads/logo240x240-1.png" alt="Logo" />
+          <img className="home" src="./imlilogo.png" alt="Logo" />
           <span onClick={()=>{
             window.location.href = "/";
           }}>Institute for Multi- Lingual Education</span>

@@ -42,3 +42,91 @@
     margin-left: 10px;
     border-radius: 10px;
 }
+
+h1 {    
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: center;
+  font-family: "Cabin Sketch", Helvetica, Arial, sans-serif;
+}
+.content {
+  display: flex;
+  padding-left: 100px;
+  margin-top: 50px;
+}
+.text {
+  width: 90%;
+  /* height: 310px; */
+  margin-top: 0%;
+ 
+  padding-left: 50px;
+  color: #ffac06;
+  font-size: 23px;
+}
+
+.about-us {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.hrline
+{
+  padding-left: 39rem;
+}
+
+/* -------------------------------------------------------- */
+
+.counier-style {
+    position: relative;
+    overflow: hidden; /* Hide any overflow to prevent arrows from being cut off */
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display:flex;
+    justify-content:space-evenly;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  
+  .arrow-box {
+    background: rgba(0, 0, 0, 0.2); /* Transparent black box */
+    border-radius: 20%;
+    height: 75px;
+    padding: 10px; /* Adjust padding as needed */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-button {
+    color: white;
+    font-size: 50px; /* Adjust the size as needed */
+  }
+
+  /* Positioning the arrow boxes */
+  .arrow-box.left {
+    position: absolute;
+    margin-left:-190%; 
+    /* Adjust left position as needed */
+  }
+  
+  .arrow-box.right {
+    position: relative;
+    right:-112%; /* Adjust right position as needed */
+  }
+  
+
+
+  
+  
+  
+
