@@ -42,3 +42,54 @@
     margin-left: 10px;
     border-radius: 10px;
 }
+/* -------------------------------------------------------- */
+
+.counier-style {
+    position: relative;
+    overflow: hidden; /* Hide any overflow to prevent arrows from being cut off */
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display:flex;
+    justify-content:space-evenly;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  
+  .arrow-box {
+    background: rgba(0, 0, 0, 0.2); /* Transparent black box */
+    border-radius: 20%;
+    height: 75px;
+    padding: 10px; /* Adjust padding as needed */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-button {
+    color: white;
+    font-size: 50px; /* Adjust the size as needed */
+  }
+
+  /* Positioning the arrow boxes */
+  .arrow-box.left {
+    position: relative;
+    left:-46%; 
+    /* Adjust left position as needed */
+  }
+  
+  .arrow-box.right {
+    position: relative;
+    right:-59.5%; /* Adjust right position as needed */
+  }
+  
+
+
+  
+  
+  
