@@ -1,21 +1,35 @@
-import React, { useState } from 'react'
-import './poster.css'
+
+import React, { useState } from 'react';
+import './poster.css';
 import imageSlide from '../export_image_object/Image_object';
+
 function Poster() {
-  const [index,setindex]=useState(0);
-  const obj={
+  const [index, setIndex] = useState(0);
+
+  // Function to go to the next index
+  function goToNextIndex() {
+    // Calculate the next index in a circular manner
+    const nextIndex = (index + 1) % imageSlide.length;
+    setIndex(nextIndex);
+  }
+
+  // Function to go to the previous index
+  function goToPrevIndex() {
+    // Calculate the previous index in a circular manner
+    const prevIndex = (index - 1 + imageSlide.length) % imageSlide.length;
+    setIndex(prevIndex);
+  }
+
+  const obj = {
     backgroundImage: `url(${imageSlide[index].url})`,
     backgroundPosition: 'center',
     backgroundSize: 'auto',
-    height:'500px',
-    width:"100%",
+    height: '500px',
+    width: "100%",
     backgroundRepeat: 'no-repeat',
     transition: 'background-image 0.4s ease',
-  }
-  function gotonextindex(index)
-  {
-    setindex(index);
-  }
+  };
+
   return (
     <>
       <div className="counier-style">
@@ -26,79 +40,22 @@ function Poster() {
               <h1>{imageSlide[index].body}</h1>
             </div>
             <div className="carousal-boullt">
-              {imageSlide.map((imageSlide, index) => (
-                <span
-                  key={index}
-                  onClick={() => {
-                    gotonextindex(index);
-                  }}
-                ></span>
-              ))}
-            </div>
-          </div>
+              {
+                imageSlide.map((imageSlide,index)=>(
+                    <span 
+                    key={index} 
+                    onClick={()=>{
+                    gotonextindex(index)
+                    }}></span>
+                ))
+              }
         </div>
-      </div>
-      <div className="about-us">
-        <h1>Why We are Here</h1>
-        <div className="hrline">
-          <img
-            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
-            alt="Separator"
-            title=""
-          />
+           </div>
         </div>
-        
-          <div className="text">
-            
-             
-              <label>
-                Pehlay Akshar Foundation was started in 2008 with the core
-                belief that every student has the right to an excellent
-                education and gain the skills needed to be future-ready.Pehlay
-                Akshar Foundation was started in 2008 with the core belief that
-                every student has the right to an excellent education and gain
-                the skills needed to be future-ready.Pehlay Akshar Foundation
-                was started in 2008 with the core belief that every student has
-                the right to an excellent education and gain the skills needed
-                to be future-ready.
-              </label>
-              
-            
-          </div>
-        
-      </div>
-       <hr />
-      <div className="about-us">
-        <h1>Who we are</h1>
-        <div className="hrline">
-          <img
-            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
-            alt="Separator"
-            title=""
-          />
-        </div>
-        
-          <div className="text">
-            
-             
-              <label>
-                Pehlay Akshar Foundation was started in 2008 with the core
-                belief that every student has the right to an excellent
-                education and gain the skills needed to be future-ready.Pehlay
-                Akshar Foundation was started in 2008 with the core belief that
-                every student has the right to an excellent education and gain
-                the skills needed to be future-ready.Pehlay Akshar Foundation
-                was started in 2008 with the core belief that every student has
-                the right to an excellent education and gain the skills needed
-                to be future-ready.
-              </label>
-              
-            
-          </div>
-        
-      </div>
+    </div>
     </>
-  );
+
+  )
 }
 
-export default Poster
+export default Poster;

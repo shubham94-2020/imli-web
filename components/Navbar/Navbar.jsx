@@ -7,8 +7,10 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-          <img src="https://pehlayakshar.org/wp-content/uploads/logo240x240-1.png" alt="Logo" />
-          <span>Institute for Multi- Lingual Education</span>
+          <img className="home" src="https://pehlayakshar.org/wp-content/uploads/logo240x240-1.png" alt="Logo" />
+          <span onClick={()=>{
+            window.location.href = "/";
+          }}>Institute for Multi- Lingual Education</span>
         </div>
         <ul className="nav-links">
           <li> <Link to="/product"> product </Link> </li>

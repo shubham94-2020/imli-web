@@ -52,3 +52,7 @@
   .nav-links a:hover {
     color: #66c2ff; /* Change the color as desired */
   }
+
+  span{
+    cursor: pointer;
+  }
