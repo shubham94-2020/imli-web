@@ -1,60 +1,24 @@
-import React, { useState } from "react";
-import "./navbar.css";
-import { Link } from "react-router-dom";
-
+import React from "react";
+import './navbar.css';
+import {Link} from 'react-router-dom'
+import Contact from "../Contact/Contact";
 function Navbar() {
-  const [showProgramDropdown, setShowProgramDropdown] = useState(false);
-
-  const toggleProgramDropdown = () => {
-    setShowProgramDropdown(!showProgramDropdown);
-  };
-
   return (
     <>
       <nav className="navbar">
         <div className="logo">
-          <img className="home" src="./imlilogo.png" alt="Logo" />
-          <span
-            onClick={() => {
-              window.location.href = "/";
-            }}
-          >
-            Institute for Multi-Lingual Education
-          </span>
+          <img className="home" src="https://pehlayakshar.org/wp-content/uploads/logo240x240-1.png" alt="Logo" />
+          <span onClick={()=>{
+            window.location.href = "/";
+          }}>Institute for Multi- Lingual Education</span>
         </div>
         <ul className="nav-links">
-          <li>
-            <Link to="/product">Product</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li
-            className="dropdown"
-            onMouseEnter={toggleProgramDropdown}
-            onMouseLeave={toggleProgramDropdown}
-          >
-            {/* <span >Programs</span> */}
-            <li>
-              <Link to="/program">Program</Link>
-            </li>
-            {showProgramDropdown && (
-              <div className="dropdown-content">
-                <Link to="/program1">Program-1</Link>
-                <Link to="/program2">Program 2</Link>
-                <Link to="/program3">Program 3</Link>
-              </div>
-            )}
-          </li>
-          <li>
-            <Link to="/resources">Resources</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blog & Press</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
-          </li>
+          <li> <Link to="/product"> product </Link> </li>
+          <li> <Link to="/about"> about us </Link> </li>
+          <li> <Link to="/program"> programs </Link> </li>
+          <li> <Link to="/resources"> Resources </Link> </li>
+          <li> <Link to="/blogs"> Blog & press </Link> </li>
+          <li> <a href="/contact"> Contact with Us </a> </li>
         </ul>
       </nav>
     </>
