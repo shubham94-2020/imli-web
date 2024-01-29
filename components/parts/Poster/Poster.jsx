@@ -151,8 +151,14 @@ function Poster() {
         </h2>
       </div>
 
+      <div className="JoinUs">
+        <h1>Join Our Community</h1>
+        <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
+        <input type="email" placeholder="Enter Your Email" size={38}/>
+        <button onClick={<a href="#"></a>}>Subscribe</button>
+      </div>
+
       <div>
-        <h1> .</h1>
         <h1>footer footer</h1>
       </div>
     </>
