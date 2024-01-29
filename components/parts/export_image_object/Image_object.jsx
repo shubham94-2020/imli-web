@@ -2,7 +2,7 @@ const imageSlide = [
   {
     url: "https://pehlayakshar.org/wp-content/uploads/slider-03.jpg",
    //  title: "image slider 1",
-    body: "MLi Preschool Initiative",
+    body: "IMLi Preschool Initiative",
   },
   {
     url: "https://pehlayakshar.org/wp-content/uploads/slider-01.jpg",

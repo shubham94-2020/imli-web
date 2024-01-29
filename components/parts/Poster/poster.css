@@ -88,44 +88,54 @@
     overflow: hidden; /* Hide any overflow to prevent arrows from being cut off */
   }
   
+.carousel-buttons {
+  position: absolute;
+  margin-top: 15%;
+  top: 100%; /* Adjust the vertical position */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px; /* Add padding to adjust the horizontal position */
+}
+
+.arrow-box {
+  background: rgba(0, 0, 0, 0.2); /* Transparent black box */
+  border-radius: 20%;
+  padding: 10px; /* Adjust padding as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-button {
+  color: white;
+  font-size: 30px; /* Adjust the size as needed */
+}
+
+/* Positioning the arrow boxes */
+.arrow-box.left {
+  margin-left: 0vw; /* Adjust left margin for positioning */
+}
+
+.arrow-box.right {
+  margin-right: 0vw; /* Adjust right margin for positioning */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
   .carousel-buttons {
-    position: absolute;
-    top: 60%;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    display:flex;
-    justify-content:space-evenly;
-    box-sizing: border-box;
-    position: absolute;
-  }
-  
-  .arrow-box {
-    background: rgba(0, 0, 0, 0.2); /* Transparent black box */
-    border-radius: 20%;
-    height: 75px;
-    padding: 10px; /* Adjust padding as needed */
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    padding: 0 10px; /* Adjust padding for smaller screens */
   }
   
   .arrow-button {
-    color: white;
-    font-size: 50px; /* Adjust the size as needed */
+    font-size: 20px; /* Decrease font size for smaller screens */
   }
+}
 
-  /* Positioning the arrow boxes */
-  .arrow-box.left {
-    position: absolute;
-    margin-left:-190%; 
-    /* Adjust left position as needed */
-  }
+
   
-  .arrow-box.right {
-    position: relative;
-    right:-112%; /* Adjust right position as needed */
-  }
   
   /* WhyWeAreHere.css */
 
@@ -208,5 +218,18 @@ font-size: 320%;
   /* Add more styles as needed */
 }
 
-/* Keyframes for the rotation animation */
 
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust the value based on your needs */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 1s ease-out; /* You can adjust the duration and timing function */
+}

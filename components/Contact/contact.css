@@ -36,13 +36,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #27ad27c1;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #14923a);
   position: absolute;
 }
 
@@ -65,7 +65,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #14923ac0;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -171,7 +171,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #27ad27c1;
   top: 50%;
   transform: translateY(-50%);
 }

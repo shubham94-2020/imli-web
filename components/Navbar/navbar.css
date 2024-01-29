@@ -85,3 +85,37 @@
     font-size: 60%;
   }
 }
+
+.dropdown {
+  position: relative;
+  z-index: 5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a{
+  /* display: inline-block; */
+  white-space: nowrap;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 0px 0px; /* Adjust margin as needed */
+  font-size: large;
+  display: block;
+  /* padding: 10px; */
+  text-decoration: none;
+  color: #7a4b48;
+}
+
+.dropdown-content a:hover {
+  background-color: #eec471;
+}

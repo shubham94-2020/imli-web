@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
-
+import ImageSlider from "./img";
 
 function Poster() {
   const [index, setIndex] = useState(0);
@@ -30,57 +30,53 @@ function Poster() {
     transition: "background-image 0.4s ease",
   };
 
+  // State to track whether the "Why we are here" section is in view
+  const [isWhyInView, setIsWhyInView] = useState(false);
+
+  useEffect(() => {
+    // Function to handle intersection of the "Why we are here" section
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsWhyInView(true);
+        }
+      });
+    };
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    });
+
+    // Observe the "Why we are here" section
+    observer.observe(document.querySelector(".why-we-are-here"));
+
+    // Cleanup: Disconnect the observer when the component unmounts
+    return () => observer.disconnect();
+  }, []);
+
+  const slides = [
+    { url: "i2.jpg", programName: "IMLi Preschool Initiative" },
+    { url: "i1.jpg", programName: "IMLi Reading Programs" },
+    { url: "i3.jpg", programName: "IMLi Multi-Lingual Hub" },
+    { url: "i4.jpg", programName: "IMLi Teacher Training Programs" },
+    { url: "i5.jpg", programName: "IMLi 3D Learning Program" },
+  ];
+  const containerStyles = {
+    width: "100%",
+    height: "80vh",
+    
+
+  };
+
   return (
     <>
-      <div className="counier-style">
-        <div style={obj}>
-          <div className="description">
-            <div>
-              <h1>{imageSlide[index].title}</h1>
-              <h1>{imageSlide[index].body}</h1>
-            </div>
-
-            {/* <div className="carousal-boullt">
-              {imageSlide.map((image, i) => (
-                <span
-                  key={i}
-                  onClick={() => {
-                    goToNextIndex(i);
-                  }}
-                ></span>
-              ))}
-            </div> */}
-            <div className="carousel-buttons">
-              {/* Arrow button to go to the previous image */}
-              <span
-                className="arrow-button left arrow-box"
-                onClick={goToPrevIndex}
-              >
-                &#8249;
-              </span>
-              {/* Mapping through imageSlide to create buttons for each image */}
-              {imageSlide.map((_, i) => (
-                <span
-                  key={i}
-                  onClick={() => {
-                    // Call the function to go to the clicked index
-                    setIndex(i);
-                  }}
-                ></span>
-              ))}
-              {/* Arrow button to go to the next image */}
-              <span
-                className="arrow-button right arrow-box"
-                onClick={goToNextIndex}
-              >
-                &#8250;
-              </span>
-            </div>
-          </div>
-        </div>
+      <div style={containerStyles}>
+        <ImageSlider slides={slides} />
       </div>
+      
       {/* why we are here section */}
-      <div className="about-us">
+      <div className={`about-us ${isWhyInView ? "fade-in-up" : ""}`}>
         <h1>Why we are here</h1>
         <div className="hrline">
           <img
@@ -91,7 +87,9 @@ function Poster() {
         </div>
       </div>
       <div className="why-we-are-here">
-        <div className="section">
+        <div
+          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
+        >
           <img src="img1.jpg" alt="Image 1" />
           <p>
             Language is at the core of everything we do – it shapes how kids
@@ -105,7 +103,9 @@ function Poster() {
             invaluable resource within the classroom
           </p>
         </div>
-        <div className="section">
+        <div
+          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
+        >
           <p>
             Despite our shared goal, year after year, we notice that a
             substantial number of children struggle with their learning
@@ -117,7 +117,9 @@ function Poster() {
           </p>
           <img src="img2.png" alt="Image 2" />
         </div>
-        <div className="section">
+        <div
+          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
+        >
           <img src="img3.png" alt="Image 3" />
           <p>
             And yet, there are pockets of innovation where certain schools and
@@ -129,7 +131,6 @@ function Poster() {
           </p>
         </div>
       </div>
-      
 
       <div className="about-us">
         <h1>What We Do</h1>
@@ -142,11 +143,11 @@ function Poster() {
         </div>
       </div>
 
-      <div >
-        <h2 className="other-section">
-          "We promote the sharing and exploration of pedagogical innovations that
-          seamlessly <br/> integrate the best principles of learning with the
-          realities of our students' lives."
+      <div>
+        <h2 className="other-section ">
+          "We promote the sharing and exploration of pedagogical innovations
+          that seamlessly <br /> integrate the best principles of learning with
+          the realities of our students' lives."
         </h2>
       </div>
 
