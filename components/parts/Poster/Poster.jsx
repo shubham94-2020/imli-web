@@ -90,7 +90,7 @@ function Poster() {
         <div
           className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
         >
-          <img src="img1.jpg" alt="Image 1" />
+          
           <p>
             Language is at the core of everything we do – it shapes how kids
             learn and how we connect as humans. In India, a nation steeped in a
@@ -115,12 +115,12 @@ function Poster() {
             learning, grappling with methods and resources that may not be the
             best fit for the needs of the children they seek to support.
           </p>
-          <img src="img2.png" alt="Image 2" />
+          
         </div>
         <div
           className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
         >
-          <img src="img3.png" alt="Image 3" />
+         
           <p>
             And yet, there are pockets of innovation where certain schools and
             teachers are pioneering innovative solutions aligned with best

@@ -9,7 +9,7 @@
 }
 .description
 {
-    width: 600px;
+    width: 600x;
     position: absolute;
     z-index: 999;
     color: aliceblue;
@@ -24,7 +24,7 @@
 }
 .description p
 {
-  
+    width: 90%;
     font-size: 22px;
 }
 .carousal-boullt
@@ -164,13 +164,13 @@ img {
   
 }
 
-p {
+.why-we-are-here p {
   font-size: 150%;
-  max-width: 55%; 
+  max-width: 90%; 
   font-family: 'Nunito', sans-serif;
   line-height: 160%;
-  color: rgba(0, 0, 0, 0.64);
-
+  color: rgba(2, 2, 2, 0.64);
+  width: 90%;
 }
 
 .about-us h1{
@@ -185,10 +185,10 @@ font-size: 320%;
 .other-section {
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #eec471;
+  
   padding: 20px;
   text-align: center;
-  color: #161515;
+  color: #0a0a0a;
   position: relative;
 
   /* Additional styling for an attractive background */
@@ -197,7 +197,7 @@ font-size: 320%;
   overflow: hidden; /* Ensures content doesn't overflow rounded corners */
 
   /* Gradient background for a more dynamic look */
-  background: linear-gradient(45deg, #eec471, #ff9c5f);
+ 
 
   /* Transition for smooth effects on hover */
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -208,7 +208,7 @@ font-size: 320%;
 
 /* Hover effect to change background color and scale slightly */
 .other-section:hover {
-  background-color: #ff9c5f;
+  background-color: #fefefe;
   transform: scale(1.05);
 }
 
@@ -222,8 +222,10 @@ font-size: 320%;
 /*Join Us*/
 .JoinUs{
   /* background-color: #87A6EC; */
+  
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  padding-bottom: 20px;
   width:100%;
   display: flex;
   align-items: center;
@@ -233,6 +235,7 @@ font-size: 320%;
   /* margin-bottom: 8px; */
   font-size: 320%;
   padding-left: 0.6rem;
+  padding-top: 3rem;
   
 }
 .JoinUs p{
