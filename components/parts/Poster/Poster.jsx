@@ -153,6 +153,13 @@ function Poster() {
 
       <div className="JoinUs">
         <h1>Join Our Community</h1>
+        <div className="hrline">
+          <img
+            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
+            alt="Separator"
+            title=""
+          />
+        </div>
         <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
         <input type="email" placeholder="Enter Your Email" size={38}/>
         <button onClick={<a href="#"></a>}>Subscribe</button>

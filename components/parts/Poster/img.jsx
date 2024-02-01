@@ -93,7 +93,12 @@ const ImageSlider = ({ slides }) => {
             left: "50%",
             transform: "translateX(-50%)",
             fontSize: "50px",
-            fontFamily:"Cabin Sketch"
+            // fontFamily: "Lato"
+            fontFamily:"Cabin Sketch",
+            // fontfamily: "Montserrat",
+            fontWeight:500
+
+
           }}
         >
           {slides[currentIndex].programName}
