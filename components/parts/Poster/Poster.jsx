@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
+import We from "../../What_will_do/We";
 
 function Poster() {
   const [index, setIndex] = useState(0);
@@ -150,7 +151,7 @@ function Poster() {
           the realities of our students' lives."
         </h2>
       </div>
-
+      <We></We>
       <div className="JoinUs">
         <h1>Join Our Community</h1>
         <div className="hrline">
