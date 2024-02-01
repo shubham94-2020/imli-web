@@ -9,7 +9,7 @@ function We() {
   return (
     <>
       <div className="how_we">
-        <p>How will we do it?</p>
+        <h1>How will we do it?</h1>
         <div className="outer_container">
           <div className="outer_box">
             <div className="svg_boy">

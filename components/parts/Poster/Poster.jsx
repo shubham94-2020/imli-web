@@ -134,7 +134,7 @@ function Poster() {
       </div>
 
       <div className="about-us">
-        <h1>What We Do</h1>
+        <h1>What we do</h1>
         <div className="hrline">
           <img
             src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
