@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+  color: black;
+  position:relative;
+  width: 100%;
+  opacity: 1;
+  min-height: 100px;
+  padding: 0 30px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button-container button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+  .button-container button:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+
+.menu {
+  color: #000000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+
+
+.menu__link {
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+  padding : 0 20px;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: rgb(84, 204, 29);
+}
+
+.footer p {
+  color: #000000;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+} 
+
+
+
+
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .social-icon__link,
+  .menu__link {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .social-icon__link,
+  .menu__link {
+    font-size: 1.2rem;
+  }
+}
