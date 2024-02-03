@@ -1,11 +1,13 @@
 /* Base styles for larger screens */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   margin: 2px 2px;
-  font-family: "Cabin Sketch", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+    font-weight: 500;
   font-size: 200%;
 }
 

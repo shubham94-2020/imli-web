@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
+import We from "../../What_will_do/We";
 
 function Poster() {
   const [index, setIndex] = useState(0);
@@ -133,7 +134,7 @@ function Poster() {
       </div>
 
       <div className="about-us">
-        <h1>What We Do</h1>
+        <h1>What we do</h1>
         <div className="hrline">
           <img
             src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
@@ -150,9 +151,16 @@ function Poster() {
           the realities of our students' lives."
         </h2>
       </div>
-
+      <We></We>
       <div className="JoinUs">
         <h1>Join Our Community</h1>
+        <div className="hrline">
+          <img
+            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
+            alt="Separator"
+            title=""
+          />
+        </div>
         <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
         <input type="email" placeholder="Enter Your Email" size={38}/>
         <button onClick={<a href="#"></a>}>Subscribe</button>

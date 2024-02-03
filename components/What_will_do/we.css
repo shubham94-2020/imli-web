@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.outer_container {
+    display: flex;
+    width: 75%;
+    justify-content: space-around; /* Added to evenly space the outer_box elements */
+  }
+  
+  .how_we {
+    /* border: 1px solid rgb(130, 255, 123); */
+    margin-top: 3%;
+    padding: 20px; /* Added for better spacing */
+  }
+  
+  .how_we p {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 3%;
+  }
+  
+  .outer_box {
+    width: 21%;
+    /* border: 2px solid rgb(130, 255, 123); */
+    position: relative;
+    margin-top: 5%;
+    border-radius: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    overflow: visible; /* Added to contain the content and shadow */
+    transition: transform 0.3s ease; /* Added transition for smoother hover effect */
+  }
+  
+  .outer_box:hover {
+    transform: translateY(-5px); /* Added hover effect */
+  }
+  
+  .content_area {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff; /* Added background color */
+    transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+  }
+  
+  .content_area:hover {
+    background-color: #f9f9f9; /* Added hover effect for background color */
+  }
+  
+
+  .content_area h4 {
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px; /* Increased font size */
+    color: #333; /* Changed font color */
+    margin-bottom: 10px; /* Added margin for spacing */
+    border-bottom: 2px solid #ddd; /* Added bottom border */
+  }
+  
+  
+  .svg_boy {
+    margin: 0px;
+    position: absolute;
+    top: -30px; /* Adjusted positioning */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .svg_boy img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%; /* Updated border radius for circular shape */
+  }
+  
+  /* Added media query for responsiveness */
+  @media (max-width: 768px) {
+    .outer_container {
+      flex-wrap: wrap;
+    }
+    .outer_box {
+      width: 45%;
+      margin-top: 20px;
+    }
+  }
+  

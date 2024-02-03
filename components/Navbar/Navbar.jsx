@@ -50,11 +50,11 @@ function Navbar() {
             </li>
             {showProgramDropdown && (
               <div className="dropdown-content">
-                <Link to="/program1">Program 1</Link>
-                <Link to="/program2">Program 2</Link>
-                <Link to="/program3">Program 3</Link>
-                <Link to="/program3">Program 4</Link>
-                <Link to="/program3">Program 5</Link>
+                <Link to="/program1">IMLi Preschool Initiative</Link>
+                <Link to="/program2">IMLi Reading Programs</Link>
+                <Link to="/program3">	IMLi Multi-Lingual Hub</Link>
+                <Link to="/program3">IMLi Teacher Training Programs</Link>
+                <Link to="/program3">IMLi 3D Learning Program </Link>
               </div>
             )}
           </li>
