@@ -10,6 +10,6 @@
 @media only screen and (max-width: 620px) {
 
   #root{
-    width:100 vh;
+    width:180%;
   }
 }
