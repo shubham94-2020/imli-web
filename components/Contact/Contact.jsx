@@ -12,6 +12,7 @@ const ContactUs = () => {
           Would you like to collaborate with us or learn about our work? Have any questions on our initiatives? Leave us a message by filling in the form below. For more details on how you can partner with us, visit our <a href=""> partnerships page </a> or <a href=""> subscribe to our newsletter. </a>
         </p>
       </div>
+      <div className="Contact">
       <div className='contact-us-form'>
         <form>
           {/* <label htmlFor="name">Name:</label> */}
@@ -29,8 +30,9 @@ const ContactUs = () => {
           <button type="submit">Send</button>
         </form>
       </div>
+      
       <div className='ContactInfo'>
-        <h1>Contact Us</h1>
+        <h1>Contact Info</h1>
           <div className='address'>
             <div className='reg'> 
             <CIcon icon={cilLocationPin}  className="text-secondary cIcon" size="sm"/>
@@ -46,6 +48,8 @@ const ContactUs = () => {
 
           </div>
       </div>
+      </div>
+      <div className="Contact"></div>
     </div>
   );
 }

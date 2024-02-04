@@ -3,6 +3,10 @@
   justify-content: left;
   align-items: top; */
   height: 100vh;
+  display: flex  ;
+  flex-direction: column;
+ justify-content: flex-start;
+  align-items:center;
 }
 
 .contact-us-text {
@@ -58,8 +62,20 @@
   background-color: #45a049;
 }
 
+.Contact{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 0;
+  padding: 0;
+}
 .ContactInfo{
-  width: 25%;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  margin-right: 0;
+  padding: 0;
+  width: 30%;
 }
 .address{
   margin-top  : -28px;
