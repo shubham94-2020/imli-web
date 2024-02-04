@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
+
 import We from "../../What_will_do/We";
 
 function Poster() {
@@ -166,9 +167,7 @@ function Poster() {
         <button onClick={<a href="#"></a>}>Subscribe</button>
       </div>
 
-      <div>
-        <h1>footer footer</h1>
-      </div>
+      
     </>
   );
 }

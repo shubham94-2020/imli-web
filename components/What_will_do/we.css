@@ -17,6 +17,9 @@
     padding-top: 3%;
   }
   
+  .how_we h1{
+    font-size: 3rem ;
+  }
   .outer_box {
     width: 21%;
     /* border: 2px solid rgb(130, 255, 123); */

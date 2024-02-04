@@ -188,33 +188,31 @@ font-size: 320%;
   
   padding: 20px;
   text-align: center;
-  color: #0a0a0a;
+  color: #0d0d0da2;
   position: relative;
+  font-weight: 500;
 
   /* Additional styling for an attractive background */
   border-radius: 15px; /* Adds rounded corners to the section */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for depth */
+   /* Adds a subtle box shadow for depth */
   overflow: hidden; /* Ensures content doesn't overflow rounded corners */
 
   /* Gradient background for a more dynamic look */
  
 
   /* Transition for smooth effects on hover */
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; */
 
   /* Animation for continuous rotation */
-  animation: rotate 10s linear infinite;
+  /* animation: rotate 10s linear infinite; */
 }
 
 /* Hover effect to change background color and scale slightly */
-.other-section:hover {
-  background-color: #fefefe;
-  transform: scale(1.05);
-}
+
 
 /* Additional styling for the content within the section */
 .other-section p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   /* Add more styles as needed */
 }
 
@@ -224,8 +222,8 @@ font-size: 320%;
   /* background-color: #87A6EC; */
   
   margin-top: 80px;
-  margin-bottom: 80px;
-  padding-bottom: 20px;
+     margin-top: 42px;
+    margin-bottom: 19px;
   width:100%;
   display: flex;
   align-items: center;
@@ -293,3 +291,4 @@ input[type="email"]{
 .fade-in-up {
   animation: fade-in-up 1s ease-out; /* You can adjust the duration and timing function */
 }
+
