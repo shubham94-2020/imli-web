@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .contact-us-container {
   /* display: flex;
   justify-content: left;
   align-items: top; */
-  height: 100vh;
+  height: 80vh;
   display: flex  ;
   flex-direction: column;
  justify-content: flex-start;
@@ -12,7 +15,8 @@
 .contact-us-text {
   max-width: 100%;
   text-align: left;
-  padding: 20px 40px;
+  padding: 20px 40px 0 40px;
+  margin: 0;
 }
 
 .contact-us-text a {
@@ -33,6 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 20px;
 }
 
 .contact-us-form label {
@@ -72,10 +77,14 @@
 }
 .ContactInfo{
   margin-left: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-right: 0;
+  margin-top: 0;
   padding: 0;
   width: 30%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
 }
 .address{
   margin-top  : -28px;
@@ -87,14 +96,18 @@
 .details{
   padding: 20px;
 }
-.cIcon{
+.LocationIcon{
   height: 75px;
-  transform: scaleX(-1);
-  padding-bottom: 25%;
+  padding-bottom: 32%;
+  padding-right: 0;
+  font-size: 85px;
 }
-.cIcon1{
-  height: 20px;
-  transform: scaleX(-1);
+.detailsCall{
+  padding-left: 10px;
+}
+.PhoneIcon{
+  font-size: 22px;
+  padding-right: 9px;
   padding-bottom: 8%;
 }
 .call{
@@ -102,4 +115,16 @@
 }
 .phone{
   padding-left: 12px;
+}
+
+.ContactIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.SocialIconsY{
+  margin-left: 50px;
+  margin-right: 50px;
 }
