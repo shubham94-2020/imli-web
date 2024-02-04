@@ -1,85 +1,53 @@
 import React from 'react';
-import './contact.css'; // Make sure to adjust the path accordingly
+import './contact.css';
+import  CIcon  from '@coreui/icons-react';
+import { cilLocationPin, cilPhone } from '@coreui/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Contact() {
+const ContactUs = () => {
   return (
-    <div className="container">
-      {/* <span className="big-circle"></span> */}
-      <img src="img/shape.png" className="square" alt="" />
-      <div className="form">
-        <div className="contact-info">
-          <h3 className="title">Let's get in touch</h3>
-          <p className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
+    <div className="contact-us-container">
+      <div className="contact-us-text">
+        <p>
+          Would you like to collaborate with us or learn about our work? Have any questions on our initiatives? Leave us a message by filling in the form below. For more details on how you can partner with us, visit our <a href=""> partnerships page </a> or <a href=""> subscribe to our newsletter. </a>
+        </p>
+      </div>
+      <div className='contact-us-form'>
+        <form>
+          {/* <label htmlFor="name">Name:</label> */}
+          <input type="text" id="name" name="name" placeholder='Name' required />
+             
+          {/* <label htmlFor="email">Email:</label> */}
+          <input type="email" id="email" name="email"  placeholder='Email' required />
 
-          <div className="info">
-            <div className="information">
-              <img src="/components/Contact/img/location.png" className="icon" alt="" />
-              <p>bajajnagar, Aurangabad</p>
+          {/* <label htmlFor="subject">Subject:</label> */}
+          <input type="text" id="subject" name="subject"  placeholder='Subject' required />
+
+          {/* <label htmlFor="message">Message:</label> */}
+          <textarea id="message" name="message"  placeholder='Message' required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div className='ContactInfo'>
+        <h1>Contact Us</h1>
+          <div className='address'>
+            <div className='reg'> 
+            <CIcon icon={cilLocationPin}  className="text-secondary cIcon" size="sm"/>
+            <div className="details">
+            <span><b>Registered Office :</b></span>
+            <span className='text-body'>Institute for Multi-Lingual Education, Indraprabha Co-op Housing Society, 3rd Floor, Pune-Bangalore Highway, Dehuroad, Pune 412 101</span>
             </div>
-            <div className="information">
-              <img src="/components/Contact/img/email.png" className="icon" alt="" />
-              <p>shubhampatil94.2020@gmail.com</p>
             </div>
-            <div className="information">
-              <img src="/components/Contact/img/phone.png" className="icon" alt="" />
-              <p>91+ 7420853790</p>
+            <div className="call">
+            <CIcon icon={cilPhone}  className="text-secondary cIcon1" size="sm"/>
+            <div className='phone'>+91 99609 28210 </div>
             </div>
+
           </div>
-
-          <div className="social-media">
-            <p>Connect with us :</p>
-            <div className="social-icons">
-              <a href="#">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="contact-form">
-          <span className="circle one"></span>
-          <span className="circle two"></span>
-
-          <form action="index.html" autoComplete="off">
-            <h3 className="title">Contact us</h3>
-            <div className="input-container">
-              <input type="text" name="name" className="input" />
-              {/* <label htmlFor="">Username</label> */}
-              <span>Username</span>
-            </div>
-            <div className="input-container">
-              <input type="email" name="email" className="input" placeholder="Email" style={{color:"white"}}/>
-              {/* <label htmlFor="">Email</label> */}
-              <span>Email</span>
-            </div>
-            <div className="input-container">
-              <input type="tel" name="phone" className="input" />
-              <label htmlFor="">Phone</label>
-              <span>Phone</span>
-            </div>
-            <div className="input-container textarea">
-              <textarea name="message" className="input"></textarea>
-              <label htmlFor="">Message</label>
-              <span>Message</span>
-            </div>
-            <input type="submit" value="Send" className="btn" />
-          </form>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Contact;
+export default ContactUs;
