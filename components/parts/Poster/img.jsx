@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const slideStyles = {
   width: "100%",
@@ -81,6 +82,7 @@ const ImageSlider = ({ slides }) => {
           ❱
         </div>
       </div>
+      <Link to={`/${slides[currentIndex].a}`}>
       <div style={slideStylesWidthBackground}>
         <div
           style={{
@@ -104,9 +106,11 @@ const ImageSlider = ({ slides }) => {
           {slides[currentIndex].programName}
         </div>
       </div>
+      </Link>
+
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-          <div
+        <div
             style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
