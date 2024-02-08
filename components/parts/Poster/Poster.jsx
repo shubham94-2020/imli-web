@@ -78,7 +78,7 @@ function Poster() {
       </div>
       
       {/* why we are here section */}
-      <div className={`about-us ${isWhyInView ? "fade-in-up" : ""}`}>
+      <div className={`about-us`}>
         <h1>Why we are here</h1>
         <div className="hrline">
           <img
@@ -90,7 +90,7 @@ function Poster() {
       </div>
       <div className="why-we-are-here">
         <div
-          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
+          className={`section fade-in-up`}
         >
           
           <p>

@@ -46,14 +46,14 @@ function Navbar() {
             onMouseLeave={toggleProgramDropdown}
           >
             <li>
-              <Link to="/program">Program</Link>
+              <Link to="/program">Programs</Link>
             </li>
             {showProgramDropdown && (
               <div className="dropdown-content">
                 <Link to="/program1">IMLi Preschool Initiative</Link>
                 <Link to="/program2">IMLi Reading Programs</Link>
                 <Link to="/program3">	IMLi Multi-Lingual Hub</Link>
-                <Link to="/program3">IMLi Teacher Training Programs</Link>
+                <Link to="/program4">IMLi Teacher Training Programs</Link>
                 <Link to="/program3">IMLi 3D Learning Program </Link>
               </div>
             )}

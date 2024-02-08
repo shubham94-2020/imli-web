@@ -1,0 +1,53 @@
+.ece-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.image{
+  display: block;
+  margin-bottom: 20px;
+  width: 80%; /* Adjust the width as needed */
+  height: auto;
+}
+
+.ece-container h2 {
+  color: #333;
+    font-size: 40px;
+}
+
+
+.ece-container p,
+.ece-container li {
+  font-size: 18px; /* Increase the font size for all headings, paragraphs, and list items */
+  line-height: 2; /* Set line height for better readability */
+}
+.ece-container h3 {
+  color: #333;
+    font-size: 35px;
+}
+
+.ece-container p {
+  margin-bottom: 20px;
+}
+
+.ece-container ul {
+  margin-bottom: 25px;
+}
+
+.ece-container li {
+  list-style: disc;
+}
+
+.ece-container button {
+  background-color: #28b457;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ece-container button:hover {
+  background-color: #2f8d50f8;
+}
