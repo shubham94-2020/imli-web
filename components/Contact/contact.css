@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin:auto;
+  box-sizing: border-box;
+}
 .contact-us-container {
   /* display: flex;
   justify-content: left;
   align-items: top; */
-  height: 100vh;
+  height: 80vh;
   display: flex  ;
   flex-direction: column;
  justify-content: flex-start;
   align-items:center;
+  margin-top: 5px;
 }
 
 .contact-us-text {
   max-width: 100%;
   text-align: left;
-  padding: 20px 40px;
+  padding: 20px 40px 0 40px;
+  margin: 0;
 }
 
 .contact-us-text a {
@@ -33,6 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 20px;
 }
 
 .contact-us-form label {
@@ -67,39 +76,68 @@
   align-items: center;
   flex-direction: row;
   width: 100vw;
-  margin-top: 0;
+  margin-top: 20px;
   padding: 0;
+
 }
 .ContactInfo{
-  margin-left: 100px;
-  margin-bottom: 100px;
+  margin-left: 0px;
+  margin-bottom: 0;
   margin-right: 0;
+  margin-top: 0;
   padding: 0;
   width: 30%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
 }
 .address{
   margin-top  : -28px;
 }
+.detailsCall{
+  margin-left: 18px;
+}
 .reg{
+  padding: 16px;
+  margin-top: 10px;
   display:flex;
   align-items: center;
 }
 .details{
   padding: 20px;
 }
-.cIcon{
-  height: 75px;
-  transform: scaleX(-1);
-  padding-bottom: 25%;
+.LocationIcon {
+  font-size: 100px; /* Adjust the size as needed */
+  margin:-2%;
+  margin-bottom: 115px;
+  color: black;
 }
-.cIcon1{
-  height: 20px;
-  transform: scaleX(-1);
-  padding-bottom: 8%;
+
+.PhoneIcon{
+  font-size:24px;
+  margin:0;
+  margin-left: 12px;
+  margin-bottom: 2px;
 }
 .call{
   display: flex;
+  align-items:flex-end;
+  margin-bottom: 43px;
+  margin-top: 0;
+
 }
 .phone{
-  padding-left: 12px;
+  padding-left: 1px;
+}
+
+.ContactIcons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.SocialIconsY{
+  margin-left: 50px;
+  margin-right: 50px;
 }

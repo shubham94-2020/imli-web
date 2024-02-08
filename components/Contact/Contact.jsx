@@ -1,8 +1,13 @@
 import React from 'react';
 import './contact.css';
-import  CIcon  from '@coreui/icons-react';
-import { cilLocationPin, cilPhone } from '@coreui/icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { RiInstagramFill } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa";
+import { TiLocation } from "react-icons/ti";
+import { FaFacebook } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+
+
+
 
 const ContactUs = () => {
   return (
@@ -35,21 +40,28 @@ const ContactUs = () => {
         <h1>Contact Info</h1>
           <div className='address'>
             <div className='reg'> 
-            <CIcon icon={cilLocationPin}  className="text-secondary cIcon" size="sm"/>
+            {/* <CIcon icon={cilLocationPin}  className="text-secondary cIcon" size="sm"/> */}
+            <TiLocation className='LocationIcon'/>
             <div className="details">
             <span><b>Registered Office :</b></span>
             <span className='text-body'>Institute for Multi-Lingual Education, Indraprabha Co-op Housing Society, 3rd Floor, Pune-Bangalore Highway, Dehuroad, Pune 412 101</span>
             </div>
             </div>
             <div className="call">
-            <CIcon icon={cilPhone}  className="text-secondary cIcon1" size="sm"/>
-            <div className='phone'>+91 99609 28210 </div>
+            {/* <CIcon icon={cilPhone}  className="text-secondary cIcon1" size="sm"/> */}
+            <IoCall className='PhoneIcon'/>
+            <div className="detailsCall">
+            <span><b>Phone :</b></span>
+            <span className='phone'>+91 99609 28210 </span>
+            </div>
             </div>
 
           </div>
+      <div className="ContactIcons">
+        <FaFacebook className='SocialIcons'/> <FaYoutube className='SocialIconsY'/> <RiInstagramFill className='SocialIcons' />
       </div>
       </div>
-      <div className="Contact"></div>
+      </div>
     </div>
   );
 }

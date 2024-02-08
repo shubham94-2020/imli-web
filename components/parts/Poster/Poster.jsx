@@ -58,11 +58,11 @@ function Poster() {
   }, []);
 
   const slides = [
-    { url: "i2.jpg", programName: "IMLi Preschool Initiative" },
-    { url: "i1.jpg", programName: "IMLi Reading Programs" },
-    { url: "i3.jpg", programName: "IMLi Multi-Lingual Hub" },
-    { url: "i4.jpg", programName: "IMLi Teacher Training Programs" },
-    { url: "i5.jpg", programName: "IMLi 3D Learning Program" },
+    { url: "i2.jpg", programName: "IMLi Preschool Initiative" ,a:"about"},
+    { url: "i1.jpg", programName: "IMLi Reading Programs" ,a:"about"},
+    { url: "i3.jpg", programName: "IMLi Multi-Lingual Hub",a:"about" },
+    { url: "i4.jpg", programName: "IMLi Teacher Training Programs",a:"about" },
+    { url: "i5.jpg", programName: "IMLi 3D Learning Program" ,a:"about"},
   ];
   const containerStyles = {
     width: "100%",
