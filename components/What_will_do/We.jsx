@@ -37,7 +37,7 @@ function We() {
               <img src={img4} alt="shubham's image"></img>
             </div>
             <div className="content_area">
-              <h2>support</h2>{" "}
+              <h2>Support</h2>{" "}
                 Undertake and support research that enables us to create better
                 language learning programs and formulate better strategies for
                 language learning for everyone.
