@@ -3,10 +3,6 @@ import "./footer.css"
 function footer() {
   return (
     <footer class="footer">
-      <div class="button-container">
-        <button>join us </button>
-        <button>News Letter</button>
-      </div>
       <ul class="menu">
         <li class="menu__item">
           <a class="menu__link" href="#">

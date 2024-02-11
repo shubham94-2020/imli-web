@@ -19,7 +19,7 @@
 
 .ece-container p,
 .ece-container li {
-  font-size: 18px; /* Increase the font size for all headings, paragraphs, and list items */
+  font-size: 25px; /* Increase the font size for all headings, paragraphs, and list items */
   line-height: 2; /* Set line height for better readability */
 }
 .ece-container h3 {
@@ -28,6 +28,7 @@
 }
 
 .ece-container p {
+
   margin-bottom: 20px;
 }
 

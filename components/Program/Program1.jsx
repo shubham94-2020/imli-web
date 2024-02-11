@@ -20,7 +20,7 @@ function Program1() {
         government anganwadis and balwadis, and the large number of private
         preschools that are opening to cater to parental demand.
       </p>
-      {showDetails && (
+     
         <div>
           <p>
             And yet, many children face a severe lack of quality education in
@@ -70,6 +70,8 @@ function Program1() {
             </li>
           </ul>
         </div>
+         {showDetails && (
+          <h1> </h1>
       )}
       <button onClick={toggledet}>
         {" "}
