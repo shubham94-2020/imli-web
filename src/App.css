@@ -1,15 +1,24 @@
-#root {
-  width: 100vw;
-  height: 100%;
-  margin: 0 auto;
+/* App.css */
+
+html, body {
+  overflow-x: hidden; /* Ensure no horizontal overflow */
   margin: 0;
-  background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
-  /* background-color: rgb(255, 255, 255); */
+  padding: 0;
 }
 
-@media only screen and (max-width: 620px) {
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
+}
+p{
+  text-align: justify;
+}
 
-  #root{
-    width:100 vh;
+/* Existing media query */
+@media only screen and (max-width: 620px) {
+  #root {
+    width: 100vw;
   }
 }

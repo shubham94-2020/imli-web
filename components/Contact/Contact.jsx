@@ -13,8 +13,11 @@ const ContactUs = () => {
   return (
     <div className="contact-us-container">
       <div className="contact-us-text">
+      <h1>Let’s Collaborate</h1>
         <p>
-          Would you like to collaborate with us or learn about our work? Have any questions on our initiatives? Leave us a message by filling in the form below. For more details on how you can partner with us, visit our <a href=""> partnerships page </a> or <a href=""> subscribe to our newsletter. </a>
+        Would you like to collaborate with us or learn about our work? We are always open for collaborating on innovative projects! Send us an email and we’ll be sure to get back to you.</p>
+        <p>
+          Reach us at <a href="askimli@imlieducation.com"> <b>askimli@imlieducation.com</b></a>
         </p>
       </div>
       <div className="Contact">

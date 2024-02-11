@@ -72,27 +72,18 @@ function Poster() {
   };
 
   return (
-    <>
-      <div style={containerStyles}>
+    <div div style={{ textAlign: "justify" }}>
+      <div style={containerStyles } >
         <ImageSlider slides={slides} />
       </div>
-      
+
       {/* why we are here section */}
       <div className={`about-us`}>
         <h1>Why we are here</h1>
-        <div className="hrline">
-          <img
-            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
-            alt="Separator"
-            title=""
-          />
-        </div>
+        
       </div>
       <div className="why-we-are-here">
-        <div
-          className={`section fade-in-up`}
-        >
-          
+        <div >
           <p>
             Language is at the core of everything we do – it shapes how kids
             learn and how we connect as humans. In India, a nation steeped in a
@@ -105,10 +96,9 @@ function Poster() {
             invaluable resource within the classroom
           </p>
         </div>
-        <div
-          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
-        >
+        <div>
           <p>
+
             Despite our shared goal, year after year, we notice that a
             substantial number of children struggle with their learning
             journeys. The roots of low learning scores can many a times be
@@ -117,12 +107,8 @@ function Poster() {
             learning, grappling with methods and resources that may not be the
             best fit for the needs of the children they seek to support.
           </p>
-          
         </div>
-        <div
-          className={`section fade-in-up ${isWhyInView ? "fade-in-up" : ""}`}
-        >
-         
+        <div>
           <p>
             And yet, there are pockets of innovation where certain schools and
             teachers are pioneering innovative solutions aligned with best
@@ -136,13 +122,7 @@ function Poster() {
 
       <div className="about-us">
         <h1>What we do</h1>
-        <div className="hrline">
-          <img
-            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
-            alt="Separator"
-            title=""
-          />
-        </div>
+        
       </div>
 
       <div>
@@ -154,21 +134,16 @@ function Poster() {
       </div>
       <We></We>
       <div className="JoinUs">
-        <h1>Join Our Community</h1>
-        <div className="hrline">
-          <img
-            src="https://pehlayakshar.org/wp-content/uploads/2016/02/home_charity2_sep1.png"
-            alt="Separator"
-            title=""
-          />
-        </div>
-        <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
-        <input type="email" placeholder="Enter Your Email" size={38}/>
+        <h1 style={{color:'rgb(196 100 100)'}}>Join Our Community</h1>
+        
+        <p>
+          Enter your email address to register to our newsletter subscription
+          delivered on regular basis!
+        </p>
+        <input type="email" placeholder="Enter Your Email" size={38} />
         <button onClick={<a href="#"></a>}>Subscribe</button>
       </div>
-
-      
-    </>
+    </div>
   );
 }
 

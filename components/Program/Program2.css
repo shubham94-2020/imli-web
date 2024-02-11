@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0 auto;
   padding: 30px;
+  font-size: small;
 }
 
 .image{
@@ -19,7 +20,7 @@
 
 .ece-container p,
 .ece-container li {
-  font-size: 18px; /* Increase the font size for all headings, paragraphs, and list items */
+  font-size: 30px; /* Increase the font size for all headings, paragraphs, and list items */
   line-height: 2; /* Set line height for better readability */
 }
 .ece-container h3 {

@@ -1,47 +1,52 @@
+/* Contact.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  margin:auto;
+  margin: auto;
   box-sizing: border-box;
 }
+
 .contact-us-container {
-  /* display: flex;
-  justify-content: left;
-  align-items: top; */
   height: 80vh;
-  display: flex  ;
+  display: flex;
   flex-direction: column;
- justify-content: flex-start;
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 5px;
 }
 
 .contact-us-text {
   max-width: 100%;
   text-align: left;
-  padding: 20px 40px 0 40px;
+  padding: 10px 40px 0 94px;
   margin: 0;
 }
 
+.contact-us-text h1{
+  padding:12px;
+  /* color: rgba(196,100,100); */
+}
 .contact-us-text a {
-  color: lightgreen; /* Change the color to light green */
-  text-decoration: none; /* Remove the underline */
+  color: lightgreen;
+  text-decoration: none;
 }
 
 .contact-us-text p {
   font-size: 22px;
   line-height: 1.5;
   display: inline-block;
-  width: 100%;
+  width: 96%;
   max-width: 100%;
   word-wrap: break-word;
+  text-align: justify;
 }
 
 .contact-us-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 43px;
 }
 
 .contact-us-form label {
@@ -71,16 +76,16 @@
   background-color: #45a049;
 }
 
-.Contact{
+.Contact {
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 100vw;
-  margin-top: 20px;
+  width: 93vw;
+  margin-top: 0px;
   padding: 0;
-
 }
-.ContactInfo{
+
+.ContactInfo {
   margin-left: 0px;
   margin-bottom: 0;
   margin-right: 0;
@@ -91,53 +96,127 @@
   font-family: "Montserrat", sans-serif;
   line-height: 2rem;
 }
-.address{
-  margin-top  : -28px;
+
+.ContactInfo h1{
+  color: rgba(196,100,100);
 }
-.detailsCall{
+
+.address {
+  margin-top: -28px;
+}
+
+.detailsCall {
   margin-left: 18px;
 }
-.reg{
+
+.reg {
   padding: 16px;
   margin-top: 10px;
-  display:flex;
+  display: flex;
   align-items: center;
+  text-align: justify;
 }
-.details{
+
+.details {
   padding: 20px;
 }
+
 .LocationIcon {
-  font-size: 100px; /* Adjust the size as needed */
-  margin:-2%;
+  font-size: 100px;
+  margin: -2%;
   margin-bottom: 115px;
   color: black;
 }
 
-.PhoneIcon{
-  font-size:24px;
-  margin:0;
+.PhoneIcon {
+  font-size: 24px;
+  margin: 0;
   margin-left: 12px;
   margin-bottom: 2px;
 }
-.call{
+
+.call {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   margin-bottom: 43px;
   margin-top: 0;
-
 }
-.phone{
+
+.phone {
   padding-left: 1px;
 }
 
-.ContactIcons{
+.ContactIcons {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
   margin-top: 25px;
 }
-.SocialIconsY{
+
+.SocialIconsY {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 620px) {
+  .contact-us-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .contact-us-text {
+    padding: 0;
+  }
+
+  .contact-us-form {
+    margin-left: 0;
+  }
+
+  .Contact {
+    flex-direction: column;
+  }
+
+  .ContactInfo {
+    width: 100%;
+  }
+
+  .ContactIcons {
+    margin-top: 20px;
+  }
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+
+  .logo span {
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .nav-links {
+    gap: 20px;
+    padding-left: 0;
+  }
+
+  .nav-links a {
+    font-size: 60%;
+  }
 }
