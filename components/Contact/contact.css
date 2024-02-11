@@ -25,6 +25,7 @@
 
 .contact-us-text h1{
   padding:12px;
+  /* color: rgba(196,100,100); */
 }
 .contact-us-text a {
   color: lightgreen;
@@ -94,6 +95,10 @@
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   line-height: 2rem;
+}
+
+.ContactInfo h1{
+  color: rgba(196,100,100);
 }
 
 .address {
