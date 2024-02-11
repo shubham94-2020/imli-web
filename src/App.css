@@ -12,6 +12,9 @@ html, body {
   margin: 0 auto;
   background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
 }
+p{
+  text-align: justify;
+}
 
 /* Existing media query */
 @media only screen and (max-width: 620px) {

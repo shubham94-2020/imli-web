@@ -43,6 +43,12 @@
     font-size: 14px;
     background-color: #fff; /* Added background color */
     transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+    font-weight: 400;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    width:110%;
+    height: 21rem;
   }
   
   .content_area:hover {
@@ -50,14 +56,14 @@
   }
   
 
-  .content_area h4 {
+  .content_area h2 {
     padding: 10px;
     padding-top: 10px;
-    text-align: center;
-    font-size: 18px; /* Increased font size */
+    
     color: #333; /* Changed font color */
     margin-bottom: 10px; /* Added margin for spacing */
     border-bottom: 2px solid #ddd; /* Added bottom border */
+    text-align: center;
   }
   
   
@@ -65,13 +71,13 @@
     margin: 0px;
     position: absolute;
     top: -30px; /* Adjusted positioning */
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
   }
   
   .svg_boy img {
-    width: 66px;
-    height: 66px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%; /* Updated border radius for circular shape */
   }
   

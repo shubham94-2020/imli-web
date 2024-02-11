@@ -15,18 +15,19 @@ const rightArrowStyles = {
   transform: "translate(0, -50%)",
   right: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "#000",
   zIndex: 1,
   cursor: "pointer",
 };
 
 const leftArrowStyles = {
+  
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
   left: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "#000",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -83,34 +84,32 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <Link to={`/${slides[currentIndex].a}`}>
-      <div style={slideStylesWidthBackground}>
-        <div
-          style={{
-            textAlign: "center",
-            color: "#fff",
-            marginTop: "10px",
-            position: "absolute",
-            zIndex: "50",
-            bottom: "10px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            fontSize: "50px",
-            // fontFamily: "Lato"
-            fontFamily:"Cabin Sketch",
-            // fontfamily: "Montserrat",
-            fontWeight:500
-
-
-          }}
-        >
-          {slides[currentIndex].programName}
+        <div style={slideStylesWidthBackground}>
+          <div
+            style={{
+              textAlign: "center",
+              color: "#fff",
+              marginTop: "10px",
+              position: "absolute",
+              zIndex: "50",
+              bottom: "10px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              fontSize: "50px",
+              // fontFamily: "Lato"
+              fontFamily: "centuar",
+              // fontfamily: "Montserrat",
+              fontWeight: 500,
+            }}
+          >
+            {slides[currentIndex].programName}
+          </div>
         </div>
-      </div>
       </Link>
 
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
-        <div
+          <div
             style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
