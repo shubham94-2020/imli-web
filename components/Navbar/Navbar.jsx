@@ -13,6 +13,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
+
           <img
             className="home"
             src="./imlilogo.png"
@@ -20,7 +21,10 @@ function Navbar() {
             onClick={() => {
               window.location.href = "/";
             }}
+            style={{marginLeft:'1rem'
+            }}
           />
+
           <span>Institute for Multi-Lingual Education</span>
         </div>
         <ul className="nav-links">
@@ -50,11 +54,11 @@ function Navbar() {
             </li>
             {showProgramDropdown && (
               <div className="dropdown-content">
-                <Link to="/program1">IMLi Preschool Initiative</Link>
-                <Link to="/program2">IMLi Reading Programs</Link>
-                <Link to="/program3">	IMLi Multi-Lingual Hub</Link>
-                <Link to="/program4">IMLi Teacher Training Programs</Link>
-                <Link to="/program3">IMLi 3D Learning Program </Link>
+                <Link to="/program1"> Preschool Initiative</Link>
+                <Link to="/program2"> Reading Programs</Link>
+                <Link to="/program3">	 Multi-Lingual Hub</Link>
+                <Link to="/program4"> Teacher Training Programs</Link>
+                <Link to="/program3"> 3D Learning Program </Link>
               </div>
             )}
           </li>

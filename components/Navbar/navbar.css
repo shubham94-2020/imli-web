@@ -1,49 +1,79 @@
 /* Base styles for larger screens */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar {
+  background-color: #ffffff;
+  box-shadow: 20px 1px 5px rgb(187, 190, 190);
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  margin: 2px 2px;
+  width: 100%;
+  gap: 0px;
+  border-radius: 9px;
+  /* padding: 10px 20px; */
+  /* margin: 2px 2px; */
   font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-  font-size: 200%;
+    font-weight: 700;
+  font-size: 130%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-  padding-left: 5%;
+  padding:0;
+  margin: 0;
+  width: 56rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: left ;
+  /* justify-content: flex-start; */
+  /* align-items:flex-end; */
+  gap: 0;
+  /* margin-right: 23px; */
+  /* margin-left: 0px; */
 }
 
-.logo img {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
+.logo img{
+  width: 7rem;
+  margin-bottom:' -21px';
+
+  /* width:9% ; */
+  /* height: 80px; */
+  /* margin-right: 10px; */
+  /* margin: 0;
+  padding: 0; */
 }
+
 
 .logo span {
+  margin-left: -3px;
   background-color: #ffffff;
-  margin-left: 2%;
-  padding-left: 10%;
-  margin-right: -1%;
+  /* margin-left: 0%;
+  margin-right:10%; */;
   color: #108110;
-  font-size: 1.8rem;
-  font-weight: 470;
+  padding-left: 1.5%;
+  font-family:"centaur";
+  font-size: 2.6rem;
+  font-weight: 550;
 }
 
 .nav-links {
-  padding-left: -2%;
-  padding-right: 0%;
+  /* padding-left: -20000%; */
+  /* padding-right: 0%; */
+  font-size:1.6rem;
   list-style: none;
+  width: 40rem;
   display: flex;
-  gap: 40px;
+  gap: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right:25px ;
 }
 
-.nav-links li {
+/* .nav-links li {
   margin: 0;
-}
+} */
 
 .nav-links a {
   font-style: unset;
@@ -56,16 +86,18 @@
   color: #66c2ff;
 }
 
+
 /* Media queries for responsiveness */
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
   .navbar {
     flex-direction: column;
     text-align: center;
+    gap: -20px;
   }
 
   .logo {
     padding-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .logo img {
@@ -76,7 +108,12 @@
 
   .logo span {
     padding-left: 0;
+    padding-top: 25px;
+    font-size: 1rem;
     margin-right: 0;
+    margin-top: 0;
+    margin-left: 75px;
+    margin-bottom: 0;
   }
 
   .nav-links {
@@ -121,4 +158,20 @@
 .dropdown-content a:hover {
   background-color: #eec471;
 }
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 1.1rem; /* Adjust font size for smaller screens */
+  }
+
+  .logo span {
+    font-size: 2.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .nav-links a {
+    font-size: 60%; /* Adjust font size for smaller screens */
+  }
+}
+
+
 

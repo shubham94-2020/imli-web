@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <hr></hr>
+      {/* <hr></hr> */}
 
       <Routes>
         <Route path="/" element={<Poster></Poster>}></Route>
