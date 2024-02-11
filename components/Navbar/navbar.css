@@ -61,6 +61,7 @@
   .navbar {
     flex-direction: column;
     text-align: center;
+    padding: 10px;
   }
 
   .logo {
@@ -81,6 +82,7 @@
 
   .nav-links {
     gap: 20px;
+    padding-left: 0;
   }
 
   .nav-links a {
