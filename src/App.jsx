@@ -9,6 +9,7 @@ import Footer from "../components/footer/footer";
 import Program1 from "../components/Program/Program1";
 import Program2 from "../components/Program/Program2";
 import Program4 from "../components/Program/Program4";
+import Blog from "../components/Blogs/Blog";
 
 function App() {
   return (
@@ -25,8 +26,7 @@ function App() {
         <Route path="/Program4" element={<Program4></Program4>}></Route>
         <Route path="/Program2" element={<Program2></Program2>}></Route>
         <Route path="/about" element={<Aboutus></Aboutus>}></Route>
-
-        <Route path="/blogs" element={<h1>blogs</h1>}></Route>
+        <Route path="/blogs" element={<Blog></Blog>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
       </Routes>
 
