@@ -11,7 +11,7 @@ function Program2() {
   return (
     <div className="ece-container">
       <img src="/i3.jpg" alt="program2" className="image" />
-      <h2>Reading Improvement Programs</h2>
+      <h2>English Language Reading and Writing</h2>
       <p>
         English literacy presents a significant challenge in Indian classrooms,
         where students consistently struggle in reading and writing assessments.

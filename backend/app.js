@@ -1,26 +1,10 @@
-const express = require('express');
-const Jwt = require("jsonwebtoken");
-const jwtKey = "e-comm";
+const express = require("express");
 // const blogRoutes=require('./routes/blogRoutes');
-
-// const userRoutes=require('./routes/userRoutes');
-const programRoute=require('./routes/programRoute');
-const Users=require('./models/userSchema')
+const userRoutes = require("./routes/userRoutes");
+// const resourceRoutes=require('./routes/resourceRoutes');
 
 const app = express();
-
-app.post("/user/signup", async (req, resp) => {
-  let user = new Users(req.body);
-  let result = await user.save();
-  result = result.toObject();
-  delete result.password;
-  Jwt.sign({ result }, jwtKey, { expiresIn: "2h" }, (err, token) => {
-    if (err) {
-      resp.send("try after sometime");
-    }
-    resp.send({ result, auth: token });
-  });
-});
+app.use(express.json());
 
 function verifyToken(req, resp, next) {
   let token = req.headers["authorization"];
@@ -42,4 +26,7 @@ function verifyToken(req, resp, next) {
 // app.use('/blogs',blogRoutes);
 // app.use('/user',userRoutes);
 app.use('/programs',programRoute);
+
+app.use("/user", userRoutes);
+// app.use('/resources',resourceRoutes);
 module.exports = app;

@@ -1,94 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .outer_container {
-    display: flex;
-    width: 75%;
-    justify-content: space-around; /* Added to evenly space the outer_box elements */
-  }
-  
-  .how_we {
-    /* border: 1px solid rgb(130, 255, 123); */
-    margin-top: 3%;
-    padding: 20px; /* Added for better spacing */
-  }
-  
-  .how_we p {
-    text-align: center;
-    font-size: x-large;
-    padding-top: 3%;
-  }
-  
-  .how_we h1{
-    font-size: 3rem ;
+  display: flex;
+  width: 75%;
+  justify-content: space-around; /* Added to evenly space the outer_box elements */
+}
+
+.how_we {
+  /* border: 1px solid rgb(130, 255, 123); */
+  margin-top: 3%;
+  padding: 20px; /* Added for better spacing */
+}
+
+.how_we p {
+  text-align: center;
+  font-size: x-large;
+  padding-top: 3%;
+}
+
+.how_we h1 {
+  font-size: 3rem;
+}
+.outer_box {
+  width: 21%;
+  /* border: 2px solid rgb(130, 255, 123); */
+  position: relative;
+  margin-top: 5%;
+  border-radius: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+  overflow: visible; /* Added to contain the content and shadow */
+  transition: transform 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.outer_box:hover {
+  transform: translateY(-5px); /* Added hover effect */
+}
+
+.content_area {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 14px;
+  background-color: #fff; /* Added background color */
+  transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  width: 110%;
+  //word-break: break-all;
+  hyphens: auto;
+}
+
+.content_area:hover {
+  background-color: #f9f9f9; /* Added hover effect for background color */
+}
+
+.content_area h2 {
+  padding: 10px;
+  padding-top: 10px;
+
+  color: #333; /* Changed font color */
+  margin-bottom: 10px; /* Added margin for spacing */
+  border-bottom: 2px solid #ddd; /* Added bottom border */
+  text-align: center;
+}
+
+.svg_boy {
+  margin: 0px;
+  position: absolute;
+  top: -30px; /* Adjusted positioning */
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+.svg_boy img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%; /* Updated border radius for circular shape */
+}
+
+/* Added media query for responsiveness */
+@media (max-width: 768px) {
+  .outer_container {
+    flex-wrap: wrap;
   }
   .outer_box {
-    width: 21%;
-    /* border: 2px solid rgb(130, 255, 123); */
-    position: relative;
-    margin-top: 5%;
-    border-radius: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
-    overflow: visible; /* Added to contain the content and shadow */
-    transition: transform 0.3s ease; /* Added transition for smoother hover effect */
+    width: 45%;
+    margin-top: 20px;
   }
-  
-  .outer_box:hover {
-    transform: translateY(-5px); /* Added hover effect */
-  }
-  
-  .content_area {
-    width: 100%;
-    padding: 30px;
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 14px;
-    background-color: #fff; /* Added background color */
-    transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
-    font-weight: 400;
-    text-align: justify;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    width:110%;
-   
-  }
-  
-  .content_area:hover {
-    background-color: #f9f9f9; /* Added hover effect for background color */
-  }
-  
-
-  .content_area h2 {
-    padding: 10px;
-    padding-top: 10px;
-    
-    color: #333; /* Changed font color */
-    margin-bottom: 10px; /* Added margin for spacing */
-    border-bottom: 2px solid #ddd; /* Added bottom border */
-    text-align: center;
-  }
-  
-  
-  .svg_boy {
-    margin: 0px;
-    position: absolute;
-    top: -30px; /* Adjusted positioning */
-    left: 55%;
-    transform: translateX(-50%);
-  }
-  
-  .svg_boy img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%; /* Updated border radius for circular shape */
-  }
-  
-  /* Added media query for responsiveness */
-  @media (max-width: 768px) {
-    .outer_container {
-      flex-wrap: wrap;
-    }
-    .outer_box {
-      width: 45%;
-      margin-top: 20px;
-    }
-  }
-  
+}

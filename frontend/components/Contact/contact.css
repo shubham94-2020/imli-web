@@ -1,6 +1,6 @@
 /* Contact.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: auto;
@@ -23,8 +23,8 @@
   margin: 0;
 }
 
-.contact-us-text h1{
-  padding:12px;
+.contact-us-text h1 {
+  padding: 12px;
   /* color: rgba(196,100,100); */
 }
 .contact-us-text a {
@@ -97,8 +97,8 @@
   line-height: 2rem;
 }
 
-.ContactInfo h1{
-  color: rgba(196,100,100);
+.ContactInfo h1 {
+  color: rgb(230, 41, 41);
 }
 
 .address {

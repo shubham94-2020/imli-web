@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa";
+import { TiLocation } from "react-icons/ti";
+import { FaFacebook } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 
 import We from "../../What_will_do/We";
 
@@ -109,9 +114,9 @@ function Poster() {
   }, []);
 
   const slides = [
-    { url: "i2.jpg", programName: "IMLi Preschool Initiative" ,a:"Program1"},
-    { url: "i1.jpg", programName: "IMLi Reading Programs" ,a:"Program2"},
-    { url: "i3.jpg", programName: "IMLi Multi-Lingual Hub",a:"Program3" },
+    { url: "i1.jpg", programName: "IMLi Early Childhood Education" ,a:"Program1"},
+    { url: "i2.jpg", programName: "IMLi English Language Reading and Writing" ,a:"Program2"},
+    { url: "i3.jpg", programName: "IMLi Multilingual Hub",a:"Program3" },
     { url: "i4.jpg", programName: "IMLi Teacher Training Programs",a:"Program4" },
     { url: "i5.jpg", programName: "IMLi 3D Learning Program" ,a:"Program5"},
   ];
@@ -173,14 +178,19 @@ function Poster() {
       </div>
       <We></We>
       <div className="JoinUs">
-        <h1 style={{ color: "rgb(196 100 100)" }}>Join Our Community</h1>
-
+        <h1 style={{color:'rgb(230, 41, 41)'}}>Join Our Community</h1>   
+        
         <p>
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!
         </p>
         <input type="email" placeholder="Enter Your Email" size={38} />
         <button onClick={<a href="#"></a>}>Subscribe</button>
+        <div className="ContactIcons">
+            <FaFacebook className="SocialIcons" />{" "}
+            <FaYoutube className="SocialIconsY" />{" "}
+            <RiInstagramFill className="SocialIcons" />
+          </div>
       </div>
     </div>
   );

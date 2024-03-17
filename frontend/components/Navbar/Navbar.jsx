@@ -23,7 +23,7 @@ function Navbar() {
             style={{ marginLeft: "1rem" }}
           />
 
-          <span>Institute for Multi-Lingual Education</span>
+          <span>Institute for Multilingual Education</span>
         </div>
         <ul className="nav-links">
           <li
@@ -51,9 +51,9 @@ function Navbar() {
             </li>
             {showProgramDropdown && (
               <div className="dropdown-content">
-                <Link to="/program1"> Preschool Initiative</Link>
-                <Link to="/program2"> Reading Programs</Link>
-                <Link to="/program3"> Multi-Lingual Hub</Link>
+                <Link to="/program1"> Early Childhood Education</Link>
+                <Link to="/program2"> English Language Reading and Writing</Link>
+                <Link to="/program3">	 Multilingual Hub</Link>
                 <Link to="/program4"> Teacher Training Programs</Link>
                 <Link to="/program3"> 3D Learning Program </Link>
               </div>
