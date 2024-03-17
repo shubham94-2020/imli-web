@@ -81,17 +81,17 @@ function Navbar() {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          {/* <li>
-            <Link to="/login">login</Link>
-          </li> */}
-          <ul className="Nav-ul">
+          <li>
+            <Link to="/signup">login</Link>
+          </li> 
+          {/* <ul className="Nav-ul">
             <li>
               <Link to="/signup"> Signup</Link>
             </li>
             <li>
               <Link to="/login">login</Link>
             </li>
-          </ul>
+          </ul> */}
         </ul>
       </nav>
     </>

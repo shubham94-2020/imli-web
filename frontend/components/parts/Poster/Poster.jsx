@@ -8,6 +8,57 @@ import We from "../../What_will_do/We";
 function Poster() {
   const [index, setIndex] = useState(0);
 
+  const defaultTexts = [
+    `Language is at the core of everything we do – it shapes how kids
+    learn and how we connect as humans. In India, a nation steeped in a
+    rich linguistic heritage, our commitment extends beyond preparing
+    children for the communication challenges of today. Our languages,
+    intricately woven into the fabric of our culture and identity, hold
+    the keys to our heritage. As parents or educators, this is the goal
+    we all share: our children should learn and communicate well.
+    Whether it's a local dialect or a national language, Language is an
+    invaluable resource within the classroom`,
+
+    `Despite our shared goal, year after year, we notice that a
+    substantial number of children struggle with their learning
+    journeys. The roots of low learning scores can many a times be
+    traced back to weak foundations language learning. Many teachers and
+    parents struggle while navigating the complexities of language
+    learning, grappling with methods and resources that may not be the
+    best fit for the needs of the children they seek to support.`,
+
+    `And yet, there are pockets of innovation where certain schools and
+    teachers are pioneering innovative solutions aligned with best
+    practices in learning. These approaches need to be understood and
+    researched to share learnings for all. Without it, public and
+    private organisations spend valuable time and resources in
+    reinventing the wheel for problems that have been solved.`,
+  ];
+
+  const [editMode, setEditMode] = useState(
+    Array(defaultTexts.length).fill(false)
+  );
+  const [editedTexts, setEditedTexts] = useState(
+    Array(defaultTexts.length).fill("")
+  );
+  const [texts, setTexts] = useState(defaultTexts);
+
+  const handleEdit = (index) => {
+    setEditedTexts((prev) =>
+      prev.map((text, i) => (i === index ? texts[index] : text))
+    );
+    setEditMode((prev) => prev.map((value, i) => (i === index ? true : value)));
+  };
+
+  const saveChanges = (index) => {
+    setTexts((prev) =>
+      prev.map((text, i) => (i === index ? editedTexts[index] : text))
+    );
+    setEditMode((prev) =>
+      prev.map((value, i) => (i === index ? false : value))
+    );
+  };
+
   // Function to go to the next index
   function goToNextIndex() {
     // Calculate the next index in a circular manner
@@ -71,56 +122,46 @@ function Poster() {
 
   return (
     <div div style={{ textAlign: "justify" }}>
-      <div style={containerStyles } >
+      <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
 
       {/* why we are here section */}
+
       <div className={`about-us`}>
         <h1>Why we are here</h1>
-        
       </div>
-      <div className="why-we-are-here">
-        <div >
-          <p>
-            Language is at the core of everything we do – it shapes how kids
-            learn and how we connect as humans. In India, a nation steeped in a
-            rich linguistic heritage, our commitment extends beyond preparing
-            children for the communication challenges of today. Our languages,
-            intricately woven into the fabric of our culture and identity, hold
-            the keys to our heritage. As parents or educators, this is the goal
-            we all share: our children should learn and communicate well.
-            Whether it's a local dialect or a national language, Language is an
-            invaluable resource within the classroom
-          </p> 
-        </div>
-        <div>
-          <p>
 
-            Despite our shared goal, year after year, we notice that a
-            substantial number of children struggle with their learning
-            journeys. The roots of low learning scores can many a times be
-            traced back to weak foundations language learning. Many teachers and
-            parents struggle while navigating the complexities of language
-            learning, grappling with methods and resources that may not be the
-            best fit for the needs of the children they seek to support.
-          </p>
-        </div>
-        <div>
-          <p>
-            And yet, there are pockets of innovation where certain schools and
-            teachers are pioneering innovative solutions aligned with best
-            practices in learning. These approaches need to be understood and
-            researched to share learnings for all. Without it, public and
-            private organisations spend valuable time and resources in
-            reinventing the wheel for problems that have been solved.
-          </p>
-        </div>
+      <div className="why-we-are-here">
+        {texts.map((text, index) => (
+          <div key={index}>
+            {editMode[index] ? (
+              <textarea
+                value={editedTexts[index]}
+                onChange={(e) =>
+                  setEditedTexts((prev) =>
+                    prev.map((value, i) =>
+                      i === index ? e.target.value : value
+                    )
+                  )
+                }
+                style={{ width: "100%", minHeight: "100px" }}
+              />
+            ) : (
+              <p>{text}</p>
+            )}
+
+            {editMode[index] ? (
+              <button onClick={() => saveChanges(index)}>Save Changes</button>
+            ) : (
+              <button onClick={() => handleEdit(index)}>Edit</button>
+            )}
+          </div>
+        ))}
       </div>
 
       <div className="about-us">
         <h1>What we do</h1>
-        
       </div>
 
       <div>
@@ -132,8 +173,8 @@ function Poster() {
       </div>
       <We></We>
       <div className="JoinUs">
-        <h1 style={{color:'rgb(196 100 100)'}}>Join Our Community</h1>
-        
+        <h1 style={{ color: "rgb(196 100 100)" }}>Join Our Community</h1>
+
         <p>
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!

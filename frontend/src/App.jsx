@@ -10,6 +10,7 @@ import Program1 from "../components/Program/Program1";
 import Program2 from "../components/Program/Program2";
 import Program4 from "../components/Program/Program4";
 import Blog from "../components/Blogs/Blog";
+import Signup from "../components/loginsignup/Signup";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<Aboutus></Aboutus>}></Route>
         <Route path="/blogs" element={<Blog></Blog>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/signup" element={<Signup />} />
       </Routes>
 
       <Footer />
