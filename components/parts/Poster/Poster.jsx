@@ -67,8 +67,6 @@ function Poster() {
   const containerStyles = {
     width: "100%",
     height: "80vh",
-    
-
   };
 
   return (
@@ -94,7 +92,7 @@ function Poster() {
             we all share: our children should learn and communicate well.
             Whether it's a local dialect or a national language, Language is an
             invaluable resource within the classroom
-          </p>
+          </p> 
         </div>
         <div>
           <p>
