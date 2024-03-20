@@ -176,3 +176,22 @@
 
 
 
+@media screen and (max-width: 400px) {
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+    /* justify-content: center; */
+    gap: 20px;
+  }
+
+  .logo .home{
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo span{
+    font-size: 1.2rem;
+  }
+  
+}
