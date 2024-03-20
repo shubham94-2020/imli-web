@@ -148,7 +148,10 @@ function Poster() {
         <input type="email" placeholder="Enter Your Email" size={38} />
         <button onClick={<a href="#"></a>}>Subscribe</button>
         <div className="ContactIcons">
-            <FaFacebook className="SocialIcons" />{" "}
+            <a href="https://www.facebook.com/imli.education/" target="_blank" rel="noopener noreferrer">
+  <FaFacebook className="SocialIcons" />
+</a>
+
             <FaYoutube className="SocialIconsY" />{" "}
             <RiInstagramFill className="SocialIcons" />
           </div>

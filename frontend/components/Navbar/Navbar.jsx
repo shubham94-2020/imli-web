@@ -70,14 +70,6 @@ function Navbar() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
-            {showProgramDropdown && (
-              <div className="dropdown-content">
-                <Link to="/program1">Video</Link>
-                <Link to="/program2">Document </Link>
-                <Link to="/program3">PPTs</Link>
-                
-              </div>
-            )}
           </li>
           <li>
             <Link to="/blogs">Blog & Press</Link>

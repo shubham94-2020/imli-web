@@ -5,6 +5,7 @@ import Poster from "../components/parts/Poster/Poster";
 import Aboutus from "../components/Aboutus/Aboutus";
 import Navbar from "../components/Navbar/Navbar";
 import Contact from "../components/Contact/Contact";
+import Resources from "../components/Resources/resources";
 import Footer from "../components/footer/footer";
 import Program1 from "../components/Program/Program1";
 import Program2 from "../components/Program/Program2";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/about" element={<Aboutus></Aboutus>}></Route>
         <Route path="/blogs" element={<Blog></Blog>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/resources" element={<Resources></Resources>}></Route>
       </Routes>
 
       <Footer />
