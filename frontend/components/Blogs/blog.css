@@ -16,7 +16,7 @@
 }
 
 .img_boyaa img {
-    width: 50%; /* Make image responsive */
+    width: 100%; /* Make image responsive */
     height: 17rem;
     /* Center image horizontally */
     margin-top: 3%;

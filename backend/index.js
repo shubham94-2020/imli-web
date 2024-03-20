@@ -3,8 +3,10 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 
-const app= require('./app');   
-app.use(cors({ origin: "http://localhost:5173" }));
+const app= require('./app');
+
+// const app = express();  
+app.use(cors());
 dotenv.config({ path: "./.env" });
 
 //code for connecting to mongoose database

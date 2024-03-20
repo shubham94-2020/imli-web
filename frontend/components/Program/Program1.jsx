@@ -1,47 +1,95 @@
 import React, { useState, useEffect } from "react";
 import "./Program1.css";
-
+// import { useNavigate } from "react-router-dom";
 function Program1() {
   const [showDetails, setShowDetails] = useState(false);
-  const [showForm, setShowForm] = useState(false);
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
+  const [error, setError] = useState(false);
+
+  // const navigate=useNavigate();
+ 
 
   useEffect(() => {
-    const storedPrograms = JSON.parse(localStorage.getItem("programs"));
-    if (storedPrograms) {
-      setPrograms(storedPrograms);
-    }
+    getPrograms();
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("programs", JSON.stringify(programs));
-  }, [programs]);
+  const getPrograms = async () => {
+    try {
+      let result = await fetch("http://localhost:3000/programs", {
+        method: "get",
+        headers: {
+          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
+        },
+      });
+
+      result = await result.json();
+      console.log(result);
+
+      setPrograms(result); // Set the new list of programs
+    } catch (error) {
+      console.error("Error fetching programs:", error);
+    }
+  };
+
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
     setShowForm(false);
   };
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
+ 
+
+  const addProgram = async() => {
+    if (!newProgramTitle || !newProgramDescription ) {
+      setError(true);
+      return false;
+    }else{
+       const id = 1; // Generate a unique ID
+       let result = await fetch("http://localhost:3000/programs", {
+       method: "post",
+       body: JSON.stringify({ id:id, title:newProgramTitle, description:newProgramDescription}),
+       headers: {
+         "Content-Type": "application/json",
+       },
+     });
+     alert("product added Succesfully...");
+        result = await result.json();
+        console.warn(result);
+        
+      getPrograms();
+      // setShowForm(false); // Hide the form after adding the program
+      setNewProgramTitle(""); // Reset the input fields
+      setNewProgramDescription("");}
   };
 
-  const addProgram = () => {
-    const id = Date.now(); // Generate a unique ID
-    setPrograms([
-      ...programs,
-      { id, title: newProgramTitle, description: newProgramDescription },
-    ]);
-    setShowForm(false); // Hide the form after adding the program
-    setNewProgramTitle(""); // Reset the input fields
-    setNewProgramDescription("");
+
+  const deleteProgram = async (title) => {
+    try {
+      let result = await fetch("http://localhost:3000/programs", {
+        method: "DELETE",
+        headers: {
+          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ title: title }),
+      });
+
+      // Check if the response status indicates success
+      if (result.ok) {
+        console.log("Program deleted successfully");
+        // Assuming the delete operation was successful, fetch programs again to update the list
+        getPrograms();
+      } else {
+        console.error("Error deleting program:", result.statusText);
+      }
+    } catch (error) {
+      console.error("Error deleting program:", error);
+    }
   };
 
-  const deleteProgram = (id) => {
-    setPrograms(programs.filter((program) => program.id !== id));
-  };
+
 
   return (
     <div className="ece-container">
@@ -109,34 +157,43 @@ function Program1() {
       </button>
       {showDetails && (
         <>
-          <button onClick={toggleForm}>Add Program</button>
           <div className="program-form">
             <input
               type="text"
               placeholder="Enter program title"
               value={newProgramTitle}
               onChange={(e) => setNewProgramTitle(e.target.value)}
+              required
             />
+            {error && !newProgramTitle && (
+              <span className="invalid">Enter valid title </span>
+            )}
             <input
               type="text"
               placeholder="Enter program description"
               value={newProgramDescription}
               onChange={(e) => setNewProgramDescription(e.target.value)}
+              required
             />
+            {error && !newProgramDescription && (
+              <span className="invalid">Enter valid description</span>
+            )}
             <button onClick={addProgram}>Add</button>
           </div>
-          {programs.map((program) => (
-            <div key={program.id} className="program">
-              <h3>{program.title}</h3>
-              <p>{program.description}</p>
-              <button
-                className="delete"
-                onClick={() => deleteProgram(program.id)}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
+          {programs
+            .filter((program) => program.id === 1)
+            .map((program) => (
+              <div key={program.id} className="program">
+                <h3>{program.title}</h3>
+                <p>{program.description}</p>
+                <button
+                  className="delete"
+                  onClick={() => deleteProgram(program.title)}
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
         </>
       )}
     </div>

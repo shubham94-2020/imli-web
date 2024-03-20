@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const programSchema = new mongoose.Schema({
 
   id: {
-    type: int,
+    type: Number,
     require: [true, "please provide a title"],
   },
   title: {

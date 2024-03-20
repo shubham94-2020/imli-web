@@ -7,6 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import Joinus from "./joinus";
 
 import We from "../../What_will_do/We";
 
@@ -178,19 +179,29 @@ function Poster() {
       </div>
       <We></We>
       <div className="JoinUs">
-        <h1 style={{color:'rgb(230, 41, 41)'}}>Join Our Community</h1>   
-        
+        <h1 style={{ color: "rgb(230, 41, 41)" }}>Join Our Community</h1>
+
         <p>
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!
         </p>
-        <input type="email" placeholder="Enter Your Email" size={38} />
-        <button onClick={<a href="#"></a>}>Subscribe</button>
+        
+          {/* <input
+            type="email"
+            placeholder="Enter Your Email"
+            name="user_email"
+            size={38}
+          />
+         
+          <button onClick={<a href="#"></a>}>Subscribe</button> */}
+
+        <Joinus/>
+     
         <div className="ContactIcons">
-            <FaFacebook className="SocialIcons" />{" "}
-            <FaYoutube className="SocialIconsY" />{" "}
-            <RiInstagramFill className="SocialIcons" />
-          </div>
+          <FaFacebook className="SocialIcons" />{" "}
+          <FaYoutube className="SocialIconsY" />{" "}
+          <RiInstagramFill className="SocialIcons" />
+        </div>
       </div>
     </div>
   );
