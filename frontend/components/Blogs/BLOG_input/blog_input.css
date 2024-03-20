@@ -1,0 +1,32 @@
+.title-boy,
+.body-boy {
+  width: 100%;
+  border: none;
+}
+.main-blog {
+  margin: 3%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin-left: 25% ;
+}
+/* Regular CSS equivalent */
+.custom-button {
+  background-color: #4299e1; /* Blue 500 */
+  color: #fff; /* White */
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 9999px; /* rounded-full */
+}
+.custom-button:hover {
+  background-color: #38a3d1; /* Blue 700 on hover */
+  cursor: pointer;
+}
+.title-boy input {
+  width: 100%;
+  height: 4vh;
+  border: none;
+}
+.body-boy textarea {
+  width: 100%;
+  border: none;
+}

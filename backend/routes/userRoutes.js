@@ -5,4 +5,7 @@ const router = express.Router();
 
 router.post("/signup", userController.SignUp);
 
+
+/////////////////////////////blog routes//////////////////
+
 module.exports = router;
