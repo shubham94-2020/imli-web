@@ -92,6 +92,9 @@ function Poster() {
   // State to track whether the "Why we are here" section is in view
   const [isWhyInView, setIsWhyInView] = useState(false);
 
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
   useEffect(() => {
     // Function to handle intersection of the "Why we are here" section
     const handleIntersection = (entries) => {
@@ -125,9 +128,9 @@ function Poster() {
     width: "100%",
     height: "80vh",
   };
-
+ 
   return (
-    <div div style={{ textAlign: "justify" }}>
+    <div  style={{ textAlign: "justify" }}>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
@@ -160,7 +163,7 @@ function Poster() {
             {editMode[index] ? (
               <button onClick={() => saveChanges(index)}>Save Changes</button>
             ) : (
-              <button onClick={() => handleEdit(index)}>Edit</button>
+              isAdmin && (<button onClick={() => handleEdit(index)}>Edit</button>)
             )}
           </div>
         ))}
@@ -185,8 +188,8 @@ function Poster() {
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!
         </p>
-        {/* <JoinUs /> */}
-        <input type="email" placeholder="Enter Your Email" size={38} /> 
+        <JoinUs />
+        {/* <input type="email" placeholder="Enter Your Email" size={38} /> 
          <button onClick={async()=>{
            await fetch("http://localhost:3000/email/sendmail", {
             method: "GET",
@@ -200,9 +203,7 @@ function Poster() {
             //   teacher,
             // }),
           });
-        }}>Subscribe</button>
-        <input type="email" placeholder="Enter Your Email" size={38} />
-        <button onClick={<a href="#"></a>}>Subscribe</button>
+        }}>Subscribe</button> */}
         <div className="ContactIcons">
             <FaFacebook className="SocialIcons" />{" "}
             <FaYoutube className="SocialIconsY" />{" "}

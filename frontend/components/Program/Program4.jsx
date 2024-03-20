@@ -4,6 +4,9 @@ import { useState } from "react";
 
 function Program4() {
     const [showDetails, setShowDetails] = useState(false);
+    const auth = localStorage.getItem("user");
+    const user = auth ? JSON.parse(auth) : null;
+    const isAdmin = user && user.email === "alaknanda@gmail.com";
 
     const toggledet = () => {
       setShowDetails(!showDetails);
@@ -78,7 +81,7 @@ function Program4() {
           </li>
         </ul>
       </div>
-      {showDetails && <h1> </h1>}
+      {isAdmin && showDetails && <h1> </h1>}
       <button onClick={toggledet}>
         {" "}
         {showDetails ? "Show Less" : "Read More"}

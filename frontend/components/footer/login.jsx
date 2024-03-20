@@ -1,41 +1,26 @@
-import React,{useEffect} from 'react'
-import {useNavigate} from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword]= React.useState("");
-  const navigate=useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
   useEffect(() => {
     const auth = localStorage.getItem("user");
-    if (auth) {
-      navigate("/");
-    }
+    // if (auth) {
+    //   navigate("/");
+    // }
   });
-  const handleLogin= async()=>{
-      console.warn(email,password);
-      let result= await fetch('http://localhost:5000/login',{
-        method:'post',
-        body:JSON.stringify({email,password}),
-        headers:{
-            'Content-type':'application/json'
-        }
-      });
-    
-        result = await result.json();
-        console.warn(result);
-        if(result.auth){
-             localStorage.setItem("user", JSON.stringify(result.user));
-             localStorage.setItem("token", JSON.stringify(result.auth));
-             navigate("/")
-        }else{
-            alert("please enter correct detail");
-        }
 
-    
+  const handleLogin = () => {
+    // Store user credentials in local storage
+    localStorage.setItem("user", JSON.stringify({ email, password }));
+    navigate("/");
   }
   return (
     <div className="login">
-      <h1> login</h1>
+      <h1> Login</h1>
       <input
         type="text"
         className="inputBox"
@@ -57,4 +42,5 @@ function Login() {
   );
 }
 
-export default Login
+
+export default Login;

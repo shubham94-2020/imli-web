@@ -6,6 +6,9 @@ import { TiLocation } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 function footer() {
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
   return (
     <footer class="footer">
       <ul class="menu">
@@ -28,6 +31,14 @@ function footer() {
           <a class="menu__link" href="/login">
             Login
           </a>
+        </li>
+        <li class="menu__item">
+        {isAdmin && (<a class="menu__link" onClick={()=>{
+            localStorage.clear();
+            alert("Successfully logged out")
+          }}>
+            Logout
+          </a>)}
         </li>
       </ul>
       <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>

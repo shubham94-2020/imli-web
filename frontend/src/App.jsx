@@ -12,6 +12,7 @@ import Program4 from "../components/Program/Program4";
 import Blog from "../components/Blogs/Blog";
 import Signup from "../components/loginsignup/Signup";
 import BlogForm from "../components/Blogs/BLOG_input/Blog_input";
+import Login from "../components/footer/login";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/signup" element={<Signup />} />
         <Route path="/blog_input" element={<BlogForm/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
 
       <Footer />
