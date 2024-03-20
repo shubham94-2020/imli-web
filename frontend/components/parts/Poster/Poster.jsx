@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
+import JoinUs from "./joinus"
 
 import We from "../../What_will_do/We";
 
@@ -72,7 +73,7 @@ function Poster() {
   };
 
   return (
-    <div div style={{ textAlign: "justify" }}>
+    <div  style={{ textAlign: "justify" }}>
       <div style={containerStyles } >
         <ImageSlider slides={slides} />
       </div>
@@ -140,11 +141,31 @@ function Poster() {
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!
         </p>
-        <input type="email" placeholder="Enter Your Email" size={38} />
-        <button onClick={<a href="#"></a>}>Subscribe</button>
+        {/* <JoinUs /> */}
+        <input type="email" placeholder="Enter Your Email" size={38} /> 
+         <button onClick={async()=>{
+           await fetch("http://localhost:3000/email/sendmail", {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            // body: JSON.stringify({
+            //   topic,
+            //   start_time,
+            //   duration,
+            //   teacher,
+            // }),
+          });
+        }}>Subscribe</button>
       </div>
     </div>
   );
 }
 
+
+//login
+
+//uname :: 
+//locals storage save
+//take from local storage.....
 export default Poster;
