@@ -13,7 +13,6 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-
           <img
             className="home"
             src="./imlilogo.png"
@@ -21,14 +20,12 @@ function Navbar() {
             onClick={() => {
               window.location.href = "/";
             }}
-            style={{marginLeft:'1rem'
-            }}
+            style={{ marginLeft: "1rem" }}
           />
 
-          <span>Institute for Multi-Lingual Education</span>
+          <span>Institute for Multilingual Education</span>
         </div>
         <ul className="nav-links">
-          
           <li
             className="dropdown"
             onMouseEnter={toggleProgramDropdown}
@@ -54,9 +51,9 @@ function Navbar() {
             </li>
             {showProgramDropdown && (
               <div className="dropdown-content">
-                <Link to="/program1"> Preschool Initiative</Link>
-                <Link to="/program2"> Reading Programs</Link>
-                <Link to="/program3">	 Multi-Lingual Hub</Link>
+                <Link to="/program1"> Early Childhood Education</Link>
+                <Link to="/program2"> English Language Reading and Writing</Link>
+                <Link to="/program3">	 Multilingual Hub</Link>
                 <Link to="/program4"> Teacher Training Programs</Link>
                 <Link to="/program3"> 3D Learning Program </Link>
               </div>
@@ -75,7 +72,6 @@ function Navbar() {
                 <Link to="/program1">Video</Link>
                 <Link to="/program2">Document </Link>
                 <Link to="/program3">PPTs</Link>
-                
               </div>
             )}
           </li>
@@ -85,6 +81,17 @@ function Navbar() {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
+          <li>
+            <Link to="/signup">login</Link>
+          </li> 
+          {/* <ul className="Nav-ul">
+            <li>
+              <Link to="/signup"> Signup</Link>
+            </li>
+            <li>
+              <Link to="/login">login</Link>
+            </li>
+          </ul> */}
         </ul>
       </nav>
     </>
