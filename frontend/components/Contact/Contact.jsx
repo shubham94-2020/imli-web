@@ -34,7 +34,7 @@ const ContactUs = () => {
               name="name"
               placeholder="Name"
               required
-            />
+            />  
 
             {/* <label htmlFor="email">Email:</label> */}
             <input

@@ -15,7 +15,7 @@ function footer() {
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="/program">
             Programs
           </a>
         </li>
@@ -25,7 +25,7 @@ function footer() {
           </a>
         </li>
       </ul>
-      <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+      {/* <p>&copy;2021 Nadine Coelho | All Rights Reserved</p> */}
     </footer>
   );
 }

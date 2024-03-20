@@ -5,15 +5,18 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [showProgramDropdown, setShowProgramDropdown] = useState(false);
 
-  const toggleProgramDropdown = () => {
-    setShowProgramDropdown(!showProgramDropdown);
+  const handleMouseEnter = () => {
+    setShowProgramDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowProgramDropdown(false);
   };
 
   return (
     <>
       <nav className="navbar">
         <div className="logo">
-
           <img
             className="home"
             src="./imlilogo.png"
@@ -21,24 +24,23 @@ function Navbar() {
             onClick={() => {
               window.location.href = "/";
             }}
-            style={{marginLeft:'1rem'
-            }}
+            style={{ marginLeft: "1rem" }}
           />
-
           <span>Institute for Multilingual Education</span>
         </div>
         <ul className="nav-links">
-          
           <li
             className="dropdown"
-            onMouseEnter={toggleProgramDropdown}
-            onMouseLeave={toggleProgramDropdown}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            <li>
-              <Link>About us</Link>
-            </li>
+            <Link>About us</Link>
             {showProgramDropdown && (
-              <div className="dropdown-content">
+              <div
+                className="dropdown-content"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Link to="/about">Who we are</Link>
                 <Link to="/program2">Meet our team</Link>
               </div>
@@ -46,22 +48,25 @@ function Navbar() {
           </li>
           <li
             className="dropdown"
-            onMouseEnter={toggleProgramDropdown}
-            onMouseLeave={toggleProgramDropdown}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            <li>
-              <Link to="/program">Programs</Link>
-            </li>
+            <Link to="/program">Programs</Link>
             {showProgramDropdown && (
-              <div className="dropdown-content">
-                <Link to="/program1"> Early Childhood Education</Link>
-                <Link to="/program2"> English Language Reading and Writing</Link>
-                <Link to="/program3">	 Multilingual Hub</Link>
-                <Link to="/program4"> Teacher Training Programs</Link>
-                <Link to="/program3"> 3D Learning Program </Link>
+              <div
+                className="dropdown-content"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Link to="/program1">Early Childhood Education</Link>
+                <Link to="/program2">English Language Reading and Writing</Link>
+                <Link to="/program3">Multilingual Hub</Link>
+                <Link to="/program4">Teacher Training Programs</Link>
+                <Link to="/program3">3D Learning Program</Link>
               </div>
             )}
           </li>
+<<<<<<< HEAD
           <li
             className="dropdown"
             onMouseEnter={toggleProgramDropdown}
@@ -70,6 +75,10 @@ function Navbar() {
             <li>
               <Link to="/resources">Resources</Link>
             </li>
+=======
+          <li>
+            <Link to="/resources">Resources</Link>
+>>>>>>> 5f5d628b8b13c97503a3ddc525a82bd368263c1c
           </li>
           <li>
             <Link to="/blogs">Blog & Press</Link>

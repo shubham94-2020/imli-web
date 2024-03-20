@@ -1,79 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import img1 from "./images/im1.jpg";
-import img2 from "./images/im2.jpg";
-import img3 from "./images/im3.jpg";
+import axios from "axios";
+
 import "./blog.css";
 function Blog() {
+  const [blogs, setblogs] = useState([]);
+  useEffect(() => {
+    // Fetch all blogs when the component mounts
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:3000/api/v1/readblogs"
+        );
+        setblogs(response.data.blogs);
+        console.log(blogs);
+      } catch (error) {
+        console.error("Error fetching blogs:");
+      }
+    };
+
+    fetchBlogs(); // Call the fetchBlogs function
+  }, []); // Empty dependency array to run only once on mount
+  const deleteblog = async (id) => {
+    try {
+      console.log(id);
+      await axios.delete(`http://localhost:3000/api/v1/deleteblog/${id}`)
+      .then((res)=>console.log(res.data.message))
+      .then(setblogs(blogs.filter(blog => blog._id !== id)))
+    } catch (error) {console.log("error in delete blog"+error)};
+  };
   return (
     <>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
-            <img src={img1} alt="shubham's image"></img>
-          </div>
-          <div className="text_areaa">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></br>{" "}
-            </h2>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci fugit sed voluptatem repudiandae nostrum quibusdam
-              dolorem fuga vel officia vero quas odit animi qui doloremque
-              assumenda, modi quia aspernatur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. git sed voluptatem repudiandae
-              nostrum quibusdam dolorem fuga vel officia vero quas odit animi
-              qui doloremque assumenda, modi quia aspernatur.
-            </p>
-          </div>
+      {/* <Link to="/blog_input">
+        <div className="container createblog">
+          <button className="custom-button">Add blogs</button>
         </div>
-      </div>
+      </Link> */}
       <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
-            <img src={img2} alt="shubham's image"></img>
+        {blogs.map((blog, index) => (
+          <div key={index} className="container content">
+            <div className="img_boyaa">
+              <img src={img1} alt={`Blog ${index} image`} />
+            </div>
+            <div className="text_areaa">
+              <h2>{blog.title}</h2>
+              <br />
+              <p>{blog.body}</p>
+            </div>
+            <div>
+              <button onClick={() => deleteblog(blog._id)} className="custom-button delete">delete</button>
+            </div>
           </div>
-          <div className="text_areaa">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></br>{" "}
-            </h2>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci fugit sed voluptatem repudiandae nostrum quibusdam
-              dolorem fuga vel officia vero quas odit animi qui doloremque
-              assumenda, modi quia aspernatur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. git sed voluptatem repudiandae
-              nostrum quibusdam dolorem fuga vel officia vero quas odit animi
-              qui doloremque assumenda, modi quia aspernatur.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
-            <img src={img3} alt="shubham's image"></img>
-          </div>
-          <div className="text_areaa">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br></br>{" "}
-            </h2>
-            <br></br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci fugit sed voluptatem repudiandae nostrum quibusdam
-              dolorem fuga vel officia vero quas odit animi qui doloremque
-              assumenda, modi quia aspernatur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. git sed voluptatem repudiandae
-              nostrum quibusdam dolorem fuga vel officia vero quas odit animi
-              qui doloremque assumenda, modi quia aspernatur.
-            </p>
-          </div>
+      <Link to="/blog_input">
+        <div className="container createblog">
+          <button className="custom-button">Add Blogs</button>
         </div>
-      </div>
+      </Link>
     </>
   );
+  
 }
 
 export default Blog;
