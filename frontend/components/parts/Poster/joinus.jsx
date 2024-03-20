@@ -1,22 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+
 export const JoinUs = () => {
   const form = useRef();
-  async()=>{const response=await fetch("http://localhost:3000/email/mainsendmail", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    // body: JSON.stringify({
-    //   topic,
-    //   start_time,
-    //   duration,
-    //   teacher,
-    // }),
-  });
-  console.log(response);
-}
 
   const sendEmail = (e) => {
     e.preventDefault();

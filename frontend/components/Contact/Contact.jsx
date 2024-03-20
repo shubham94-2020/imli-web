@@ -34,7 +34,7 @@ const ContactUs = () => {
               name="name"
               placeholder="Name"
               required
-            />
+            />  
 
             {/* <label htmlFor="email">Email:</label> */}
             <input
@@ -95,7 +95,9 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="ContactIcons">
-            <FaFacebook className="SocialIcons" />{" "}
+          <a href="https://www.facebook.com/imli.education/" target="_blank" rel="noopener noreferrer">
+  <FaFacebook className="SocialIcons" />
+</a>
             <FaYoutube className="SocialIconsY" />{" "}
             <RiInstagramFill className="SocialIcons" />
           </div>

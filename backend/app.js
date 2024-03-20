@@ -5,14 +5,12 @@ const userRoutes = require("./routes/userRoutes");
 const emailjs = require('emailjs-com');
 const Email = require('./models/emailSchema'); // Assuming you have an Email model
 // const resourceRoutes=require('./routes/resourceRoutes');
+
 const app = express();
 const cors=require("cors");
 app.use(cors({ origin: "http://localhost:5173" }));
 const crud_blog=require("./routes/blogRoutes");
 app.use(express.json());
-
-
-
 
 function verifyToken(req, resp, next) {
   let token = req.headers["authorization"];
@@ -31,12 +29,10 @@ function verifyToken(req, resp, next) {
     resp.status(401).send({ result: "Please add token with header" });
   }
 }
-app.get("/",(req,res)=>{
-  res.send("<h1>imli web</h1>");
-})
 // app.use('/blogs',blogRoutes);
 // app.use('/user',userRoutes);
-// app.use('/programs',programRoute);
+app.use('/programs',programRoute);
+
 app.use("/user", userRoutes);
 app.use("/email", emailRoutes);
 app.use("/api/v1",crud_blog);

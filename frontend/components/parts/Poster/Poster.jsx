@@ -8,6 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import Joinus from "./joinus";
 
 import We from "../../What_will_do/We";
 
@@ -182,30 +183,29 @@ function Poster() {
       </div>
       <We></We>
       <div className="JoinUs">
-        <h1 style={{color:'rgb(230, 41, 41)'}}>Join Our Community</h1>   
-        
+        <h1 style={{ color: "rgb(230, 41, 41)" }}>Join Our Community</h1>
+
         <p>
           Enter your email address to register to our newsletter subscription
           delivered on regular basis!
         </p>
-        <JoinUs />
-        {/* <input type="email" placeholder="Enter Your Email" size={38} /> 
-         <button onClick={async()=>{
-           await fetch("http://localhost:3000/email/sendmail", {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            // body: JSON.stringify({
-            //   topic,
-            //   start_time,
-            //   duration,
-            //   teacher,
-            // }),
-          });
-        }}>Subscribe</button> */}
+        
+          {/* <input
+            type="email"
+            placeholder="Enter Your Email"
+            name="user_email"
+            size={38}
+          />
+         
+          <button onClick={<a href="#"></a>}>Subscribe</button> */}
+
+        <Joinus/>
+     
         <div className="ContactIcons">
-            <FaFacebook className="SocialIcons" />{" "}
+            <a href="https://www.facebook.com/imli.education/" target="_blank" rel="noopener noreferrer">
+  <FaFacebook className="SocialIcons" />
+</a>
+
             <FaYoutube className="SocialIconsY" />{" "}
             <RiInstagramFill className="SocialIcons" />
           </div>

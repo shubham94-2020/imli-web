@@ -19,7 +19,7 @@ function Blog() {
         console.error("Error fetching blogs:");
       }
     };
-
+   
     fetchBlogs(); // Call the fetchBlogs function
   }, []); // Empty dependency array to run only once on mount
   const deleteblog = async (id) => {

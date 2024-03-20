@@ -56,6 +56,14 @@
   margin-top: 20px;
 }
 
+.invalid{
+  color: red;
+  margin-left: 23px;
+  margin-top: -20px;
+  /* padding-top: -20px; */
+  display: block;
+  font-size: inherit;
+}
 .program-form input {
   width: 100%;
   padding: 10px;

@@ -10,10 +10,10 @@ const blogSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // image: {
-    //     type: String, // Assuming you will store the image URL as a string
-    //     required: true
-    // }
+    image: {
+        type: String, // Assuming you will store the image URL as a string
+        required: true
+    }
   },
   {
     timestamps: true,

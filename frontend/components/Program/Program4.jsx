@@ -1,16 +1,98 @@
 import React from "react";
 import "./Program4.css";
-import { useState } from "react";
+import { useState,useEffect} from "react";
 
 function Program4() {
     const [showDetails, setShowDetails] = useState(false);
     const auth = localStorage.getItem("user");
     const user = auth ? JSON.parse(auth) : null;
     const isAdmin = user && user.email === "alaknanda@gmail.com";
+  const [newProgramTitle, setNewProgramTitle] = useState("");
+  const [newProgramDescription, setNewProgramDescription] = useState("");
+  const [programs, setPrograms] = useState([]);
+  const [error, setError] = useState(false);
 
-    const toggledet = () => {
-      setShowDetails(!showDetails);
-    };
+  // const navigate=useNavigate();
+
+  useEffect(() => {
+    getPrograms();
+  }, []);
+
+  const getPrograms = async () => {
+    try {
+      let result = await fetch("http://localhost:3000/programs", {
+        method: "get",
+        headers: {
+          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
+        },
+      });
+
+      result = await result.json();
+      console.log(result);
+
+      setPrograms(result); // Set the new list of programs
+    } catch (error) {
+      console.error("Error fetching programs:", error);
+    }
+  };
+
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+    setShowForm(false);
+  };
+
+  const addProgram = async () => {
+    if (!newProgramTitle || !newProgramDescription) {
+      setError(true);
+      return false;
+    } else {
+      const id = 4; // Generate a unique ID
+      let result = await fetch("http://localhost:3000/programs", {
+        method: "post",
+        body: JSON.stringify({
+          id: id,
+          title: newProgramTitle,
+          description: newProgramDescription,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      alert("product added Succesfully...");
+      result = await result.json();
+      console.warn(result);
+
+      getPrograms();
+      // setShowForm(false); // Hide the form after adding the program
+      setNewProgramTitle(""); // Reset the input fields
+      setNewProgramDescription("");
+    }
+  };
+
+  const deleteProgram = async (title) => {
+    try {
+      let result = await fetch("http://localhost:3000/programs", {
+        method: "DELETE",
+        headers: {
+          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ title: title }),
+      });
+
+      // Check if the response status indicates success
+      if (result.ok) {
+        console.log("Program deleted successfully");
+        // Assuming the delete operation was successful, fetch programs again to update the list
+        getPrograms();
+      } else {
+        console.error("Error deleting program:", result.statusText);
+      }
+    } catch (error) {
+      console.error("Error deleting program:", error);
+    }
+  };
+
   return (
     <div className="ece-container">
       <img src="/i4.jpg" alt="program4" className="image" />
@@ -82,10 +164,51 @@ function Program4() {
         </ul>
       </div>
       {isAdmin && showDetails && <h1> </h1>}
-      <button onClick={toggledet}>
+      <button onClick={toggleDetails}>
         {" "}
         {showDetails ? "Show Less" : "Read More"}
       </button>
+      {showDetails && (
+        <>
+          <div className="program-form">
+            <input
+              type="text"
+              placeholder="Enter program title"
+              value={newProgramTitle}
+              onChange={(e) => setNewProgramTitle(e.target.value)}
+              required
+            />
+            {error && !newProgramTitle && (
+              <span className="invalid">Enter valid title </span>
+            )}
+            <input
+              type="text"
+              placeholder="Enter program description"
+              value={newProgramDescription}
+              onChange={(e) => setNewProgramDescription(e.target.value)}
+              required
+            />
+            {error && !newProgramDescription && (
+              <span className="invalid">Enter valid description</span>
+            )}
+            <button onClick={addProgram}>Add</button>
+          </div>
+          {programs
+            .filter((program) => program.id === 4)
+            .map((program) => (
+              <div key={program.id} className="program">
+                <h3>{program.title}</h3>
+                <p>{program.description}</p>
+                <button
+                  className="delete"
+                  onClick={() => deleteProgram(program.title)}
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
+        </>
+      )}
     </div>
   );
 }

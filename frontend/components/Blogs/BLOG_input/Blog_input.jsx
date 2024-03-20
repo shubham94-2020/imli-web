@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./blog_input.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -13,7 +13,24 @@ const BlogForm = () => {
     const { name, value } = event.target;
     setinput({ ...input, [name]: value });
   };
-
+  const [file,setfile]=useState('');
+  const [image,setimage]=useState("");
+  useEffect(()=>
+  {
+    const getimage=()=>
+    {
+      if(file)
+      {
+        const data=new FormData();
+        data.append("name",file.name);
+        data.append("file",file);
+        // console.log("called"+);
+          ////////////api call
+        // image="url";
+      }
+    }
+    getimage();
+  },[file]);
   const createBlog = async () => {
     try {
       // Assuming input contains the title and body of the blog post
@@ -55,6 +72,9 @@ const BlogForm = () => {
             onChange={change}
           ></textarea>
         </div>
+        <div className="body-boy container image_input">
+            <input type="file"  accept="image/*" onChange={(e)=>{setfile(e.target.files[0]);} } />
+        </div>
       </div>
       <div className="container createblog">
         <button className="custom-button" onClick={createBlog}>
@@ -64,7 +84,6 @@ const BlogForm = () => {
           <button className="custom-button">Cancel</button>
         </Link>
       </div>
-      
     </>
   );
 };
