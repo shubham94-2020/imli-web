@@ -8,6 +8,9 @@ function Program2() {
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
   const [error, setError] = useState(false);
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
 
   // const navigate=useNavigate();
 
@@ -19,9 +22,9 @@ function Program2() {
     try {
       let result = await fetch("http://localhost:3000/programs", {
         method: "get",
-        headers: {
-          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
-        },
+        // headers: {
+        //   authorization: bearer ${JSON.parse(localStorage.getItem("token"))},
+        // },
       });
 
       result = await result.json();
@@ -70,10 +73,10 @@ function Program2() {
     try {
       let result = await fetch("http://localhost:3000/programs", {
         method: "DELETE",
-        headers: {
-          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
-          "Content-Type": "application/json",
-        },
+        // headers: {
+        //   authorization: bearer ${JSON.parse(localStorage.getItem("token"))},
+        //   "Content-Type": "application/json",
+        // },
         body: JSON.stringify({ title: title }),
       });
 
@@ -163,7 +166,7 @@ function Program2() {
       <button onClick={toggleDetails}>
         {showDetails ? "Show Less" : "Read More"}
       </button>
-      {showDetails && (
+      {isAdmin && showDetails && (
         <>
           <div className="program-form">
             <input

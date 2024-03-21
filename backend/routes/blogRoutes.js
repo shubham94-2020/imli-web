@@ -10,7 +10,7 @@ router.post("/createblog", async (req, res) => {
     await newblog.save();
     res.status(200).json({ messgae: "blog created!" });
   } catch (error) {
-    res.status(200).json({ messgae: " error in blog creation!" });
+    res.status(200).json({ messgae: "error in blog creation!" ,error});
   }
 });
 ///read

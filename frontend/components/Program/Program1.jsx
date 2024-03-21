@@ -6,6 +6,9 @@ function Program1() {
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
   const [error, setError] = useState(false);
 
   // const navigate=useNavigate();
@@ -155,7 +158,7 @@ function Program1() {
       <button onClick={toggleDetails}>
         {showDetails ? "Show Less" : "Read More"}
       </button>
-      {showDetails && (
+      {isAdmin && showDetails && (
         <>
           <div className="program-form">
             <input

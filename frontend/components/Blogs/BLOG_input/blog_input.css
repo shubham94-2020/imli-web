@@ -30,3 +30,8 @@
   width: 100%;
   border: none;
 }
+.image_input
+{
+  background-color: white;
+  margin: 3%;
+}

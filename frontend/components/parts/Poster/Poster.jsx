@@ -13,6 +13,9 @@ import We from "../../What_will_do/We";
 
 function Poster() {
   const [index, setIndex] = useState(0);
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
 
   const defaultTexts = [
     `Language is at the core of everything we do – it shapes how kids
@@ -115,11 +118,11 @@ function Poster() {
   }, []);
 
   const slides = [
-    { url: "i1.jpg", programName: "IMLi Early Childhood Education" ,a:"Program1"},
-    { url: "i2.jpg", programName: "IMLi English Language Reading and Writing" ,a:"Program2"},
-    { url: "i3.jpg", programName: "IMLi Multilingual Hub",a:"Program3" },
-    { url: "i4.jpg", programName: "IMLi Teacher Training Programs",a:"Program4" },
-    { url: "i5.jpg", programName: "IMLi 3D Learning Program" ,a:"Program5"},
+    { url: "i1.jpg", programName: "Early Childhood Education" ,a:"Program1"},
+    { url: "i2.jpg", programName: "English Language Reading and Writing" ,a:"Program2"},
+    { url: "i6.jpg", programName: "Multilingual Education",a:"Program3" },
+    { url: "i8.jpg", programName: "Teacher Training Programs",a:"Program4" },
+    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
   ];
   const containerStyles = {
     width: "100%",
@@ -127,7 +130,7 @@ function Poster() {
   };
 
   return (
-    <div div style={{ textAlign: "justify" }}>
+    <div  style={{ textAlign: "justify" }}>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
@@ -160,7 +163,7 @@ function Poster() {
             {editMode[index] ? (
               <button onClick={() => saveChanges(index)}>Save Changes</button>
             ) : (
-              <button onClick={() => handleEdit(index)}>Edit</button>
+              isAdmin && <button onClick={() => handleEdit(index)}>Edit</button>
             )}
           </div>
         ))}
@@ -198,10 +201,13 @@ function Poster() {
         <Joinus/>
      
         <div className="ContactIcons">
-          <FaFacebook className="SocialIcons" />{" "}
-          <FaYoutube className="SocialIconsY" />{" "}
-          <RiInstagramFill className="SocialIcons" />
-        </div>
+            <a href="https://www.facebook.com/imli.education/" target="_blank" rel="noopener noreferrer">
+  <FaFacebook className="SocialIcons" />
+</a>
+
+            <FaYoutube className="SocialIconsY" />{" "}
+            <RiInstagramFill className="SocialIcons" />
+          </div>
       </div>
     </div>
   );

@@ -3,7 +3,10 @@ import "./Program4.css";
 import { useState,useEffect} from "react";
 
 function Program4() {
-  const [showDetails, setShowDetails] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
+    const auth = localStorage.getItem("user");
+    const user = auth ? JSON.parse(auth) : null;
+    const isAdmin = user && user.email === "alaknanda@gmail.com";
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
@@ -160,7 +163,9 @@ function Program4() {
           </li>
         </ul>
       </div>
+      {isAdmin && showDetails && <h1> </h1>}
       <button onClick={toggleDetails}>
+        {" "}
         {showDetails ? "Show Less" : "Read More"}
       </button>
       {showDetails && (

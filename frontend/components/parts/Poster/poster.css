@@ -1,49 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
-
-.counier-style
-{
-    height: 500px;
-    position: relative;
-    margin: 0;
+.counier-style {
+  height: 500px;
+  position: relative;
+  margin: 0;
 }
-.description
-{
-    width: 600x;
-    position: absolute;
-    z-index: 999;
-    color: aliceblue;
-    top: 20%;
-    left: 20%;
+.description {
+  width: 600x;
+  position: absolute;
+  z-index: 999;
+  color: aliceblue;
+  top: 20%;
+  left: 20%;
 }
-.description h1
-{
-    text-align:unset;
-    font-size: 46px;
-    color: aliceblue;
+.description h1 {
+  text-align: unset;
+  font-size: 46px;
+  color: aliceblue;
 }
-.description p
-{
-    width: 90%;
-    font-size: 22px;
+.description p {
+  width: 90%;
+  font-size: 22px;
 }
-.carousal-boullt
-{
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   margin-right: 40rem;
-   margin-top: 2rem;
-   width: 15rem;
-
+.carousal-boullt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40rem;
+  margin-top: 2rem;
+  width: 15rem;
 }
-.carousal-boullt span
-{
-    width: 45px;
-    height: 12px;
-    background-color:aliceblue;
-    margin-left: 10px;
-    border-radius: 10px;
+.carousal-boullt span {
+  width: 45px;
+  height: 12px;
+  background-color: aliceblue;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 /* h1 {    
@@ -64,7 +56,7 @@
   width: 90%;
   /* height: 310px; */
   margin-top: 0%;
- 
+
   padding-left: 50px;
   color: #ffac06;
   font-size: 23px;
@@ -76,21 +68,17 @@
   padding-top: 50px;
   margin-top: 50px;
 }
-.hrline
-{
+.hrline {
   padding-left: 39rem;
 }
-
-
-
 
 /* -------------------------------------------------------- */
 
 .counier-style {
-    position: relative;
-    overflow: hidden; /* Hide any overflow to prevent arrows from being cut off */
-  }
-  
+  position: relative;
+  overflow: hidden; /* Hide any overflow to prevent arrows from being cut off */
+}
+
 .carousel-buttons {
   position: absolute;
   margin-top: 15%;
@@ -131,25 +119,21 @@
   .carousel-buttons {
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
-  
+
   .arrow-button {
     font-size: 20px; /* Decrease font size for smaller screens */
   }
 }
 
-
-  
-  
-  /* WhyWeAreHere.css */
+/* WhyWeAreHere.css */
 
 /* WhyWeAreHere.css */
 
 .why-we-are-here {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 80px ;
+  margin: 30px 80px;
 }
 
 .section {
@@ -163,21 +147,19 @@
 img {
   width: 20%; /* Adjust the width of the images */
   border-radius: 8px; /* Add border radius for a rounded appearance */
-  
-  
 }
 
 .why-we-are-here p {
   font-size: 150%;
-  max-width: 90%; 
-  font-family: 'Nunito', sans-serif;
+  max-width: 90%;
+  font-family: "Nunito", sans-serif;
   line-height: 160%;
   color: rgba(2, 2, 2, 0.64);
   width: 90%;
 }
 
-.about-us h1{
-font-size: 320%;
+.about-us h1 {
+  font-size: 320%;
 }
 
 /* .bg{
@@ -196,15 +178,14 @@ font-size: 320%;
   font-weight: 600;
   font-size: 1.95rem;
   margin: 0 auto;
-  line-height:3.5rem;
+  line-height: 3.5rem;
 
   /* Additional styling for an attractive background */
   border-radius: 15px; /* Adds rounded corners to the section */
-   /* Adds a subtle box shadow for depth */
+  /* Adds a subtle box shadow for depth */
   overflow: hidden; /* Ensures content doesn't overflow rounded corners */
 
   /* Gradient background for a more dynamic look */
- 
 
   /* Transition for smooth effects on hover */
   /* transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; */
@@ -215,56 +196,53 @@ font-size: 320%;
 
 /* Hover effect to change background color and scale slightly */
 
-
 /* Additional styling for the content within the section */
 .other-section p {
-  font-size: 1.0rem;
+  font-size: 1rem;
   /* Add more styles as needed */
 }
 
-
 /*Join Us*/
-.JoinUs{
+.JoinUs {
   /* background-color: #87A6EC; */
-  
+
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 20px;
-  width:100%;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.JoinUs h1{
+.JoinUs h1 {
   /* margin-bottom: 8px; */
   font-size: 320%;
   padding-left: 0.6rem;
   padding-top: 3rem;
-  
 }
-.JoinUs p{
+.JoinUs p {
   font-size: 1.033rem;
   margin: 1.5rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-.JoinUs input{
+.JoinUs input {
   font-size: 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* margin-top: 10px; */
   border-color: #030303;
   border-radius: 0.3rem;
 }
-input[type="email"]{
-  height:2.4rem;
-  font-family: 'Nunito', sans-serif;
+input[type="email"] {
+  height: 2.4rem;
+  font-family: "Nunito", sans-serif;
   padding: 0.8rem;
 }
-.JoinUs button{
-  font-family: 'Nunito', sans-serif;
+.JoinUs button {
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
-  padding:0.1rem;
+  padding: 0.1rem;
   height: 1.8rem;
-  width: 5.8rem; 
+  width: 5.8rem;
   margin-top: 1rem;
   background-color: #ffac069c;
   border: 1rem;
@@ -282,7 +260,6 @@ input[type="email"]{
 } */
 /* Keyframes for the rotation animation */
 
-
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -297,9 +274,3 @@ input[type="email"]{
 .fade-in-up {
   animation: fade-in-up 1s ease-out; /* You can adjust the duration and timing function */
 }
-
-/* Mobile first styles */
-/* Keep default styles for mobile devices */
-
-/* Media queries for tablets and larger screens */
-
