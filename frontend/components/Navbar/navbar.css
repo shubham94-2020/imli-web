@@ -189,7 +189,7 @@
   .logo{
     display: flex;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 33rem;
     /* justify-content: center; */
     gap: 20px;
   }
@@ -201,7 +201,7 @@
 
   .logo span{
     margin-top: 15px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
 .upper{
@@ -235,7 +235,7 @@
 
   .ham{
     display: flex;
-    margin-top: -8px;
+    margin-top: -18px;
     margin-right: 8px;
   }
   
