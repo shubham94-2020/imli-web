@@ -16,28 +16,8 @@ const addMail = catchAsync(async (req, res, next) => {
   });
 });
 
-// let transporter = nodemailer.createTransport({
-//   host: "smtp.gmail.com",
-//   port: 587,
-//   secure: false,
-//   requireTLS: true,
-//   auth: {
-//     // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-//     user: "mvthakare_b21@ce.vjti.ac.in",
-//     pass: "qxdl wfwr ufei gdcp",
-//   },
-// });
 
-let transporter = nodemailer.createTransport({
-  service:"Gmail",
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: "maheshthakare149@gmail.com",
-    pass: "tgxi frwc hhnj gcvq",
-  },
-});
+
 
 const sendMailT = async () => {
   // let teach = await Teacher.findById(teacher);
