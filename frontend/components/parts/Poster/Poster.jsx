@@ -122,7 +122,7 @@ function Poster() {
     { url: "i2.jpg", programName: "English Language Reading and Writing" ,a:"Program2"},
     { url: "i6.jpg", programName: "Multilingual Education",a:"Program3" },
     { url: "i8.jpg", programName: "Teacher Training Programs",a:"Program4" },
-    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
+    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
   ];
   const containerStyles = {
     width: "100%",
