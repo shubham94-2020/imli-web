@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure that the body takes up at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
 
 .footer {
-  color: black;
-  
-  bottom: 0; /* Stick to the bottom */
-  left: 0; /* Position from the left */
+  margin-top: auto; /* Push the footer to the bottom */
   width: 100%;
-  opacity: 1;
-  min-height: 100px;
+  min-height: 100px; /* Minimum height of the footer */
   padding: 0 30px;
-  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,6 @@
   background-color: #ffffff;
   box-shadow: 20px 15px 25px rgb(187, 190, 190);
   border-radius: 6px;
-  
 }
 .button-container {
     text-align: center;
@@ -95,7 +94,6 @@
     padding: 20px;
   }
 
-  .social-icon__link,
   .menu__link {
     font-size: 1.5rem;
   }
@@ -106,7 +104,6 @@
     padding: 10px;
   }
 
-  .social-icon__link,
   .menu__link {
     font-size: 1.2rem;
   }

@@ -5,6 +5,9 @@ import axios from "axios";
 
 import "./blog.css";
 function Blog() {
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
   const [blogs, setblogs] = useState([]);
   useEffect(() => {
     // Fetch all blogs when the component mounts
@@ -54,19 +57,19 @@ function Blog() {
               </div>
             </div>
             <div className="delete_button">
-              <button
+              {isAdmin && (<button
                 onClick={() => deleteblog(blog._id)}
                 className="custom-button delete"
               >
                 delete
-              </button>
+              </button>)}
             </div>
           </div>
         ))}
       </div>
       <Link to="/blog_input">
         <div className="delete_button add_button">
-          <button className="custom-button">Add Blogs</button>
+          {isAdmin && (<button className="custom-button">Add Blogs</button>)}
         </div>
       </Link>
     </>

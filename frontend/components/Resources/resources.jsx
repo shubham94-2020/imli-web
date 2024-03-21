@@ -11,9 +11,9 @@ const ResourcesPage = () => {
   return (
     <div>
       <div className="heading-center">
-        <button onClick={() => handleOptionClick('introduction')}className="nav-link">INTRODUCTION</button>
-        <button onClick={() => handleOptionClick('parentStudent')} className="nav-link">PARENT / STUDENT</button>
-        <button onClick={() => handleOptionClick('teacherEducator')} className="nav-link">TEACHER / EDUCATOR</button>
+        <button onClick={() => handleOptionClick('introduction')} className={`nav-link ${selectedOption === 'introduction' ? 'active' : ''}`}>INTRODUCTION</button>
+        <button onClick={() => handleOptionClick('parentStudent')} className={`nav-link ${selectedOption === 'parentStudent' ? 'active' : ''}`}>PARENT / STUDENT</button>
+        <button onClick={() => handleOptionClick('teacherEducator')} className={`nav-link ${selectedOption === 'teacherEducator' ? 'active' : ''}`}>TEACHER / EDUCATOR</button>
       </div>
       <div className="text-center" style={{ marginTop: '20px' }}>
         {selectedOption === 'introduction' && (
