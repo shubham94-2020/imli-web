@@ -1,13 +1,32 @@
+.blogs{
+  display: flex;
+  flex-direction: column;
+  /* width: 75%; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .single_blog
 {
   display: flex;
-  height: 30vh;
-  width: 70%;
+  /* justify-content: center; */
+  width: 80vw;
   border-radius: 5px;
-  margin-top: 1%;
+  margin-top: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-
 }
+
+.custom-button2{
+  margin-top: 20px;
+  margin-right: 120px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
 .img_boyaa
 { flex: 1;
   /* background-color: antiquewhite; */
@@ -25,19 +44,26 @@
 }
 .text_areaa
 {
-  width: 75%;
+  width: 80%;
   margin-right: 2%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5; /* Adjust to the desired number of lines */
-  line-height: 1.5;
+  -webkit-line-clamp: 3; /* Adjust to the desired number of lines */
+  line-height: 1.3;
+}
+.text_areaa h2 {
+  overflow: hidden; /* Hide any content that overflows its container */
+  white-space: nowrap; /* Prevent wrapping of text */
+  text-overflow: ellipsis; /* Display an ellipsis (...) when text overflows */
+  max-width: 100%; /* Limit the maximum width to 100% of the container */
 }
 .delete_button
 {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: -40px;
 }
 .add_button
 {
@@ -47,14 +73,16 @@
 
 
 @media screen and (max-width: 400px) {
-.blog{
-  display: flex;
+.blogs{
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
   .single_blog{
-    width: 90%;
     margin: 25px auto;
   gap: 10px;
 
@@ -64,10 +92,15 @@
     width: 30px;
     height: auto;
   }
-
+  .img_boyaa img{
+    width: 120px;
+    height: 120px;
+  }
   .text_areaa{
     text-align: center;
     width: 50%;
+    font-size: 1rem;
+
   }
-  
+
 }

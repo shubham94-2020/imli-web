@@ -7,15 +7,15 @@ import "./Program.css";
 function Blog() {
   return (
     <>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
+      <div className="blogss">
+        <div className="containers">
+          <div className="img_boyaas">
             <Link to="/program1">
-              <img src="/i1.jpg" alt="program1" className="image" />
+              <img src="/i1.jpg" alt="program1" className="images" />
             </Link>
           </div>
 
-          <div className="text_areaa">
+          <div className="text_areaas">
             <h2>
               Early Childhood Education<br></br>{" "}
             </h2>
@@ -36,14 +36,14 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
+      <div className="blogss">
+        <div className="containers">
+          <div className="img_boyaas">
             <Link to={"/Program2"}>
-              <img src="/i2.jpg" alt="program2" className="image" />
+              <img src="/i2.jpg" alt="program2" className="images" />
             </Link>
           </div>
-          <div className="text_areaa">
+          <div className="text_areaas">
             <h2>
               English Language Reading and Writing<br></br>{" "}
             </h2>
@@ -65,14 +65,14 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
+      <div className="blogss">
+        <div className="containers">
+          <div className="img_boyaas">
             <Link to={"/Program3"}>
-              <img src="/i6.jpg" alt="program4" className="image" />
+              <img src="/i6.jpg" alt="program4" className="images" />
             </Link>
           </div>
-          <div className="text_areaa">
+          <div className="text_areaas">
             <h2>
               Multilingual Education<br></br>{" "}
             </h2>
@@ -89,14 +89,14 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
+      <div className="blogss">
+        <div className="containers">
+          <div className="img_boyaas">
             <Link to={"/Program4"}>
-              <img src="/i8.jpg" alt="program4" className="image" />
+              <img src="/i8.jpg" alt="program4" className="images" />
             </Link>
           </div>
-          <div className="text_areaa">
+          <div className="text_areaas">
             <h2>
               Teacher Training Program<br></br>{" "}
             </h2>
@@ -118,14 +118,14 @@ function Blog() {
           </div>
         </div>
       </div>
-      <div className="blogs">
-        <div className="container">
-          <div className="img_boyaa">
+      <div className="blogss">
+        <div className="containers">
+          <div className="img_boyaas">
             <Link to={"/Program5"}>
-              <img src="/i5.jpg" alt="program4" className="image" />
+              <img src="/i5.jpg" alt="program4" className="images" />
             </Link>
           </div>
-          <div className="text_areaa">
+          <div className="text_areaas">
             <h2>
               3D Learning Program <br></br>{" "}
             </h2>

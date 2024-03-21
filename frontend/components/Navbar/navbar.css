@@ -1,5 +1,5 @@
 /* Base styles for larger screens */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .navbar {
   background-color: #ffffff;
   box-shadow: 20px 1px 5px rgb(187, 190, 190);
@@ -13,19 +13,19 @@
   /* padding: 10px 20px; */
   /* margin: 2px 2px; */
   /* font-family: "Montserrat", sans-serif; */
-    font-weight: 700;
+  font-weight: 700;
   font-size: 130%;
   margin: 0;
   padding: 0;
 }
 
 .logo {
-  padding:0;
+  padding: 0;
   margin: 0;
   width: 56rem;
   display: flex;
   align-items: flex-start;
-  justify-content: left ;
+  justify-content: left;
   /* justify-content: flex-start; */
   /* align-items:flex-end; */
   gap: 0;
@@ -33,9 +33,9 @@
   /* margin-left: 0px; */
 }
 
-.logo img{
+.logo img {
   width: 7rem;
-  margin-bottom:' -21px';
+  margin-bottom: " -21px";
 
   /* width:9% ; */
   /* height: 80px; */
@@ -44,15 +44,14 @@
   padding: 0; */
 }
 
-
 .logo span {
   margin-left: -3px;
   background-color: #ffffff;
   /* margin-left: 0%;
-  margin-right:10%; */;
+  margin-right:10%; */
   color: #108110;
   padding-left: 1.5%;
-  font-family:"centaur";
+  font-family: "centaur";
   font-size: 2.8rem;
   font-weight: 600;
 }
@@ -60,7 +59,7 @@
 .nav-links {
   /* padding-left: -20000%; */
   /* padding-right: 0%; */
-  font-size:1.6rem;
+  font-size: 1.6rem;
   list-style: none;
   width: 40rem;
   display: flex;
@@ -68,7 +67,7 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right:25px ;
+  margin-right: 25px;
 }
 
 /* .nav-links li {
@@ -85,7 +84,6 @@
 .nav-links a:hover {
   color: #66c2ff;
 }
-
 
 /* Media queries for responsiveness */
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
@@ -144,7 +142,7 @@
   display: block;
 }
 
-.dropdown-content a{
+.dropdown-content a {
   /* display: inline-block; */
   white-space: nowrap;
   padding: 10px 20px; /* Adjust padding as needed */
@@ -174,10 +172,19 @@
   }
 }
 
+.sidebar {
+  display: none;
+}
 
+.ham {
+  display: none;
+}
 
 @media screen and (max-width: 400px) {
-  .logo{
+  .navbar {
+    height: auto;
+  }
+  .logo {
     display: flex;
     align-items: center;
     margin-left: 500px;
@@ -185,13 +192,48 @@
     gap: 20px;
   }
 
-  .logo .home{
+  .logo .home {
     width: 50px;
     height: 50px;
   }
 
-  .logo span{
+  .logo span {
+    margin-top: 15px;
     font-size: 1.2rem;
   }
-  
+
+  .upper {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 250px;
+    display: none;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close {
+    /* display: flex; */
+    margin-top: 50px;
+    padding-left: 200px;
+    /* margin-left: 5px; */
+    /* margin-right: 10px; */
+  }
+
+  .ham {
+    display: flex;
+    margin-top: -8px;
+    margin-right: 8px;
+  }
 }

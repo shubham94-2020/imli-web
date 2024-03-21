@@ -14,7 +14,6 @@ import Program3 from "../components/Program/Program3";
 import Program5 from "../components/Program/Program5";
 import Program from "../components/Program/Program"
 import Blog from "../components/Blogs/Blog";
-import Signup from "../components/loginsignup/Signup";
 import BlogForm from "../components/Blogs/BLOG_input/Blog_input";
 import Login from "../components/footer/login";
 
@@ -37,12 +36,13 @@ function App() {
         <Route path="/program" element={<Program></Program>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/resources" element={<Resources></Resources>}></Route>
-        <Route path="/signup" element={<Signup />} />
         <Route path="/blog_input" element={<BlogForm/>} />
+        <Route path="/resources" element={<Resources/>} />
+
         <Route path="/login" element={<Login/>} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

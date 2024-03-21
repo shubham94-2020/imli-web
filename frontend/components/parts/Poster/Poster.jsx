@@ -17,6 +17,9 @@ import We from "../../What_will_do/We";
 
 function Poster() {
   const [index, setIndex] = useState(0);
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
 
   const defaultTexts = [
     `Language is at the core of everything we do – it shapes how kids
@@ -123,7 +126,7 @@ function Poster() {
     { url: "i2.jpg", programName: "English Language Reading and Writing" ,a:"Program2"},
     { url: "i6.jpg", programName: "Multilingual Education",a:"Program3" },
     { url: "i8.jpg", programName: "Teacher Training Programs",a:"Program4" },
-    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
+    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
   ];
   const containerStyles = {
     width: "100%",
@@ -131,7 +134,7 @@ function Poster() {
   };
 
   return (
-    <div div style={{ textAlign: "justify" }}>
+    <div  style={{ textAlign: "justify" }}>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
@@ -164,7 +167,7 @@ function Poster() {
             {editMode[index] ? (
               <button onClick={() => saveChanges(index)}>Save Changes</button>
             ) : (
-              <button onClick={() => handleEdit(index)}>Edit</button>
+              isAdmin && <button onClick={() => handleEdit(index)}>Edit</button>
             )}
           </div>
         ))}
