@@ -220,3 +220,7 @@
     font-size: 60%;
   }
 }
+
+.ContactIcons > * {
+  margin-right: 5px; /* Adjust spacing as needed */
+}

@@ -6,6 +6,10 @@ import { FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { SocialIcon } from 'react-social-icons/component'
+import 'react-social-icons/youtube'
+import 'react-social-icons/instagram'
+import 'react-social-icons/facebook'
 
 const ContactUs = () => {
   const form = useRef();
@@ -119,12 +123,10 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="ContactIcons">
-          <a href="https://www.facebook.com/imli.education/" target="_blank" rel="noopener noreferrer">
-  <FaFacebook className="SocialIcons" />
-</a>
-            <FaYoutube className="SocialIconsY" />{" "}
-            <RiInstagramFill className="SocialIcons" />
+          <div className="ContactIcons">  
+            <SocialIcon url="https://www.facebook.com/imli.education/" target="_blank" />
+            <SocialIcon url="https://www.youtube.com/@imli.education/featured" target="_blank"/>
+            <SocialIcon url="https://www.instagram.com/imli.education/" target="_blank" />
           </div>
         </div>
       </div>
