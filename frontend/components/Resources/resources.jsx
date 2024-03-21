@@ -5,19 +5,31 @@ import { Link } from 'react-router-dom';
 const ResourcesPage = () => {
   const [selectedOption, setSelectedOption] = useState('introduction');
 
+  const [showDropdown1, setShowDropdown1] = useState(false);
+  const [showDropdown2, setShowDropdown2] = useState(false);
+  const [showDropdown3, setShowDropdown3] = useState(false);
+
   const handleOptionClick = (option) => {
     setSelectedOption(option);
   };
   
-  const [showProgramDropdown, setShowProgramDropdown] = useState(false);
 
-  const handleMouseEnter = () => {
-    setShowProgramDropdown(true);
+  const toggleDropdown1 = () => {
+    setShowDropdown1(!showDropdown1);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+  };
+  const toggleDropdown2 = () => {
+    setShowDropdown2(!showDropdown2);
+    setShowDropdown1(false);
+    setShowDropdown3(false);
+  };
+  const toggleDropdown3 = () => {
+    setShowDropdown3(!showDropdown3);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
   };
 
-  const handleMouseLeave = () => {
-    setShowProgramDropdown(false);
-  };
   return (
     <div>
       <div className="heading-center">
@@ -133,7 +145,7 @@ const ResourcesPage = () => {
           </div>
         )}
         {selectedOption === "parentStudent" && (
-          <div>
+          <div className="parentarea">
             <h2 className="heading heading-left">
               Welcome to IMLi’s Resource World!
             </h2>
@@ -156,40 +168,54 @@ const ResourcesPage = () => {
               . You will find lesson planning and teacher professional
               development materials here.
             </p>
+            <br />
             <div className="dropdown-container">
-              {/* <div className="drop"> */}
-                <button className="dropdown-container dropButton-one">
-                  English
-                </button>
-                {/* <button className="dropdown-container dropButton-one">
-                  English
-                </button>
-                <button className="dropdown-container dropButton-one">
-                  English
-                </button>
-              </div> */}
-              {/* <div className="drop"> */}
-                <button className="dropdown-container dropButton-two">
-                  Indian Languages
-                </button>
-                {/* <button className="dropdown-container dropButton-two">
-                  Indian Languages
-                </button>
-                <button className="dropdown-container dropButton-two">
-                  Indian Languages
-                </button>
-              </div> */}
-              {/* <div className="drop"> */}
-                <button className="dropdown-container dropButton-three">
-                  3D Learning
-                </button>
-                {/* <button className="dropdown-container dropButton-three">
-                  3D Learning
-                </button>
-                <button className="dropdown-container dropButton-three">
-                  3D Learning
-                </button> */}
-              {/* </div> */}
+              <button className="dropdown1" onClick={toggleDropdown1}>
+                English
+              </button>
+              {showDropdown1 && (
+                <div
+                  className="dropdown-content1"
+                  // onMouseEnter={handleMouseEnter1}
+                  // onMouseLeave={handleMouseLeave}
+                >
+                  <p>Phonics</p>
+                  <br />
+                  <p>Reading Comprehension</p>
+                  <br />
+                  <p>Writing</p>
+                </div>
+              )}
+
+              <button className="dropdown2" onClick={toggleDropdown2}>
+                Indian Languages
+              </button>
+              {showDropdown2 && (
+                <div className="dropdown-content2">
+                  <p>Marathi</p>
+                  <br />
+                  <p>Tamil</p>
+                  <br />
+                  <p>Hindi</p>
+                  <br />
+                  <p>Tribal Languages</p>
+                </div>
+              )}
+              <button className="dropdown3" onClick={toggleDropdown3}>
+                3D Learning
+              </button>
+              {showDropdown3 && (
+                <div
+                  className="dropdown-content3"
+                  // onMouseEnter={handleMouseEnter1}
+                >
+                  <p>ThinkBox</p>
+                  <br />
+                  <p>SEL Material</p>
+                  <br />
+                  <p>STEM</p>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -216,17 +242,47 @@ const ResourcesPage = () => {
               . Student facing materials are available for students aged 5-10
               (Stds. 1-5).
             </p>
+            <br />
             <div className="dropdown-container">
-              <button className="dropdown-container dropButton-one">
+              <button className="dropdown1" onClick={toggleDropdown1}>
                 Assessment
               </button>
-              <button className="dropdown-container dropButton-two">
-                Classroom{" "}
+              {showDropdown1 && (
+                <div className="dropdown-content1">
+                  <p>Phonics</p>
+                  <br />
+                  <p>Reading Comprehension</p>
+                  <br />
+                  <p>Writing</p>
+                </div>
+              )}
+
+              <button className="dropdown2" onClick={toggleDropdown2}>
+                Classroom
               </button>
-              <button className="dropdown-container dropButton-three">
-                Professional Development
+              {showDropdown2 && (
+                <div className="dropdown-content2">
+                  <p>Marathi</p>
+                  <br />
+                  <p>Tamil</p>
+                  <br />
+                  <p>Hindi</p>
+                  <br />
+                  <p>Tribal Languages</p>
+                </div>
+              )}
+              <button className="dropdown3" onClick={toggleDropdown3}>
+                Development
               </button>
-              {/* Add dropdown content for each button (implementation omitted for brevity) */}
+              {showDropdown3 && (
+                <div className="dropdown-content3">
+                  <p>ThinkBox</p>
+                  <br />
+                  <p>SEL Material</p>
+                  <br />
+                  <p>STEM</p>
+                </div>
+              )}
             </div>
           </div>
         )}

@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
+/* html {
+  font-size: 16px; 
+} */
 .counier-style {
   height: 500px;
   position: relative;
   margin: 0;
 }
 .description {
-  width: 600x;
+  width: 600px;
   position: absolute;
   z-index: 999;
   color: aliceblue;
@@ -15,12 +18,12 @@
 }
 .description h1 {
   text-align: unset;
-  font-size: 46px;
+  font-size: 2rem;
   color: aliceblue;
 }
 .description p {
   width: 90%;
-  font-size: 22px;
+  font-size: 1rem;
 }
 .carousal-boullt {
   display: flex;

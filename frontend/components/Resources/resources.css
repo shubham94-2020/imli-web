@@ -14,6 +14,9 @@
   text-align: left;
 }
 
+.parentarea {
+  margin-bottom: 10%;
+}
 .heading {
   font-weight: 600;
   font-size: 34px;
@@ -38,39 +41,32 @@
 }
 
 .button-group .button-one {
-  /* New class for first button */
   background-color: #007bff; /* Blue */
   color: #ffffff;
 }
 
 .button-group .button-two {
-  /* New class for second button */
   background-color: #ffc107; /* Orange */
   color: #000000;
 }
 
 .button-group .button-three {
-  /* New class for third button */
   background-color: #28a745; /* Green */
   color: #ffffff;
 }
 
 .button-group button:hover {
-  background-color: darken(
-    10%,
-    /* Darken the base color on hover */ currentColor
-  );
+  background-color: darken(10%, currentColor);
 }
 
 .dropdown-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-container button {
   margin: 0px 20px;
-  padding: 10px 100px;
+  padding: 10px 20px; /* Adjusted padding */
   font-size: 22px;
   line-height: 30px;
   border: none;
@@ -79,17 +75,45 @@
   text-align: left;
 }
 
-.dropdown-container .dropButton-one {
-  background-color: #007bff; /* Blue */
-  color: #ffffff;
+.dropdown-container .dropdown-content1,
+.dropdown-container .dropdown-content2,
+.dropdown-container .dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: white; /* Changed background color */
+  width: 250px; /* Set width to auto */
+  max-width: 600px; /* Set maximum width for the dropdown */
+  padding: 10px; /* Added padding */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  z-index: 1;
+  top: 8.5vh; /* Position below the button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  height: auto;
 }
-.dropdown-container .dropButton-two {
-  background-color: #ffc107; /* Orange */
-  color: #000000;
+ 
+.dropdown-container .dropdown-content1 {
+  display: block;
+  margin-left: -43.5vh;
 }
-.dropdown-container .dropButton-three {
-  background-color: #28a745; /* Green */
-  color: #ffffff;
+.dropdown-container .dropdown-content2 {
+  display: block;
+  margin-left: 0vh;
+}
+.dropdown-container .dropdown-content3 {
+  display: block;
+  margin-left: 44vh;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
 }
 
 .nav-link {
@@ -103,35 +127,41 @@
 }
 
 .nav-link.active {
-  /* Style for active button */
   text-decoration: underline yellow 2px; /* Yellow underline, 2px thick */
 }
 
-.dropdown-container {
+.dropdown1,
+.dropdown2,
+.dropdown3 {
   position: relative;
-  display: inline-block;
 }
 
-.dropdown-container .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+  margin: 0px 20px;
+  padding: 20px 40px; /* Adjusted padding */
+  font-size: 22px;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 250px; /* Increased width */
+  height: 60px; /* Increased height */
 }
 
-.dropdown-container:hover .dropdown-content {
-  display: block;
+.dropdown1 {
+  background-color: #007bff; /* Blue */
+  color: #ffffff;
 }
 
-.dropdown-item {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown2 {
+  background-color: #ffc107; /* Orange */
+  color: #000000;
 }
 
-.dropdown-item:hover {
-  background-color: #f1f1f1;
+.dropdown3 {
+  background-color: #28a745; /* Green */
+  color: #ffffff;
 }
