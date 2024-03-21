@@ -107,6 +107,7 @@ function Navbar() {
             </svg>
           </li>
           <li
+            className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -123,6 +124,7 @@ function Navbar() {
             )}
           </li>
           <li
+            className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -157,4 +159,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
