@@ -35,7 +35,7 @@ export const JoinUs = () => {
         size={38}
         required // Add the required attribute for validation
       />
-      <button type="submit">Subscribe</button>
+      <button  type="submit">Subscribe</button>
     </form>
   );
 };
