@@ -89,15 +89,15 @@
   height: auto;
 }
 
-.dropdown-container:hover .dropdown-content1 {
+.dropdown-container .dropdown-content1 {
   display: block;
   margin-left: -41.5vh;
 }
-.dropdown-container:hover .dropdown-content2 {
+.dropdown-container .dropdown-content2 {
   display: block;
   margin-left: 0vh;
 }
-.dropdown-container:hover .dropdown-content3 {
+.dropdown-container .dropdown-content3 {
   display: block;
   margin-left: 41.5vh;
 }
@@ -161,4 +161,8 @@
 .dropdown3 {
   background-color: #28a745; /* Green */
   color: #ffffff;
+}
+
+.parentarea {
+  margin-bottom: 10%;
 }
