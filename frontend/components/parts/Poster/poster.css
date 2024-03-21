@@ -298,3 +298,8 @@ input[type="email"]{
   animation: fade-in-up 1s ease-out; /* You can adjust the duration and timing function */
 }
 
+/* Mobile first styles */
+/* Keep default styles for mobile devices */
+
+/* Media queries for tablets and larger screens */
+

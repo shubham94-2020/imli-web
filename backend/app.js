@@ -1,6 +1,7 @@
 const express = require("express");
 // const blogRoutes=require('./routes/blogRoutes');
 const userRoutes = require("./routes/userRoutes");
+const programRoute = require("./routes/programRoute");
 // const resourceRoutes=require('./routes/resourceRoutes');
 
 const app = express();
