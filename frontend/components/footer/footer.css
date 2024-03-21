@@ -7,19 +7,7 @@ body {
   margin: 0; /* Remove default margin */
 }
 
-.footer {
-  margin-top: auto; /* Push the footer to the bottom */
-  width: 100%;
-  min-height: 100px; /* Minimum height of the footer */
-  padding: 0 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  box-shadow: 20px 15px 25px rgb(187, 190, 190);
-  border-radius: 6px;
-}
+
 .button-container {
     text-align: center;
     margin-top: 20px;
@@ -107,4 +95,21 @@ body {
   .menu__link {
     font-size: 1.2rem;
   }
+}
+
+
+.footer {
+  margin-top: auto; 
+  margin-bottom: 0;
+  padding-bottom:0 ;
+  width: 100%;
+  min-height: 100px; 
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 20px 15px 25px rgb(187, 190, 190);
+  border-radius: 6px;
 }

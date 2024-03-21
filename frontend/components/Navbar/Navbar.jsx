@@ -47,7 +47,7 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link>About us</Link>
+            <Link>AboutUs</Link>
             {showProgramDropdown && (
               <div
                 className="dropdown-content"
@@ -55,7 +55,7 @@ function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 <Link to="/about">Who we are</Link>
-                <Link to="/program2">Meet our team</Link>
+                <Link to="/program3">Meet our team</Link>
               </div>
             )}
           </li>
@@ -83,10 +83,10 @@ function Navbar() {
             <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog & Press</Link>
+            <Link to="/blogs">Blog&Press</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">ContactUs</Link>
           </li>
         </ul>
       </nav>
@@ -119,7 +119,7 @@ function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 <Link to="/about">Who we are</Link>
-                <Link to="/program2">Meet our team</Link>
+                <Link to="/program3">Meet our team</Link>
               </div>
             )}
           </li>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .text-center {
   font-size: 20px;
   line-height: 35px;
@@ -166,3 +167,172 @@
 .parentarea {
   margin-bottom: 10%;
 }
+=======
+.text-center {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  padding: 20px 100px 40px 100px;
+}
+
+.heading-center {
+  text-align: center;
+  padding: 20px 100px 10px 100px;
+}
+
+.heading-left {
+  text-align: left;
+}
+
+.parentarea {
+  margin-bottom: 10%;
+}
+.heading {
+  font-weight: 600;
+  font-size: 34px;
+  text-decoration: underline;
+  font-family: "Raleway", sans-serif; /* Use Raleway Regular 400 */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin: 0 10px;
+  padding: 40px 20px;
+  font-size: 22px;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group .button-one {
+  background-color: #007bff; /* Blue */
+  color: #ffffff;
+}
+
+.button-group .button-two {
+  background-color: #ffc107; /* Orange */
+  color: #000000;
+}
+
+.button-group .button-three {
+  background-color: #28a745; /* Green */
+  color: #ffffff;
+}
+
+.button-group button:hover {
+  background-color: darken(10%, currentColor);
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-container button {
+  margin: 0px 20px;
+  padding: 10px 20px; /* Adjusted padding */
+  font-size: 22px;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-container .dropdown-content1,
+.dropdown-container .dropdown-content2,
+.dropdown-container .dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: white; /* Changed background color */
+  width: 250px; /* Set width to auto */
+  max-width: 600px; /* Set maximum width for the dropdown */
+  padding: 10px; /* Added padding */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  z-index: 1;
+  top: 8.5vh; /* Position below the button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  height: auto;
+}
+ 
+.dropdown-container .dropdown-content1 {
+  display: block;
+  margin-left: -43.5vh;
+}
+.dropdown-container .dropdown-content2 {
+  display: block;
+  margin-left: 0vh;
+}
+.dropdown-container .dropdown-content3 {
+  display: block;
+  margin-left: 44vh;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-link {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer; /* Indicate clickable behavior */
+  color: inherit; /* Inherit text color from parent element */
+  font-weight: bold; /* Optional: Make text bolder */
+  text-decoration: none; /* Remove default button underline */
+}
+
+.nav-link.active {
+  text-decoration: underline yellow 2px; /* Yellow underline, 2px thick */
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+  position: relative;
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+  margin: 0px 20px;
+  padding: 20px 40px; /* Adjusted padding */
+  font-size: 22px;
+  line-height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 250px; /* Increased width */
+  height: 60px; /* Increased height */
+}
+
+.dropdown1 {
+  background-color: #007bff; /* Blue */
+  color: #ffffff;
+}
+
+.dropdown2 {
+  background-color: #ffc107; /* Orange */
+  color: #000000;
+}
+
+.dropdown3 {
+  background-color: #28a745; /* Green */
+  color: #ffffff;
+}
+>>>>>>> 86b18145b85aca319a2404453d076713bf40b603

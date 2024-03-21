@@ -52,7 +52,7 @@
   color: #108110;
   padding-left: 1.5%;
   font-family: "centaur";
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 600;
 }
 
@@ -187,7 +187,7 @@
   .logo {
     display: flex;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 33rem;
     /* justify-content: center; */
     gap: 20px;
   }
@@ -233,7 +233,7 @@
 
   .ham {
     display: flex;
-    margin-top: -8px;
+    margin-top: -18px;
     margin-right: 8px;
   }
 }
