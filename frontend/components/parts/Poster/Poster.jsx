@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./poster.css";
 import imageSlide from "../export_image_object/Image_object";
 import ImageSlider from "./img";
-import JoinUs from "./joinus"
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
@@ -93,9 +92,6 @@ function Poster() {
   // State to track whether the "Why we are here" section is in view
   const [isWhyInView, setIsWhyInView] = useState(false);
 
-  const auth = localStorage.getItem("user");
-  const user = auth ? JSON.parse(auth) : null;
-  const isAdmin = user && user.email === "alaknanda@gmail.com";
   useEffect(() => {
     // Function to handle intersection of the "Why we are here" section
     const handleIntersection = (entries) => {
@@ -119,19 +115,19 @@ function Poster() {
   }, []);
 
   const slides = [
-    { url: "i1.jpg", programName: "IMLi Early Childhood Education" ,a:"Program1"},
-    { url: "i2.jpg", programName: "IMLi English Language Reading and Writing" ,a:"Program2"},
-    { url: "i3.jpg", programName: "IMLi Multilingual Hub",a:"Program3" },
-    { url: "i4.jpg", programName: "IMLi Teacher Training Programs",a:"Program4" },
-    { url: "i5.jpg", programName: "IMLi 3D Learning Program" ,a:"Program5"},
+    { url: "i1.jpg", programName: "Early Childhood Education" ,a:"Program1"},
+    { url: "i2.jpg", programName: "English Language Reading and Writing" ,a:"Program2"},
+    { url: "i6.jpg", programName: "Multilingual Education",a:"Program3" },
+    { url: "i8.jpg", programName: "Teacher Training Programs",a:"Program4" },
+    { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
   ];
   const containerStyles = {
     width: "100%",
     height: "80vh",
   };
- 
+
   return (
-    <div  style={{ textAlign: "justify" }}>
+    <div div style={{ textAlign: "justify" }}>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
@@ -164,7 +160,7 @@ function Poster() {
             {editMode[index] ? (
               <button onClick={() => saveChanges(index)}>Save Changes</button>
             ) : (
-              isAdmin && (<button onClick={() => handleEdit(index)}>Edit</button>)
+              <button onClick={() => handleEdit(index)}>Edit</button>
             )}
           </div>
         ))}
@@ -214,10 +210,4 @@ function Poster() {
   );
 }
 
-
-//login
-
-//uname :: 
-//locals storage save
-//take from local storage.....
 export default Poster;
