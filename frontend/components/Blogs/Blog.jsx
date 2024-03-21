@@ -69,7 +69,7 @@ function Blog() {
       </div>
       <Link to="/blog_input">
         <div className="delete_button add_button">
-          {isAdmin && (<button className="custom-button">Add Blogs</button>)}
+          {isAdmin && (<button className="custom-button custom-button2">Add Blogs</button>)}
         </div>
       </Link>
     </>
