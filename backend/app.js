@@ -2,10 +2,11 @@ const express = require("express");
 // const blogRoutes=require('./routes/blogRoutes');
 const emailRoutes = require("./routes/emailRoutes");
 const userRoutes = require("./routes/userRoutes");
+const programRoute = require("./routes/programRoute");
 const emailjs = require('emailjs-com');
 const Email = require('./models/emailSchema'); // Assuming you have an Email model
 // const resourceRoutes=require('./routes/resourceRoutes');
-
+const programRoute=require('./routes/programRoute');
 const app = express();
 const cors=require("cors");
 app.use(cors({ origin: "http://localhost:5173" }));
