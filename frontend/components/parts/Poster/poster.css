@@ -274,3 +274,7 @@ input[type="email"] {
 .fade-in-up {
   animation: fade-in-up 1s ease-out; /* You can adjust the duration and timing function */
 }
+
+.ContactIcons > * {
+  margin-right: 15px; /* Adjust spacing as needed */
+}

@@ -1,11 +1,37 @@
 import React, { useState } from 'react';
 import './resources.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
 
 const ResourcesPage = () => {
   const [selectedOption, setSelectedOption] = useState('introduction');
 
+  const [showDropdown1, setShowDropdown1] = useState(false);
+  const [showDropdown2, setShowDropdown2] = useState(false);
+  const [showDropdown3, setShowDropdown3] = useState(false);
+
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+  };
+  const handleMouseLeave=()=>{
+    setShowDropdown1(false);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+  }
+
+  const toggleDropdown1 = () => {
+    setShowDropdown1(!showDropdown1);
+    setShowDropdown2(false);
+    setShowDropdown3(false);
+  };
+  const toggleDropdown2 = () => {
+    setShowDropdown2(!showDropdown2);
+    setShowDropdown1(false);
+    setShowDropdown3(false);
+  };
+  const toggleDropdown3 = () => {
+    setShowDropdown3(!showDropdown3);
+    setShowDropdown1(false);
+    setShowDropdown2(false);
   };
 
   return (
@@ -51,17 +77,55 @@ const ResourcesPage = () => {
           <p>
             Discover high quality, relevant student-facing learning materials which have been deftly compiled by IMLi’s team of curriculum experts. You will find audio clips, videos and worksheets to learn from and practice with. Simply click below on the relevant subject, to find topic-wise learning and practice materials. Materials are available for students aged 5-10 (stds. 1-5). If you are looking for teacher professional development content, <a href="#" onClick={() => handleOptionClick('teacherEducator')} style={{ color: 'green' }}>please click here</a> . You will find lesson planning and teacher professional development materials here.
           </p>
+<br />
           <div className="dropdown-container">
-            <button className="dropdown-container dropButton-one">English</button>
-            <button className="dropdown-container dropButton-two">Indian Languages</button>
-            <button className="dropdown-container dropButton-three">3D Learning</button>
+            <button className="dropdown1"
+            onClick={toggleDropdown1}>English</button>
+            {showDropdown1 && (
+              <div
+                className="dropdown-content1"
+                // onMouseEnter={handleMouseEnter1}
+                onMouseLeave={handleMouseLeave}
+              >
+                <p>Phonics</p><br /> 
+                <p>Reading Comprehension</p><br /> 
+                <p>Writing</p>
+              </div>
+            )}
+
+            <button className="dropdown2"
+            onClick={toggleDropdown2}>Indian Languages</button>
+            {showDropdown2 && (
+              <div
+                className="dropdown-content2"
+                onMouseLeave={handleMouseLeave}
+              >
+                <p>Marathi</p><br /> 
+                <p>Tamil</p><br /> 
+                <p>Hindi</p><br /> 
+                <p>Tribal Languages</p>
+              </div>
+            )}
+            <button className="dropdown3"
+            onClick={toggleDropdown3}>3D Learning</button>
+            {showDropdown3 && (
+              <div
+                className="dropdown-content3"
+                // onMouseEnter={handleMouseEnter1}
+                onMouseLeave={handleMouseLeave}
+              >
+                <p>ThinkBox</p><br /> 
+                <p>SEL Material</p><br /> 
+                <p>STEM</p>
+              </div>
+            )}
             {/* Add dropdown content for each button (implementation omitted for brevity) */}
-            <div className="dropdown-content">
+            {/* <div className="dropdown-content">
         <button onClick={() => handleDropdownOptionClick('Marathi')} className="dropdown-item">Marathi</button>
         <button onClick={() => handleDropdownOptionClick('Tamil')} className="dropdown-item">Tamil</button>
         <button onClick={() => handleDropdownOptionClick('Hindi')} className="dropdown-item">Hindi</button>
         <button onClick={() => handleDropdownOptionClick('Tribal Languages')} className="dropdown-item">Tribal Languages</button>
-      </div>
+      </div> */}
           </div>
         </div>
         )}
