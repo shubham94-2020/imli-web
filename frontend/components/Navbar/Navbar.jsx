@@ -66,19 +66,8 @@ function Navbar() {
               </div>
             )}
           </li>
-<<<<<<< HEAD
-          <li
-            className="dropdown"
-            onMouseEnter={toggleProgramDropdown}
-            onMouseLeave={toggleProgramDropdown}
-          >
-            <li>
-              <Link to="/resources">Resources</Link>
-            </li>
-=======
           <li>
             <Link to="/resources">Resources</Link>
->>>>>>> 5f5d628b8b13c97503a3ddc525a82bd368263c1c
           </li>
           <li>
             <Link to="/blogs">Blog & Press</Link>

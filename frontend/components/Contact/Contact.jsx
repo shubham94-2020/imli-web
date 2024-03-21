@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
@@ -7,6 +8,30 @@ import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
 const ContactUs = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_97dzq8k", "template_pzrugh7", form.current, {
+        name:form.current.name.value,
+        email: form.current.email.value, // Get the email from the form
+        subject: form.current.subject.value, // Get the email from the form
+        message: form.current.message.value, // Get the email from the form
+        publicKey: "B0fVLyabPeys4qZqZ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          window.alert("Thank you for contacting !!  We will get back to you shortly ");
+          form.current.reset(); // Clear the input field
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          window.alert("Please try again."); // Alert for failure
+        }
+      );
+  };
   return (
     <div className="contact-us-container">
       <div className="contact-us-text">
@@ -26,7 +51,7 @@ const ContactUs = () => {
       </div>
       <div className="Contact">
         <div className="contact-us-form">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             {/* <label htmlFor="name">Name:</label> */}
             <input
               type="text"

@@ -3,14 +3,14 @@ import "./Program4.css";
 import { useState, useEffect } from "react";
 
 function Program2() {
-    const [showDetails, setShowDetails] = useState(false);
-    const auth = localStorage.getItem("user");
-    const user = auth ? JSON.parse(auth) : null;
-    const isAdmin = user && user.email === "alaknanda@gmail.com";
+  const [showDetails, setShowDetails] = useState(false);
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
   const [error, setError] = useState(false);
+  const auth = localStorage.getItem("user");
+  const user = auth ? JSON.parse(auth) : null;
+  const isAdmin = user && user.email === "alaknanda@gmail.com";
 
   // const navigate=useNavigate();
 
@@ -22,9 +22,9 @@ function Program2() {
     try {
       let result = await fetch("http://localhost:3000/programs", {
         method: "get",
-        headers: {
-          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
-        },
+        // headers: {
+        //   authorization: bearer ${JSON.parse(localStorage.getItem("token"))},
+        // },
       });
 
       result = await result.json();
@@ -73,10 +73,10 @@ function Program2() {
     try {
       let result = await fetch("http://localhost:3000/programs", {
         method: "DELETE",
-        headers: {
-          authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
-          "Content-Type": "application/json",
-        },
+        // headers: {
+        //   authorization: bearer ${JSON.parse(localStorage.getItem("token"))},
+        //   "Content-Type": "application/json",
+        // },
         body: JSON.stringify({ title: title }),
       });
 
@@ -163,12 +163,10 @@ function Program2() {
           </li>
         </ul>
       </div>
-      {isAdmin && showDetails && <h1> </h1>}
-      <button onClick={toggleDetails()}>
-        {" "}
+      <button onClick={toggleDetails}>
         {showDetails ? "Show Less" : "Read More"}
       </button>
-      {showDetails && (
+      {isAdmin && showDetails && (
         <>
           <div className="program-form">
             <input
