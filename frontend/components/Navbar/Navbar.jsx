@@ -30,7 +30,6 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li
-            className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -47,7 +46,6 @@ function Navbar() {
             )}
           </li>
           <li
-            className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
