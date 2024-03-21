@@ -50,7 +50,7 @@ function Blog() {
               <div className="text_areaa ">
                 <h2>{blog.title}</h2>
                 <br />
-                <p className="overflow_body">{blog.body}</p>
+                <p>{blog.body}</p>
               </div>
             </div>
             <div className="delete_button">

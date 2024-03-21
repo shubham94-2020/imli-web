@@ -174,9 +174,18 @@
   }
 }
 
+.sidebar{
+  display: none;
+}
 
+.ham{
+  display: none;
+}
 
 @media screen and (max-width: 400px) {
+  .navbar{
+    height: auto;
+  }
   .logo{
     display: flex;
     align-items: center;
@@ -191,7 +200,43 @@
   }
 
   .logo span{
-    font-size: 1.2rem;
+    margin-top: 15px;
+    font-size: 1.4rem;
+  }
+
+.upper{
+  display: none;
+}
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 250px;
+    display: none;
+  }
+
+  .sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close{
+    /* display: flex; */
+    margin-top: 50px;
+    padding-left: 200px;
+    /* margin-left: 5px; */
+    /* margin-right: 10px; */
+  }
+
+  .ham{
+    display: flex;
+    margin-top: -8px;
+    margin-right: 8px;
   }
   
 }
