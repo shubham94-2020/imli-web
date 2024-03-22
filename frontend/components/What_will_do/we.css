@@ -48,7 +48,7 @@
   margin: 0 auto;
   font-size: 1.1rem;
   width: 110%;
-  //word-break: break-all;
+  word-break: break-all;
   hyphens: auto;
 }
 
@@ -108,6 +108,7 @@
 
 .card-content {
   padding: 10px;
+  background-color: #fff;
 }
 
 .card-title {
@@ -123,7 +124,7 @@
   display: flex;
   justify-content: space-between; /* Adjusted to evenly space the cards */
   align-items: flex-start;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-top: 3%;
   margin-left: 1%;
   margin-right: 2%;
@@ -131,16 +132,22 @@
 }
 
 .card {
-  width: 190px; /* Adjusted width to fit three cards per row with spacing */
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  width: 200px; /* Adjusted width to fit three cards per row with spacing */
+  /* border: solid #ccc; */
   border-radius: 8px;
-  margin-bottom: 20px; /* Added margin for spacing between rows */
+  margin-bottom: 10px; /* Added margin for spacing between rows */
   margin-top: 3%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
+.card:hover{
+  transform: translateY(-5px);
+}
 .courses-sec {
   margin-top: 3%;
-  background-color: rgba(252, 233, 206, 0.85);
+  
   padding-bottom: 40px;
   background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
 }
