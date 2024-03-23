@@ -180,7 +180,7 @@
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .navbar {
     height: auto;
   }
@@ -200,7 +200,8 @@
   .logo span {
     margin-top: 15px;
     font-size: 1.1rem;
-    margin-left: -5px;
+    margin-left:0;
+    margin-right: auto;
   }
 
   .upper {

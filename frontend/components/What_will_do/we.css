@@ -193,7 +193,7 @@
 }
 
 /* Added media query for responsiveness */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .how_we h1{
     font-size:2rem ;
   }
