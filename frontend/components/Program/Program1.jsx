@@ -98,7 +98,7 @@ function Program1() {
     <div className="ece-container">
       <img src="/i1.jpg" alt="program1" className="image" />
       <h2>Early Childhood Education</h2>
-      <p>
+      <p> 
         Parents and policy makers all agree - early childhood is a pivotal phase
         in human development as the child learns and develops the most in this
         period. In India, this is seen through the widespread presence of

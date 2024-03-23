@@ -113,3 +113,11 @@ body {
   box-shadow: 20px 15px 25px rgb(187, 190, 190);
   border-radius: 6px;
 }
+
+@media only screen and (max-width: 400px) {
+
+  .menu__link {
+    font-size:0.9rem;
+  }
+
+}

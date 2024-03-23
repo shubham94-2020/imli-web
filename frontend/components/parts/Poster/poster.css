@@ -158,8 +158,19 @@ img {
   width: 90%;
 }
 
+
 .about-us h1 {
   font-size: 320%;
+}
+@media only screen and (max-device-width: 400px) and (orientation: portrait) {
+  .why-we-are-here {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin: 0;
+  }
+
+  .about-us h1 {
+    font-size: 220%;
+  }
 }
 
 /* .bg{

@@ -52,3 +52,37 @@
 .ece-container button:hover {
   background-color: #2f8d50f8;
 }
+
+@media only screen and (max-width: 400px) {
+  .ece-container{
+    margin-left: 10px;
+    margin-right:0 ;
+    padding-right: 0.4rem;
+  }
+  .ece-container h2{
+    font-size: 1.8rem;
+  }
+  .ece-container p{
+    font-size: 1rem;
+  }
+  .ece-container h3{
+    font-size: 1.5rem;
+  }
+  .ece-container li{
+    font-size: 1rem;
+  }
+  .ece-container ul{
+    margin: 0;
+    padding: 0;
+  }
+  .image{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 120%; /* Adjust the width as needed */
+    height: 100%;
+  }
+}
+
+
+
