@@ -1,5 +1,8 @@
-/* created by shubham patil */
+/* Aboutus.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common styles */
 h1 {
   font-size: 46px;
   line-height: 42px;
@@ -9,39 +12,20 @@ h1 {
   text-align: center;
   font-family: "Lato", sans-serif;
 }
-.cont {
-  display: flex;
-  padding-left: 100px;
-  margin-top: 50px; 
-}
-.text-content {
-  width: 692px;
-  height: 310px;
-  padding-top: 10px;
-  padding-left: 30px;
-  color: #7c7b79;
-  font-size: 19px;
-}
-
-.about-us {
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-}
-.hrline
-{
-  padding-left: 39rem;
-}
 
 .about-imli-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 10%;
+  
+}
+
+.about-us {
+  padding: 10px;
 }
 
 .about-imli-container h2 {
   color: #333;
-  
 }
 
 .about-imli-container p {
@@ -59,25 +43,78 @@ h1 {
   margin-bottom: 10px;
 }
 
-.vision{
+.vision {
   margin-top: 4rem;
   background-color: #1683cb;
-  width:100%;
+  width: 100%;
   color: white;
   text-align: center;
-  height: 50%;
   font-size: 1.5rem;
-  border: 2px solid black ;
+  border: 2px solid black;
   padding: 1.5rem;
 }
-.vision p{
+
+.vision p {
   text-align: center;
   margin: 1rem;
 }
 
-.vision ul{
+.vision ul {
   padding-left: 10%;
   text-align: left;
   margin-top: 2rem;
 }
 
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cont {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .about-imli-container {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+  .about-imli-container p {
+    font-size: 0.8rem;
+  }
+  .about-imli-container h2 {
+    font-size: 0.9rem;
+  }
+  .text-content {
+    font-size: 5px;
+  }
+  .vision h2{
+    font-size: 1.5rem;
+  }
+  .vision p{
+    font-size: 0.9rem;
+  }
+  .vision li{
+    font-size: 0.9rem;
+  }
+  .cont {
+    padding-left: 10px;
+  }
+
+  .about-imli-container {
+    padding: 0 2%;
+  }
+}

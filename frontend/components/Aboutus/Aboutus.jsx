@@ -10,7 +10,7 @@ const Aboutus= () => {
           IMLi Education Foundation was started in 2018 with the core idea that
           every student, no matter his circumstances and language, has the right
           to an excellent education and gain the skills needed to be
-          future-ready.
+          future-ready. 
         </p>
         <p>
           IMLi helped set up mini-libraries in anganwadis and schools in
