@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showProgramDropdown, setShowProgramDropdown] = useState(false);
+  const [sidebarOpened, setSidebarOpened] = useState(false);
 
   const handleMouseEnter = () => {
     setShowProgramDropdown(true);
@@ -28,10 +29,13 @@ function Navbar() {
           />
           <span>Institute for Multilingual Education</span>
         </div>
-        <div className="ham" onClick={()=>{
-          const sidebar = document.querySelector(".sidebar");
-          sidebar.style.display = "flex";
-        }}>
+        <div
+          className="ham"
+          onClick={() => {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
@@ -47,17 +51,7 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link>AboutUs</Link>
-            {showProgramDropdown && (
-              <div
-                className="dropdown-content"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link to="/about">Who we are</Link>
-                <Link to="/program3">Meet our team</Link>
-              </div>
-            )}
+            <Link to="/about">AboutUs</Link>
           </li>
           <li
             className="dropdown"
@@ -90,13 +84,16 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-
-      <nav className="navbar sidebar">
+      <nav className={`navbar sidebar ${sidebarOpened ? "opened" : ""}`}>
         <ul className="nav-links">
-          <li className="close" onClick={()=>{
-          const sidebar = document.querySelector(".sidebar");
-          sidebar.style.display = "none";
-        }}>
+          <li
+            className="close"
+            onClick={() => {
+              setSidebarOpened(!sidebarOpened);
+              const sidebar = document.querySelector(".sidebar");
+              sidebar.style.display = "none";
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -106,29 +103,23 @@ function Navbar() {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </li>
-          <li
-            className="dropdown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <Link>About us</Link>
-            {showProgramDropdown && (
-              <div
-                className="dropdown-content"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link to="/about">Who we are</Link>
-                <Link to="/program3">Meet our team</Link>
-              </div>
-            )}
+          <li>
+            <Link to="/about">About us</Link>
           </li>
           <li
             className="dropdown"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/program">Programs</Link>
+            <Link
+              to="/program"
+              onClick={() => {
+                console.log(showProgramDropdown);
+                setShowProgramDropdown(!showProgramDropdown);
+              }}
+            >
+              Programs
+            </Link>
             {showProgramDropdown && (
               <div
                 className="dropdown-content"
@@ -139,7 +130,7 @@ function Navbar() {
                 <Link to="/program2">English Language Reading and Writing</Link>
                 <Link to="/program3">Multilingual Hub</Link>
                 <Link to="/program4">Teacher Training Programs</Link>
-                <Link to="/program3">3D Learning Program</Link>
+                <Link to="/program5">3D Learning Program</Link>
               </div>
             )}
           </li>

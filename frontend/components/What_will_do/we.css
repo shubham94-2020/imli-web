@@ -101,7 +101,7 @@
 .card-image {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -114,10 +114,14 @@
 .card-title {
   font-size: 18px;
   margin-bottom: 5px;
+  word-break: break-all;
+  hyphens: auto;
 }
 
 .card-text {
   font-size: 14px;
+  word-break: break-all;
+  hyphens: auto;
 }
 
 .courses {
@@ -139,16 +143,15 @@
   margin-bottom: 10px; /* Added margin for spacing between rows */
   margin-top: 3%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-5px);
 }
 .courses-sec {
   margin-top: 3%;
   overflow: visible;
-  
+
   padding-bottom: 40px;
   background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
 }
@@ -158,7 +161,8 @@
 }
 
 .chat-button {
-  background-color: #25d366; /* WhatsApp green color */
+  /* background-color: #25d366; WhatsApp green color */
+  background-color: #f7c81b;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -204,7 +208,7 @@
     margin-right: 0;
     padding: 0;
   }
-  .content_area h2{
+  .content_area h2 {
     font-size: 1rem;
   }
   .content_area {
@@ -215,41 +219,39 @@
     height: 55px;
     border-radius: 25%;
   }
-  .courses-sec h1{
+  .courses-sec h1 {
     font-size: 2.2rem;
   }
-  .chat-button{
-  border-radius: 2px;
-  padding: 0;
-  width: 100%;
-  height: 1.35rem;
-  font-size: 13px;
+  .chat-button {
+    border-radius: 2px;
+    padding: 0;
+    width: 100%;
+    height: 1.35rem;
+    font-size: 13px;
   }
-  .chat-button a{
-     margin-left: 0.8rem;
+  .chat-button a {
+    margin-left: 0.8rem;
   }
-  .card-text{
+  .card-text {
     font-size: 0.8rem;
   }
-  .card-title{
+  .card-title {
     font-size: 0.8rem;
   }
-  .courses{
+  .courses {
     flex-wrap: wrap;
   }
-  .card{
+  .card {
     width: 150px;
   }
-  .chat-button img{
+  .chat-button img {
     position: absolute;
-    margin-left:15px ;
+    margin-left: 15px;
     margin-top: 0px;
-    height: 1.3rem ;
-    width: 1.3rem ;
+    height: 1.3rem;
+    width: 1.3rem;
   }
-  .card-image{
+  .card-image {
     height: 80px;
   }
 }
-
-

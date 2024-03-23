@@ -98,10 +98,10 @@ function Program3() {
       <img src="/i6.jpg" alt="program4" className="image" />
       <h2>Multilingual Education </h2>
       <p>
-        Students who are taught in their mother tongue or home language perform
-        better academically. Access to the curriculum becomes easier, leading to
-        confident learners who can transfer their skills and knowledge to other
-        languages.
+        Children’s languages empower them to communicate with others, but also
+        provide them an anchor to their culture and identity. At IMLi, we
+        believe in the power of multilingual education in the classroom and
+        beyond.
       </p>
 
       <div>
@@ -135,7 +135,7 @@ function Program3() {
           skills in English.
         </p>
       </div>
-      
+
       <button onClick={toggleDetails}>
         {" "}
         {showDetails ? "Show Less" : "Read More"}
@@ -167,9 +167,7 @@ function Program3() {
               <button onClick={addProgram}>Add</button>
             </div>
           )}
-          {
-           
-          programs
+          {programs
             .filter((program) => program.id === 4)
             .map((program) => (
               <div key={program.id} className="program">

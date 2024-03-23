@@ -60,7 +60,7 @@ function Blog() {
               systematic decoding. This leads to a disconnect between textbook
               expectations and early readers' capabilities. Pre-primary schools
               often emphasize rote learning of alphabet names and writing,
-              sprinkled with some phonics activities and decodables. 
+              sprinkled with some phonics activities and decodables.
             </p>
           </div>
         </div>
@@ -78,13 +78,19 @@ function Blog() {
             </h2>
             <br></br>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci fugit sed voluptatem repudiandae nostrum quibusdam
-              dolorem fuga vel officia vero quas odit animi qui doloremque
-              assumenda, modi quia aspernatur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. git sed voluptatem repudiandae
-              nostrum quibusdam dolorem fuga vel officia vero quas odit animi
-              qui doloremque assumenda, modi quia aspernatur.
+              Children’s languages empower them to communicate with others, but
+              also provide them an anchor to their culture and identity. At
+              IMLi, we believe in the power of multilingual education in the
+              classroom and beyond.Students who are taught in their mother
+              tongue or home language perform better academically. Access to the
+              curriculum becomes easier, leading to confident learners who can
+              transfer their skills and knowledge to other languages.We believe
+              that multilingual education implies ensuring equal opportunities
+              for learning, regardless of a student's linguistic background. It
+              fosters a sense of belonging, identity, and reduces
+              discrimination. Our approach caters to the linguistic realities
+              and needs of learners while respecting constitutional provisions
+              and the National Education Policy.
             </p>
           </div>
         </div>
@@ -131,13 +137,20 @@ function Blog() {
             </h2>
             <br></br>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci fugit sed voluptatem repudiandae nostrum quibusdam
-              dolorem fuga vel officia vero quas odit animi qui doloremque
-              assumenda, modi quia aspernatur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. git sed voluptatem repudiandae
-              nostrum quibusdam dolorem fuga vel officia vero quas odit animi
-              qui doloremque assumenda, modi quia aspernatur.
+              In a rapidly changing global landscape, the traditional focus on
+              academic achievements is no longer sufficient. The need for
+              empathy and compassion is paramount in fostering harmonious
+              societies. Mindfulness contributes to mental well-being and
+              enhances the learning process. SEL improves student's attitudes
+              toward learning and their self-awareness and self-efficacy.
+              Critical inquiry equips children with the ability to think deeply,
+              solve problems, and navigate the complex information ecosystem.At
+              IMLi Education, we recognize the evolving demands of the 21st
+              century and the vital role of education in meeting these
+              challenges. Our 3D Learning Program is designed to integrate
+              Socio-Emotional Learning (SEL) and essential 21st-century skills,
+              focusing on Empathy, Mindfulness, Compassion, and Critical Inquiry
+              (EMCC).
             </p>
           </div>
         </div>

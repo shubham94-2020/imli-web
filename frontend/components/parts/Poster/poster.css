@@ -5,6 +5,10 @@
   position: relative;
   margin: 0;
 }
+.containerStyles{
+    width: 100%;
+    height: 80vh;
+}
 .description {
   width: 600x;
   position: absolute;
@@ -123,8 +127,37 @@
   .arrow-button {
     font-size: 20px; /* Decrease font size for smaller screens */
   }
-}
+  .why-we-are-here {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .other-section {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    line-height:normal;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
 
+  .about-us h1 {
+    font-size: 2.2rem;
+  }
+  .JoinUs h1{
+    font-size: 2.2rem;
+  }
+  .JoinUs p{
+    margin-top: 7px;
+    margin-bottom: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1rem;
+  }
+ .containerStyles{
+    height: 40vh;
+  } 
+} 
 /* WhyWeAreHere.css */
 
 /* WhyWeAreHere.css */
@@ -312,4 +345,7 @@ input[type="email"] {
     font-size: 1rem;
     text-align: center;
   }
-}
+ .containerStyles{
+    height: 40vh;
+  } 
+} 

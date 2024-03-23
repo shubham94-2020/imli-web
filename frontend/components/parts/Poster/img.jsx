@@ -1,56 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-const slideStyles = {
-  width: "100%",
-  height: "100%",
-  borderRadius: "10px",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-};
-
-const rightArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  right: "32px",
-  fontSize: "45px",
-  color: "#fff",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const leftArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  left: "32px",
-  fontSize: "45px",
-  color: "#fff",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const sliderStyles = {
-  position: "relative",
-  height: "90%",
-  width:"80%",
-  borderRadius: "10px",
-  boxShadow: "0px 4px 10px ",
-  marginTop:"20px"
-  
-};
-
-const dotsContainerStyles = {
-  display: "flex",
-  justifyContent: "center",
-};
-
-const dotStyle = {
-  margin: "0 7px",
-  cursor: "pointer",
-  fontSize: "20px",
-};
+import "./img.css"; // Import the CSS file
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -68,55 +18,37 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
   const slideStylesWidthBackground = {
-    ...slideStyles,
+    width: "100%",
+    height: "100%",
+    borderRadius: "10px",
     backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   return (
-    <div style={sliderStyles}>
+    <div className="slider">
+      {" "}
+      {/* Use the className instead of inline styles */}
       <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
-          ❰
+        <div onClick={goToPrevious} className="left-arrow">
+          {" "}
+          {/* Use the className instead of inline styles */}❰
         </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
-          ❱
+        <div onClick={goToNext} className="right-arrow">
+          {" "}
+          {/* Use the className instead of inline styles */}❱
         </div>
       </div>
       <Link to={`/${slides[currentIndex].a}`}>
-        <div style={slideStylesWidthBackground}>
-          <div
-            style={{
-              textAlign: "center",
-              color: "#fff",
-              marginTop: "10px",
-              position: "absolute",
-              zIndex: "50",
-              bottom: "10px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              fontSize: "50px",
-              // fontFamily: "Lato"
-              fontFamily: "centuar",
-              // fontfamily: "Montserrat",
-              fontWeight: 500,
-            }}
-          >
+        <div style={slideStylesWidthBackground} className="slide">
+          {" "}
+          {/* Use the className instead of inline styles */}
+          <div className="posterContent">
             {slides[currentIndex].programName}
           </div>
         </div>
       </Link>
-
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div
-            style={dotStyle}
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-          >
-            ●
-          </div>
-        ))}
-      </div>
     </div>
   );
 };
