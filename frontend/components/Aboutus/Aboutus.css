@@ -1,7 +1,7 @@
 /* created by shubham patil */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 h1 {
-  font-size: 42px;
+  font-size: 46px;
   line-height: 42px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -12,7 +12,7 @@ h1 {
 .cont {
   display: flex;
   padding-left: 100px;
-  margin-top: 50px;
+  margin-top: 50px; 
 }
 .text-content {
   width: 692px;
@@ -22,12 +22,7 @@ h1 {
   color: #7c7b79;
   font-size: 19px;
 }
-.video {
-  border-width: 3px;
-  border-color: #6da644;
-  box-shadow: none;
-  border-radius: 5px;
-}
+
 .about-us {
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,3 +32,52 @@ h1 {
 {
   padding-left: 39rem;
 }
+
+.about-imli-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.about-imli-container h2 {
+  color: #333;
+  
+}
+
+.about-imli-container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.about-imli-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-imli-container li {
+  margin-bottom: 10px;
+}
+
+.vision{
+  margin-top: 4rem;
+  background-color: #1683cb;
+  width:100%;
+  color: white;
+  text-align: center;
+  height: 50%;
+  font-size: 1.5rem;
+  border: 2px solid black ;
+  padding: 1.5rem;
+}
+.vision p{
+  text-align: center;
+  margin: 1rem;
+}
+
+.vision ul{
+  padding-left: 10%;
+  text-align: left;
+  margin-top: 2rem;
+}
+

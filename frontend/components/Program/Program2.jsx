@@ -166,9 +166,9 @@ function Program2() {
       <button onClick={toggleDetails}>
         {showDetails ? "Show Less" : "Read More"}
       </button>
-      {isAdmin && showDetails && (
+       showDetails && (
         <>
-          <div className="program-form">
+          {isAdmin &&<div className="program-form">
             <input
               type="text"
               placeholder="Enter program title"
@@ -190,23 +190,23 @@ function Program2() {
               <span className="invalid">Enter valid description</span>
             )}
             <button onClick={addProgram}>Add</button>
-          </div>
+          </div>}
           {programs
             .filter((program) => program.id === 2)
             .map((program) => (
               <div key={program.id} className="program">
                 <h3>{program.title}</h3>
                 <p>{program.description}</p>
-                <button
+                {isAdmin && <button
                   className="delete"
                   onClick={() => deleteProgram(program.title)}
                 >
                   Delete
-                </button>
+                </button>}
               </div>
             ))}
         </>
-      )}
+      )
     </div>
   );
 }

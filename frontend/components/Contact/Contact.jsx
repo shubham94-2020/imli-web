@@ -47,9 +47,9 @@ const ContactUs = () => {
         </p>
         <p>
           Reach us at{" "}
-          <a href="askimli@imlieducation.com">
+          <a href="imli.education@gmail.com">
             {" "}
-            <b>askimli@imlieducation.com</b>
+            <b>imli.education@gmail.com</b>
           </a>
         </p>
       </div>
@@ -63,7 +63,7 @@ const ContactUs = () => {
               name="name"
               placeholder="Name"
               required
-            />  
+            />
 
             {/* <label htmlFor="email">Email:</label> */}
             <input
@@ -123,10 +123,19 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="ContactIcons">  
-            <SocialIcon url="https://www.facebook.com/imli.education/" target="_blank" />
-            <SocialIcon url="https://www.youtube.com/@imli.education/featured" target="_blank"/>
-            <SocialIcon url="https://www.instagram.com/imli.education/" target="_blank" />
+          <div className="ContactIcons">
+            <SocialIcon
+              url="https://www.facebook.com/imli.education/"
+              target="_blank"
+            />
+            <SocialIcon
+              url="https://www.youtube.com/@imli.education/featured"
+              target="_blank"
+            />
+            <SocialIcon
+              url="https://www.instagram.com/imli.education/"
+              target="_blank"
+            />
           </div>
         </div>
       </div>
