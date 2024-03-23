@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showProgramDropdown, setShowProgramDropdown] = useState(false);
+  const [sidebarOpened, setSidebarOpened] = useState(false);
 
   const handleMouseEnter = () => {
     setShowProgramDropdown(true);
@@ -68,7 +69,7 @@ function Navbar() {
                 <Link to="/program2">English Language Reading and Writing</Link>
                 <Link to="/program3">Multilingual Education</Link>
                 <Link to="/program4">Teacher Training Programs</Link>
-                <Link to="/program5">3D Learning Program</Link>
+                <Link to="/program3">3D Learning Program</Link>
               </div>
             )}
           </li>
@@ -83,12 +84,12 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-
-      <nav className="navbar sidebar">
+      <nav className={`navbar sidebar ${sidebarOpened ? "opened" : ""}`}>
         <ul className="nav-links">
           <li
             className="close"
             onClick={() => {
+              setSidebarOpened(!sidebarOpened);
               const sidebar = document.querySelector(".sidebar");
               sidebar.style.display = "none";
             }}
@@ -102,11 +103,7 @@ function Navbar() {
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
           </li>
-          <li
-            className="dropdown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <li>
             <Link to="/about">About us</Link>
           </li>
           <li
@@ -114,7 +111,15 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/program">Programs</Link>
+            <Link
+              to="/program"
+              onClick={() => {
+                console.log(showProgramDropdown);
+                setShowProgramDropdown(!showProgramDropdown);
+              }}
+            >
+              Programs
+            </Link>
             {showProgramDropdown && (
               <div
                 className="dropdown-content"

@@ -141,7 +141,13 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.sidebar {
+  display: none;
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth animation */
+}
+.sidebar.opened {
+  transform: translateX(0); /* Move sidebar into view */
+}
 .dropdown-content a {
   /* display: inline-block; */
   white-space: nowrap;
@@ -236,5 +242,27 @@
     display: flex;
     margin-top: -18px;
     margin-right: 8px;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .sidebar .dropdown-content {
+    position: absolute;
+    /* background-color: white;*/
+    background-image:  url("https://pehlayakshar.org/wp-content/uploads/new-bg.png"); 
+    width: 38=0vh;
+    left: -100%;
+    font-size: 1.2rem;
+    box-shadow: none;
+    text-align: left;
+    z-index: 999;
+  }
+  .sidebar {
+    background-image:  url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
+    width: 35vh;
+    height: 50vh;
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    line-height:100%;
   }
 }
