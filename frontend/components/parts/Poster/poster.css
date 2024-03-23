@@ -313,8 +313,7 @@ input[type="email"] {
   margin-right: 15px; /* Adjust spacing as needed */
 }
 
-
-@media only screen and (max-device-width: 400px) and (orientation: portrait) {
+@media only screen and (max-device-width: 500px) and (orientation: portrait) {
   .why-we-are-here {
     font-size: 10px; /* Adjust font size for smaller screens */
     margin-left: 2px;
@@ -325,12 +324,15 @@ input[type="email"] {
     line-height:normal;
     margin-left: 2px;
     margin-right: 2px;
-    margin-top: -20px;
+    margin-top: -10px;
     margin-bottom: -20px;
   }
 
   .about-us h1 {
     font-size: 2.2rem;
+  }
+  .JoinUs{
+    margin-top: -50px;
   }
   .JoinUs h1{
     font-size: 2.2rem;
@@ -341,6 +343,7 @@ input[type="email"] {
     margin-left: 4px;
     margin-right: 4px;
     font-size: 1rem;
+    text-align: center;
   }
  .containerStyles{
     height: 40vh;
