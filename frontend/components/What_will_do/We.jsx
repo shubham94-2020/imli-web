@@ -73,7 +73,7 @@ function We() {
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a> */}
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
 
       </div> 
@@ -89,7 +89,7 @@ function We() {
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a> */}
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
@@ -104,7 +104,7 @@ function We() {
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a> */}
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
@@ -119,7 +119,7 @@ function We() {
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a> */}
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
@@ -134,7 +134,7 @@ function We() {
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a> */}
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
@@ -145,7 +145,7 @@ function We() {
         <p className="card-text">A collaborative space that provides students & teachers with functional english curriculum, digital aids, books and skilled personnel for improving their english literacy & 21st century skills.</p>
         <br />
         <button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a>
