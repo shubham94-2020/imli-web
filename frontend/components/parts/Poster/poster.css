@@ -162,16 +162,6 @@ img {
 .about-us h1 {
   font-size: 320%;
 }
-@media only screen and (max-device-width: 400px) and (orientation: portrait) {
-  .why-we-are-here {
-    font-size: 10px; /* Adjust font size for smaller screens */
-    margin: 0;
-  }
-
-  .about-us h1 {
-    font-size: 220%;
-  }
-}
 
 /* .bg{
   width: 100%;
@@ -190,17 +180,17 @@ img {
   font-size: 1.95rem;
   margin: 0 auto;
   line-height: 3.5rem;
-
+  
   /* Additional styling for an attractive background */
   border-radius: 15px; /* Adds rounded corners to the section */
   /* Adds a subtle box shadow for depth */
   overflow: hidden; /* Ensures content doesn't overflow rounded corners */
-
+  
   /* Gradient background for a more dynamic look */
-
+  
   /* Transition for smooth effects on hover */
   /* transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; */
-
+  
   /* Animation for continuous rotation */
   /* animation: rotate 10s linear infinite; */
 }
@@ -216,7 +206,7 @@ img {
 /*Join Us*/
 .JoinUs {
   /* background-color: #87A6EC; */
-
+  
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 20px;
@@ -288,4 +278,34 @@ input[type="email"] {
 
 .ContactIcons > * {
   margin-right: 15px; /* Adjust spacing as needed */
+}
+
+@media only screen and (max-device-width: 400px) and (orientation: portrait) {
+  .why-we-are-here {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .other-section {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    line-height:normal;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
+  .about-us h1 {
+    font-size: 2.2rem;
+  }
+  .JoinUs h1{
+    font-size: 2.2rem;
+  }
+  .JoinUs p{
+    margin-top: 7px;
+    margin-bottom: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1rem;
+  }
 }

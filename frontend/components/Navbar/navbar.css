@@ -199,7 +199,8 @@
 
   .logo span {
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-left: -5px;
   }
 
   .upper {

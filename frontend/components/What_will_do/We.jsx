@@ -29,7 +29,7 @@ function We() {
               <img src={img2} alt="shubham's image"></img>
             </div>
             <div className="content_area">
-              <h2>Create</h2>
+              <h2>Create</h2> 
               Develop low-cost, effective and interesting media aimed at
               enhancing teacher performance and student learning.
             </div>
@@ -67,14 +67,15 @@ function We() {
       <div className="card-content">
         <h2 className="card-title">In Class Teaching</h2>
         <p className="card-text">A 6-year teaching program in partnership with Government Schools to teach English and create safe learning spaces in classrooms across India.</p>
-        <br /><button className="chat-button">
+        <br />
+        <button className="chat-button">
   <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
   </a>
 </button>
 
-      </div>
+      </div> 
     </div>
       <div className="card">
       <img src="youtube.png" alt="Card" className="card-image" />

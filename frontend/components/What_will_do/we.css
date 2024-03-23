@@ -147,6 +147,7 @@
 }
 .courses-sec {
   margin-top: 3%;
+  overflow: visible;
   
   padding-bottom: 40px;
   background-image: url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
@@ -192,13 +193,63 @@
 }
 
 /* Added media query for responsiveness */
-@media (max-width: 768px) {
-  .courses {
+@media only screen and (max-width: 400px) {
+  .how_we h1{
+    font-size:2rem ;
+  }
+  .outer_container {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .content_area h2{
+    font-size: 1rem;
+  }
+  .content_area {
+    font-size: 0.8rem;
+  }
+  .svg_boy img {
+    width: 55px;
+    height: 55px;
+    border-radius: 25%;
+  }
+  .courses-sec h1{
+    font-size: 2.2rem;
+  }
+  .chat-button{
+  border-radius: 2px;
+  padding: 0;
+  width: 100%;
+  height: 1.35rem;
+  font-size: 13px;
+  }
+  .chat-button a{
+     margin-left: 0.8rem;
+  }
+  .card-text{
+    font-size: 0.8rem;
+  }
+  .card-title{
+    font-size: 0.8rem;
+  }
+  .courses{
     flex-wrap: wrap;
   }
-  .card {
-    width: calc(
-      50% - 20px
-    ); /* Adjusted width to fit two cards per row with spacing */
+  .card{
+    width: 150px;
+  }
+  .chat-button img{
+    position: absolute;
+    margin-left:15px ;
+    margin-top: 0px;
+    height: 1.3rem ;
+    width: 1.3rem ;
+  }
+  .card-image{
+    height: 80px;
   }
 }
+
+
