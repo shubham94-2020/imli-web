@@ -66,7 +66,7 @@ function Navbar() {
                 <Link to="/program2">English Language Reading and Writing</Link>
                 <Link to="/program3">Multilingual Education</Link>
                 <Link to="/program4">Teacher Training Programs</Link>
-                <Link to="/program3">3D Learning Program</Link>
+                <Link to="/program5">3D Learning Program</Link>
               </div>
             )}
           </li>

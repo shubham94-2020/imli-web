@@ -128,14 +128,11 @@ function Poster() {
     { url: "i8.jpg", programName: "Teacher Training Programs",a:"Program4" },
     { url: "i5.jpg", programName: "3D Learning Program" ,a:"Program5"},
   ];
-  const containerStyles = {
-    width: "100%",
-    height: "80vh",
-  };
+
 
   return (
     <div  style={{ textAlign: "justify" }}>
-      <div style={containerStyles}>
+      <div className="containerStyles">
         <ImageSlider slides={slides} />
       </div>
 
