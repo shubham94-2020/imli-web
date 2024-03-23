@@ -248,16 +248,18 @@
   }
   .sidebar .dropdown-content {
     position: absolute;
-    background-color: white;
-    width: 30vh;
+    /* background-color: white;*/
+    background-image:  url("https://pehlayakshar.org/wp-content/uploads/new-bg.png"); 
+    width: 38=0vh;
     left: -100%;
     font-size: 1.2rem;
     box-shadow: none;
     text-align: left;
+    z-index: 999;
   }
   .sidebar {
     background-image:  url("https://pehlayakshar.org/wp-content/uploads/new-bg.png");
-    width: 30vh;
+    width: 35vh;
     height: 50vh;
     border-top-left-radius: 4vh;
     border-bottom-left-radius: 4vh;
