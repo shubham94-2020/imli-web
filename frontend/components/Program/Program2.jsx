@@ -166,7 +166,7 @@ function Program2() {
       <button onClick={toggleDetails}>
         {showDetails ? "Show Less" : "Read More"}
       </button>
-       showDetails && (
+       {showDetails && (
         <>
           {isAdmin &&<div className="program-form">
             <input
@@ -206,7 +206,7 @@ function Program2() {
               </div>
             ))}
         </>
-      )
+      )}
     </div>
   );
 }
