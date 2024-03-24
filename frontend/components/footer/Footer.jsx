@@ -27,7 +27,7 @@ function footer() {
             Contact Us
           </a>
         </li>
-        <li class="menu__item">
+        {/* <li class="menu__item">
           <a class="menu__link" href="/login">
             Login
           </a>
@@ -39,7 +39,7 @@ function footer() {
           }}>
             Logout
           </a>)}
-        </li>
+        </li> */}
       </ul>
       {/* <p>&copy;2021 Nadine Coelho | All Rights Reserved</p> */}
     </footer>
