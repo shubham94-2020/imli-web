@@ -138,20 +138,21 @@ function We() {
 </button>
       </div>
     </div>
-      {/* <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <div className="card">
+      <img src="imli nurture.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">Learning Room</h2>
-        <p className="card-text">A collaborative space that provides students & teachers with functional english curriculum, digital aids, books and skilled personnel for improving their english literacy & 21st century skills.</p>
+        <h2 className="card-title">IMLi Nurture &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creative Writing</h2>
+        <p className="card-text">Empower children in today's fast-paced digital world with our Nurturing Creative Writing Course. Immerse yourself in creativity and learn the process of thinking through diverse activities: Drama, Painting, Story writing and beyond. </p>
         <br />
         <button className="chat-button">
-  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
-    </div> */}
+    </div>
     </div></div>
 
       {/* <div className="how_we2">
