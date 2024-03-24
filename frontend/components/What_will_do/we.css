@@ -9,6 +9,8 @@
   /* border: 1px solid rgb(130, 255, 123); */
   margin-top: 3%;
   padding: 20px; /* Added for better spacing */
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .how_we p {
@@ -29,6 +31,9 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
   overflow: visible; /* Added to contain the content and shadow */
   transition: transform 0.3s ease; /* Added transition for smoother hover effect */
+  display: flex; /* Use flexbox */
+  flex-direction: column; 
+  
 }
 
 .outer_box:hover {
@@ -193,17 +198,21 @@
 }
 
 /* Added media query for responsiveness */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .how_we h1{
-    font-size:2rem ;
+    font-size:1.8rem ;
   }
   .outer_container {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    
   }
+  /* .outer_box{
+    min-height: max-content;
+  } */
   .content_area h2{
     font-size: 1rem;
   }
@@ -211,8 +220,8 @@
     font-size: 0.8rem;
   }
   .svg_boy img {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 25%;
   }
   .courses-sec h1{

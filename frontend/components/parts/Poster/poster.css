@@ -325,12 +325,13 @@ input[type="email"] {
     line-height:normal;
     margin-left: 2px;
     margin-right: 2px;
-    margin-top: -20px;
+    margin-top: 10px;
     margin-bottom: -20px;
   }
 
   .about-us h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    margin-bottom: -20px;
   }
   .JoinUs h1{
     font-size: 2.2rem;
@@ -343,6 +344,6 @@ input[type="email"] {
     font-size: 1rem;
   }
  .containerStyles{
-    height: 40vh;
+    height: 30vh;
   } 
 } 
