@@ -62,24 +62,15 @@ const ResourcesPage = () => {
         {selectedOption === "introduction" && (
           <div>
             <p>
-              <h2 className="heading">What is IMLi’s Resource World?</h2>
+              <h2 className="heading">What is IMLi’s MultiLingual Resource Hub?</h2>
               <br />
-              Welcome to IMLi’s Resource World! This resource repository
-              provides you expertly compiled content for student
-              instruction/learning and teacher professional development. We have
-              put together the best materials created by our team and have
-              sourced high quality, contextual resources to make this your one
-              stop-shop for teaching, learning materials for Grades 1-5.
+              Welcome to IMLi’s Resource Hub! This resource repository provides you expertly compiled content for student instruction/learning and teacher professional development. We have put together the best materials created by our team and have sourced high quality, contextual resources to make this your one stop-shop for teaching, learning materials for Grades 1-5.
             </p>
             <p>
               <br />
               <h2 className="heading">How to explore?</h2>
               <br />
-              You will find here learning materials for students in Grades 1-5
-              (ages 5-10) and professional development / classroom instructional
-              support for teachers teaching primary grades. You can navigate
-              through the repository by clicking through the relevant
-              categorization of material.
+              You will find here learning materials for students in Grades 1-5 (ages 5-10) and professional development / classroom instructional support for teachers teaching primary and pre-primary grades. You can navigate through the repository by clicking through the relevant categorization of material.
             </p>
             <div className="button-group">
               <button
@@ -111,7 +102,7 @@ const ResourcesPage = () => {
               fill in and tell us more about how we can support you.
             </p>
             <br />
-            <h2 className="heading heading-left">
+            {/* <h2 className="heading heading-left">
               Know your child’s learning level
             </h2>
             <br />
@@ -141,7 +132,7 @@ const ResourcesPage = () => {
               classrooms. Our team is specialized in creating solutions for the
               education sector, specifically to enhance the foundational
               literacy and numeracy skills of students.
-            </p>
+            </p> */}
           </div>
         )}
         {selectedOption === "parentStudent" && (
