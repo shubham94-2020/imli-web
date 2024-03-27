@@ -130,7 +130,7 @@ function Program3() {
 
   return (
     <div className="ece-container">
-      <img src="/Multi-Lingual Education.jpg" alt="program4" className="image" />
+      <img src="/multilingual hub.jpeg" alt="program4" className="image" />
       <h2>Multilingual Education </h2>
       <p>
         Children’s languages empower them to communicate with others, but also

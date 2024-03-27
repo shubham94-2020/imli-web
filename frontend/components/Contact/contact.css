@@ -21,24 +21,24 @@
   margin: 0px 120px;
 }
 
-.chat a{
+.chat a {
   text-decoration: none;
   color: inherit;
 }
-.careers{
+.careers {
   display: flex;
   align-items: center;
   margin: 2rem;
   margin-bottom: -20px;
   font-size: 1.5rem;
 }
-.careers h2{
+.careers h2 {
   margin-top: 0px;
   font-size: 1.8em;
   font-weight: 500;
   color: #4caf50;
 }
-.careers button:hover{
+.careers button:hover {
   margin: 20px 0px;
   background-color: #4caf50;
   color: rgb(255, 255, 255);
@@ -46,7 +46,7 @@
   border: solid 1px black;
   border-radius: 4px;
 }
-.careers button{
+.careers button {
   margin: 20px 0px;
   /* background-color: #fafafa; */
   color: rgb(0, 0, 0);
@@ -57,25 +57,25 @@
 
 .corporate {
   display: flex;
-   flex-direction: row-reverse;
+  flex-direction: row-reverse;
   align-items: center;
   margin: 2rem;
   font-size: 1.1rem;
-} 
-.corporate div{
+}
+.corporate div {
   margin-left: 50px;
-} 
+}
 
-.corporate h2{
+.corporate h2 {
   font-size: 2.4rem;
   font-weight: 500;
   color: #4caf50;
 }
-.m{
+.m {
   margin: 20px 2px;
   font-weight: 600;
 }
-.m a{
+.m a {
   text-decoration: none;
   font-weight: 600;
   color: lightgreen;
@@ -83,18 +83,16 @@
 .careers > div,
 .corporate > div {
   flex: 1;
-  
 }
 
 .careers img,
 .corporate img {
   background-color: #45a049;
-  
+  border-radius: 5%;
   max-width: 100%;
-  width:50%;
+  width: 50%;
   height: auto;
 }
-
 
 .contact-us-text {
   max-width: 100%;
@@ -239,6 +237,13 @@
   margin-right: 50px;
 }
 
+.careers p,
+.corporate p {
+  font-size: 25px;
+}
+.corporate .m a {
+  font-weight: bold;
+}
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 620px) {
@@ -307,93 +312,88 @@
   margin-bottom: 30px;
 }
 
-
-@media screen and (max-width: 500px){
-  .contact-us-text h1{
+@media screen and (max-width: 500px) {
+  .contact-us-text h1 {
     font-size: 1.5rem;
   }
-  .contact-us-text p{
+  .contact-us-text p {
     font-size: 1rem;
   }
-  .ContactInfo h1{
+  .ContactInfo h1 {
     font-size: 1.5rem;
   }
-  .details span{
+  .details span {
     font-size: 1rem;
   }
-  .text-body{
+  .text-body {
     font-size: 1rem;
   }
-  .detailsCall span b{
+  .detailsCall span b {
     font-size: 1rem;
   }
-  .phone{
+  .phone {
     font-size: 1rem;
   }
   .upperMain {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 20px; /* Adjust margin for smaller screens */
-}
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px; /* Adjust margin for smaller screens */
+  }
 
-.careers,
-.corporate {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-}
+  .careers,
+  .corporate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 
-.careers > div,
-.corporate > div {
-  width: 100%;
-}
- 
-.corporate div{
-  margin-left: 0;
-  margin-right: 15px;
-}
-.careers img,
-.corporate img {
-  width: 100%; /* Make the images fill the width of their container */
-  max-width: none; /* Remove the max-width to allow images to resize */
-}
+  .careers > div,
+  .corporate > div {
+    width: 100%;
+  }
 
-.corporate p,
-.careers p,
-.m {
-  font-size: 1rem;
-  margin: 0px 0; /* Adjust spacing between elements */
-}
-.corporate h2,
-.careers h2
-{
-  font-size: 1.4rem;
-  margin: 0px 0; /* Adjust spacing between elements */
-  margin-top: 30px;
-}
+  .corporate div {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .careers img,
+  .corporate img {
+    width: 100%; /* Make the images fill the width of their container */
+    max-width: none; /* Remove the max-width to allow images to resize */
+  }
 
+  .corporate p,
+  .careers p,
+  .m {
+    font-size: 1rem;
+    margin: 0px 0; /* Adjust spacing between elements */
+  }
+  .corporate h2,
+  .careers h2 {
+    font-size: 1.4rem;
+    margin: 0px 0; /* Adjust spacing between elements */
+    margin-top: 30px;
+  }
 
-.corporate p{
-  margin-right: -20px;
-  margin-bottom: 10px;
-}
+  .corporate p {
+    margin-right: -20px;
+    margin-bottom: 10px;
+  }
 
-.careers button {
-  margin: 0px 0;
-  padding: 8px 15px;
-  margin-bottom: 10px;
-  font-size: 0.5rem;
-}
+  .careers button {
+    margin: 0px 0;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+  }
 
-.careers button:hover{
-  background-color: #4caf50;
-  margin: 0px 0;
-  padding: 8px 15px;
-  margin-bottom: 10px;
-  font-size: 0.5rem;
-  color: rgb(255, 255, 255);
-}
-
-  
+  .careers button:hover {
+    background-color: #4caf50;
+    margin: 0px 0;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    color: rgb(255, 255, 255);
+  }
 }

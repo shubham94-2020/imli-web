@@ -69,7 +69,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to={"/Program3"}>
-              <img src="/Multi-Lingual Education.jpg" alt="program4" className="images" />
+              <img src="/multilingual hub.jpeg" alt="program4" className="images" />
             </Link>
           </div>
           <div className="text_areaas">
