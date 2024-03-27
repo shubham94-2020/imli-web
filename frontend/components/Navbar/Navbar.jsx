@@ -51,7 +51,7 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/about">AboutUs</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li
             className="dropdown"
@@ -67,7 +67,7 @@ function Navbar() {
               >
                 <Link to="/program1">Early Childhood Education</Link>
                 <Link to="/program2">English Language Reading and Writing</Link>
-                <Link to="/program3">Multilingual Hub</Link>
+                <Link to="/program3">Multilingual Education</Link>
                 <Link to="/program4">Teacher Training Programs</Link>
                 <Link to="/program5">3D Learning Program</Link>
               </div>
@@ -77,10 +77,10 @@ function Navbar() {
             <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog&Press</Link>
+            <Link to="https://imlimultilingual.wordpress.com/" target="_blank">Blog</Link>
           </li>
           <li>
-            <Link to="/contact">ContactUs</Link>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </nav>
@@ -128,7 +128,7 @@ function Navbar() {
               >
                 <Link to="/program1">Early Childhood Education</Link>
                 <Link to="/program2">English Language Reading and Writing</Link>
-                <Link to="/program3">Multilingual Hub</Link>
+                <Link to="/program3">Multilingual Education</Link>
                 <Link to="/program4">Teacher Training Programs</Link>
                 <Link to="/program5">3D Learning Program</Link>
               </div>
