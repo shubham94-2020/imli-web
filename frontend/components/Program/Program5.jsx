@@ -96,7 +96,7 @@ function Program5() {
 
   return (
     <div className="ece-container">
-      <img src="/i5.jpg" alt="program4" className="image" />
+      <img src="/3D Learning.jpeg" alt="program4" className="image" />
       <h2>3D Learning Program </h2>
       <p style={{ fontWeight: 600 }}>
         Empowering Children and Educators for a Compassionate and Mindful Future

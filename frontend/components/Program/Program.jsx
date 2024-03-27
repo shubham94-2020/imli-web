@@ -11,7 +11,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to="/program1">
-              <img src="/i1.jpg" alt="program1" className="images" />
+              <img src="/Early Childhood Education..jpg" alt="program1" className="images" />
             </Link>
           </div>
 
@@ -40,7 +40,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to={"/Program2"}>
-              <img src="/i2.jpg" alt="program2" className="images" />
+              <img src="English Language Programs.jpg" alt="program2" className="images" />
             </Link>
           </div>
           <div className="text_areaas">
@@ -69,7 +69,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to={"/Program3"}>
-              <img src="/i6.jpg" alt="program4" className="images" />
+              <img src="/Multi-Lingual Education.jpg" alt="program4" className="images" />
             </Link>
           </div>
           <div className="text_areaas">
@@ -99,7 +99,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to={"/Program4"}>
-              <img src="/i8.jpg" alt="program4" className="images" />
+              <img src="/Teacher Training (2).jpg" alt="program4" className="images" />
             </Link>
           </div>
           <div className="text_areaas">
@@ -128,7 +128,7 @@ function Blog() {
         <div className="containers">
           <div className="img_boyaas">
             <Link to={"/Program5"}>
-              <img src="/i5.jpg" alt="program4" className="images" />
+              <img src="/3D Learning.jpeg" alt="program4" className="images" />
             </Link>
           </div>
           <div className="text_areaas">

@@ -95,7 +95,7 @@ function Program4() {
 
   return (
     <div className="ece-container">
-      <img src="/i8.jpg" alt="program4" className="image" />
+      <img src="/Teacher Training (2).jpg" alt="program4" className="image" />
       <h2>Teacher Training Programs</h2>
       <p>
         English literacy presents a significant challenge in Indian classrooms,

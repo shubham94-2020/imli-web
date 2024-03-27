@@ -96,7 +96,7 @@ function Program1() {
 
   return (
     <div className="ece-container">
-      <img src="/i1.jpg" alt="program1" className="image" />
+      <img src="/Early Childhood Education..jpg" alt="program1" className="image" />
       <h2>Early Childhood Education</h2>
       <p> 
         Parents and policy makers all agree - early childhood is a pivotal phase
