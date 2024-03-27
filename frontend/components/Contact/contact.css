@@ -362,7 +362,7 @@
 .corporate p,
 .careers p,
 .m {
-  font-size: 1rem;
+  font-size: 0;
   margin: 0px 0; /* Adjust spacing between elements */
 }
 .corporate h2,

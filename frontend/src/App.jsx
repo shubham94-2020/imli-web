@@ -18,6 +18,7 @@ import Program from "../components/Program/Program"
 import Blog from "../components/Blogs/Blog";
 import BlogForm from "../components/Blogs/BLOG_input/Blog_input";
 import Login from "../components/footer/login";
+import UnderConstructionPage from './../components/broken_page';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/resources" element={<Resources></Resources>}></Route>
         <Route path="/blog_input" element={<BlogForm/>} />
         <Route path="/resources" element={<Resources/>} />
+        <Route path="/broken" element={<UnderConstructionPage />}/>
 
         <Route path="/login" element={<Login/>} />
       </Routes>

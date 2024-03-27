@@ -6,6 +6,8 @@ import { FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+
 import { SocialIcon } from 'react-social-icons/component'
 import 'react-social-icons/youtube'
 import 'react-social-icons/instagram'
@@ -45,7 +47,7 @@ const ContactUs = () => {
             <p>Join our incredible team of dreamers and doers.</p>
             <button className="chat">
               {" "}
-              <a href="https://wa.me/919960928210">Positions Open</a>
+              <Link to="/broken">Positions Open</Link>
             </button>
           </div>
           <img src="i1.jpg" alt="img" />
