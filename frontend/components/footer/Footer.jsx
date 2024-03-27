@@ -10,36 +10,36 @@ function footer() {
   const user = auth ? JSON.parse(auth) : null;
   const isAdmin = user && user.email === "alaknanda@gmail.com";
   return (
-    <footer class="footer">
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="/blogs">
+    <footer className="footer">
+      <ul className="menu">
+        <li className="menu__item">
+          <a className="menu__link" href="/blogs">
             Recent Posts
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="/program">
+        <li className="menu__item">
+          <a className="menu__link" href="/program">
             Programs
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="/contact">
+        <li className="menu__item">
+          <a className="menu__link" href="/contact">
             Contact Us
           </a>
         </li>
-        <li class="menu__item">
+        {/* <li class="menu__item">
           <a class="menu__link" href="/login">
             Login
           </a>
         </li>
-        <li class="menu__item">
-        {isAdmin && (<a class="menu__link" onClick={()=>{
+        <li className="menu__item">
+        {isAdmin && (<a className="menu__link" onClick={()=>{
             localStorage.clear();
             alert("Successfully logged out")
           }}>
             Logout
           </a>)}
-        </li>
+        </li> */}
       </ul>
       {/* <p>&copy;2021 Nadine Coelho | All Rights Reserved</p> */}
     </footer>

@@ -2,21 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .navbar {
   background-color: #ffffff;
-  box-shadow: 20px 1px 5px rgb(187, 190, 190);
+  box-shadow: 2px 1px 5px rgb(187, 190, 190);
   height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   gap: 0px;
-  border-radius: 9px;
-  /* padding: 10px 20px; */
-  /* margin: 2px 2px; */
-  /* font-family: "Montserrat", sans-serif; */
   font-weight: 700;
   font-size: 130%;
   margin: 0;
   padding: 0;
+  margin-left: -16px;
 }
 
 .logo {
@@ -91,6 +88,7 @@
     flex-direction: column;
     text-align: center;
     gap: -20px;
+   
   }
 
   .logo {
@@ -186,9 +184,10 @@
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .navbar {
     height: auto;
+    margin-left: 2px;
   }
   .logo {
     display: flex;
@@ -205,8 +204,8 @@
 
   .logo span {
     margin-top: 15px;
-    font-size: 1.1rem;
-    margin-left: -5px;
+    font-size: 1.35rem;
+    margin-left: -15px;
   }
 
   .upper {

@@ -91,10 +91,10 @@
   transform: translateX(-50%); /* Center horizontally */
   height: auto;
 }
- 
+
 .dropdown-container .dropdown-content1 {
   display: block;
-  margin-left: -43.5vh;
+  margin-left: -45.5vh;
 }
 .dropdown-container .dropdown-content2 {
   display: block;
@@ -102,7 +102,7 @@
 }
 .dropdown-container .dropdown-content3 {
   display: block;
-  margin-left: 44vh;
+  margin-left: 45.5vh;
 }
 
 .dropdown-item {
@@ -164,4 +164,67 @@
 .dropdown3 {
   background-color: #28a745; /* Green */
   color: #ffffff;
+}
+
+@media only screen and (max-width: 400px) {
+  .text-center {
+    font-size: 16px; /* Decreased font size for smaller screens */
+    line-height: 28px; /* Decreased line height for smaller screens */
+    padding: 20px 10px 40px 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .heading {
+    font-size: 24px; /* Decreased font size for smaller screens */
+  }
+
+  .button-group button {
+    padding: 15px 30px; /* Adjusted padding for smaller screens */
+    font-size: 16px; /* Decreased font size for smaller screens */
+  }
+
+  .dropdown-container button {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+    font-size: 16px; /* Decreased font size for smaller screens */
+  }
+
+  .dropdown-container .dropdown-content1 {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+    margin-left: 0; /* Reset margin left */
+    left: 0; /* Align to the left */
+    transform: none; /* Reset transform */
+    bottom: unset; /* Remove bottom position */
+    top: unset; /* Position below the button */
+  }
+
+  .dropdown-container .dropdown-content2 {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+    margin-left: 0; /* Reset margin left */
+    left: 0; /* Align to the left */
+    transform: none; /* Reset transform */
+    bottom: unset; /* Remove bottom position */
+    top: calc(62% + 10px); /* Position below the button */
+  }
+
+  .dropdown-container .dropdown-content3 {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+    margin-left: 0; /* Reset margin left */
+    left: 0; /* Align to the left */
+    transform: none; /* Reset transform */
+    bottom: unset; /* Remove bottom position */
+    top: calc(94% + 10px); /* Position below the button */
+  }
+
+  .button-group {
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center align items */
+  }
+
+  .button-group button {
+    margin: 10px 0; /* Add margin between buttons */
+    width: 80%; /* Adjust button width */
+  }
 }

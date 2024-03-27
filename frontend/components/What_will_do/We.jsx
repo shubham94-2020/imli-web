@@ -63,84 +63,93 @@ function We() {
       <h1>Our Courses</h1>
       <div className="courses">
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="IMLi ELDP.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">In Class Teaching</h2>
-        <p className="card-text">A 6-year teaching program in partnership with Government Schools to teach English and create safe learning spaces in classrooms across India.</p>
+        <h2 className="card-title">IMLi English Language Development Program for Teachers</h2>
+        <p className="card-text">A comprehensive program designed to enhance teachers' proficiency in English, equipping them with effective language skills to enrich their teaching methodologies.</p>
         <br />
         <button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
 
       </div> 
     </div>
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="IMLi StoryBox Marathi.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">Create</h2>
-        <p className="card-text">In partnership with SCERT Maharashtra, our ‘English’ classroom is televised across Maharashtra on DD Sahyadri. These video-based classrooms are based on our unique teaching approach and are aligned with the state’s Bal Bharti textbooks.</p>
+        <h2 className="card-title">IMLi Marathi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Storybox</h2>
+        <p className="card-text">Engaging storytelling sessions coupled with creative activities, aimed at fostering a love for reading and stimulating imagination in Marathi.
+</p>
         <br /><button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="IMLi English Storybox.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">Magic Classroom on Television</h2>
-        <p className="card-text">A bank of simple, fun and engaging English stories in video format, for children between the ages of 5-13 years. These stories are recorded by volunteers and available on social media platforms.</p>
+        <h2 className="card-title">IMLi English &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Storybox</h2>
+        <p className="card-text">A series of interactive storytelling and activity sessions, crafted to inspire a passion for reading and creativity in English among young learners.
+</p>
         <br /><button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="IMLI ThinkBox Registration Flyer.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">A Story A Day</h2>
-        <p className="card-text">Working with teachers in Brihanmumbai Municipal Corporation (BMC) schools across all 24 wards of Mumbai, to help them build their confidence, and improve and strengthen their teaching practices and English language skills.</p>
+        <h2 className="card-title">IMLi Thinkbox</h2>
+        <p className="card-text">Dynamic workshops focused on cultivating critical thinking skills and an enquiry-based approach, particularly in STEM subjects, encouraging analytical and innovative thinking.
+</p>
         <br /><button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="IMLi Blended Phonics Program.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">Teacher Training</h2>
-        <p className="card-text">A collaborative space that provides students & teachers with functional english curriculum, digital aids, books and skilled personnel for improving their english literacy & 21st century skills.</p>
+        <h2 className="card-title">IMLi Phonics Courses for Children</h2>
+        <p className="card-text">Specially designed courses for children to master phonics, laying a strong foundation for reading and language skills through interactive and fun-filled activities.</p>
         <br />
         <button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>
       <div className="card">
-      <img src="youtube.png" alt="Card" className="card-image" />
+      <img src="imli nurture.png" alt="Card" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">Learning Room</h2>
-        <p className="card-text">A collaborative space that provides students & teachers with functional english curriculum, digital aids, books and skilled personnel for improving their english literacy & 21st century skills.</p>
+        <h2 className="card-title">IMLi Nurture &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creative Writing</h2>
+        <p className="card-text">Empower children in today's fast-paced digital world with our Nurturing Creative Writing Course. Immerse yourself in creativity and learn the process of thinking through diverse activities: Drama, Painting, Story writing and beyond. </p>
         <br />
         <button className="chat-button">
-  <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
+  {/* <a href="https://wa.me/qr/X2NGUGDP3746P1" target="_blank" rel="noopener noreferrer">
     Chat with us 
     <img src="whatsapp.png" alt="WhatsApp logo" />
-  </a>
+  </a> */}
+  <a href="https://wa.me/919960928210" target="_blank" rel="noopener noreferrer">Enquire Now</a>
 </button>
       </div>
     </div>

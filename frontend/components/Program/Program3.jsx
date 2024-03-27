@@ -1,6 +1,9 @@
 import React from "react";
-import "./Program4.css";
+import "./Program3.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import PdfComp from "../PDF/PdfComp";
+
 
 function Program3() {
   const [showDetails, setShowDetails] = useState(false);
@@ -10,6 +13,7 @@ function Program3() {
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
+  const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(false);
 
   // const navigate=useNavigate();
@@ -92,6 +96,37 @@ function Program3() {
       console.error("Error deleting program:", error);
     }
   };
+  const images = [
+    {
+      name: "आंब्याचं झाड ",
+      name2: "मामडी माकं",
+      url: "pdf1.jpg",
+      file: "./105764-ambyache-zaad-mamadi-makam.pdf",
+    },
+    
+    {
+      name: "मला खूप गोष्टी बनवता येतात!",
+      name2: "आनुङ कुबी गोटकुल बेनाप वाव!",
+      url: "pdf2.jpg",
+      file: "./105888-mala-khoop-goshti-banavta-yetat-aanun-kubee-goteekul-benaap-vaav.pdf",
+    },
+    {
+      name: "कल्पनाची सायकल ",
+      name2: "कल्पनाकनेत सायकल",
+      url: "pdf3.jpg",
+      file: "./106243-kalpanachi-cycle-kalpanakaneth-cycle.pdf",
+    },
+    // Add more images here if needed
+  ];
+
+  const openPdf = (file) => {
+    setSelectedPdf(file); // Set the selected PDF path
+  };
+  const handleReadMore = () => {
+    window.location.href =
+      "https://storyweaver.org.in/en/stories?language=Marathi-Kolami&language=Kolami&language=Gondi&language=Pawari&level=1&query=&sort=Ratings";
+  };
+
 
   return (
     <div className="ece-container">
@@ -135,6 +170,50 @@ function Program3() {
           skills in English.
         </p>
       </div>
+
+      {showDetails && (
+        <div>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <span style={{ fontWeight: "bold" }}> Stories and Poems</span>–
+              Dive into our Translation of storybooks, children's literature
+              stories, poems etc
+            </li>
+            <div className="image-grid">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="image-with-name-container"
+                  onClick={() => openPdf(image.file)}
+            >
+                  <img src={image.url} alt={image.name} className="image" />
+                  <pre className="image-name">{image.name}</pre>
+                  <pre className="image-name">{image.name2}</pre>
+                </div>
+              ))}
+              <button className="read-more" onClick={handleReadMore}>
+                Read More Stories
+              </button>
+            </div>
+            {selectedPdf && <PdfComp src={selectedPdf} />}
+            <li>
+              <span style={{ fontWeight: "bold" }}> IMLi Language Hub</span>–
+              Explore our knowledge base on the why and how of Multi-lingual
+              Education.{" "}
+              <Link to="https://www.youtube.com/@imli.education/playlists">
+                Click here
+              </Link>
+            </li>
+            <li>
+              <span style={{ fontWeight: "bold" }}> Research Studies</span>
+              -Learn more about the studies undertaken in collaboration by IMLi
+              on language learning, conservation, and transition.{" "}
+              <Link to="https://imlieducation.com/resources">Click here</Link>
+            </li>
+          </ul>
+        </div>
+
+      )}
 
       <button onClick={toggleDetails}>
         {" "}

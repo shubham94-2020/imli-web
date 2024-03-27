@@ -18,3 +18,158 @@
   font-size: 1.2rem;
   color: #666;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px; /* Adjust gap between items as needed */
+}
+.image-grid:hover {
+  cursor: pointer;
+}
+
+.image-with-name-container {
+  position: relative; /* Position relative for absolute positioning */
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.image-content {
+  padding: 10px; /* Padding for content */
+}
+
+.image {
+  
+  width: 100%; /* Image width 100% */
+  height: auto;
+}
+
+.image-name {
+  font-size: 23px;
+  padding: 3px;
+  text-align: center;
+
+} 
+
+.read-more {
+   position: relative;
+ left: 60vw;
+}
+
+.ece-container h2 {
+  color: #333;
+    font-size: 40px;
+}
+
+
+.ece-container p,
+.ece-container li {
+  font-size: 25px; /* Increase the font size for all headings, paragraphs, and list items */
+  line-height: 2; /* Set line height for better readability */
+}
+.ece-container h3 {
+  color: #333;
+    font-size: 35px;
+}
+
+.ece-container p {
+
+  margin-bottom: 20px;
+}
+
+.ece-container ul {
+  margin-bottom: 25px;
+}
+
+/* .ece-container li {
+  list-style: disc;
+} */
+
+.ece-container button {
+  background-color: #28b457;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ece-container button:hover {
+  background-color: #2f8d50f8;
+}
+
+@media only screen and (max-width: 500px) {
+  .ece-container{
+    margin-left: -5PX;
+    width: 100%;
+  }
+  .ece-container h2{
+    font-size: 1.4rem;
+  }
+  .ece-container p{
+    font-size: 0.8rem;
+  }
+  .ece-container h3{
+    font-size: 1.5rem;
+  }
+  .ece-container li{
+    font-size: 1rem;
+  }
+  .ece-container ul{
+    margin: 0;
+    padding: 0;
+  }
+  .image{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 120%;
+    height: 100%;
+  }
+  .image-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2px; /* Adjust gap between items as needed */
+}
+.image-grid:hover {
+  cursor: pointer;
+}
+
+.image-with-name-container {
+  position: relative; /* Position relative for absolute positioning */
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  /* height: 0vh; */
+  width: 100%;
+  margin: 1px;
+}
+
+.image-content {
+  padding: 10px;
+  width: 20vh; /* Padding for content */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image-name {
+  font-size: 16px;
+  padding: 3px;
+  text-align: center;
+
+} 
+
+.read-more {
+  position: relative;
+  left: 30vw;
+}
+
+  
+}
+
+
+
