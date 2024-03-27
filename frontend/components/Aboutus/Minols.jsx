@@ -8,7 +8,7 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>shubham patil</h3>
+             <h3>Alaknanda sanap</h3>
              <p>shubham patil</p>
              </div>
         </div>
@@ -24,7 +24,7 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>shubham patil</h3>
+             <h3>Shilpa gore</h3>
              <p>shubham patil</p>
              </div>
         </div>
