@@ -138,10 +138,10 @@ function Navbar() {
             <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog & Press</Link>
+            <Link to="/blogs">Blog</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">Join Us</Link>
           </li>
         </ul>
       </nav>
