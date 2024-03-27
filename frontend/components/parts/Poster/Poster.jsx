@@ -12,6 +12,7 @@ import { SocialIcon } from 'react-social-icons/component'
 import 'react-social-icons/youtube'
 import 'react-social-icons/instagram'
 import 'react-social-icons/facebook'
+import WhatsAppButton from './../../whatsapp/Whatsapp'
 
 import We from "../../What_will_do/We";
 
@@ -131,7 +132,9 @@ function Poster() {
 
 
   return (
+    
     <div  style={{ textAlign: "justify" }}>
+      <WhatsAppButton/>
       <div className="containerStyles">
         <ImageSlider slides={slides} />
       </div>
