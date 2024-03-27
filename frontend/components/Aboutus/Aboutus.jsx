@@ -112,6 +112,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div>
+      <h1 className="about-us">Testimonials</h1>
         <Minols></Minols>
       </div>
     </>
