@@ -51,7 +51,7 @@ function Navbar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/about">AboutUs</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li
             className="dropdown"
@@ -77,10 +77,10 @@ function Navbar() {
             <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <Link to="/blogs">Blog&Press</Link>
+            <Link to="/blogs">Blogs</Link>
           </li>
           <li>
-            <Link to="/contact">ContactUs</Link>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </nav>
