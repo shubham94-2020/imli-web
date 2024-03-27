@@ -8,8 +8,8 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>Alaknanda sanap</h3>
-             <p>shubham patil</p>
+             <h3>Mrs. Shalini Khade</h3>
+             <p>Principal, Shishu Mandir School, Khopoli</p>
              </div>
         </div>
         <div className="text_boy">
@@ -24,8 +24,8 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>Alaknanda sanap</h3>
-             <p>shubham patil</p>
+             <h3>Suvarna Kharat</h3>
+             <p>Teacher, Urja Private School, Ahmednagar</p>
              </div>
         </div>
         <div className="text_boy">
@@ -40,8 +40,8 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>Shilpa gore</h3>
-             <p>shubham patil</p>
+             <h3>Ashwini Ponkshe</h3>
+             <p>Principal, Sangli</p>
              </div>
         </div>
         <div className="text_boy">
@@ -56,8 +56,8 @@ function Minols() {
         <div className="title_boy">
              <img src={img1} alt="" />
              <div className="h">
-             <h3>shubham patil</h3>
-             <p>shubham patil</p>
+             <h3>Rajshri Kare</h3>
+             <p>Parent, Pune</p>
              </div>
         </div>
         <div className="text_boy">

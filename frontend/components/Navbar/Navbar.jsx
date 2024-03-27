@@ -77,10 +77,10 @@ function Navbar() {
             <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <Link to="https://imlimultilingual.wordpress.com/" target="_blank">Blog</Link>
+            <Link to="https://imlimultilingual.wordpress.com/" >Blog</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">Join Us</Link>
           </li>
         </ul>
       </nav>

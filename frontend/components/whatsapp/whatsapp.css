@@ -1,3 +1,5 @@
+/* whatsapp.css */
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -5,14 +7,28 @@
   z-index: 999;
 }
 
+.whatsapp-button a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
 .whatsapp-button img {
   width: 60px; /* Adjust size as needed */
   height: 60px; /* Adjust size as needed */
   border-radius: 50%;
-  border: 2px solid #25D366; /* Green color for border */
+  border: 2px solid #25d366; /* Green color for border */
   background-color: #fff; /* White background */
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+
+.chat-text {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555; /* Adjust color as needed */
 }
 
 /* Optional: Hover effect */

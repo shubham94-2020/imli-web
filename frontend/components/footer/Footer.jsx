@@ -24,7 +24,7 @@ function footer() {
         </li>
         <li className="menu__item">
           <a className="menu__link" href="/contact">
-            Contact Us
+            Join Us
           </a>
         </li>
         {/* <li class="menu__item">

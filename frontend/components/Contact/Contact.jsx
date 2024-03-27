@@ -12,6 +12,7 @@ import { SocialIcon } from 'react-social-icons/component'
 import 'react-social-icons/youtube'
 import 'react-social-icons/instagram'
 import 'react-social-icons/facebook'
+import WhatsAppButton from "../whatsapp/Whatsapp";
 
 const ContactUs = () => {
   const form = useRef();
@@ -41,6 +42,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="upperMain">
+        <WhatsAppButton/>
         <div className="careers">
           <div>
             <h2>Careers</h2>
@@ -50,7 +52,7 @@ const ContactUs = () => {
               <Link to="/broken">Positions Open</Link>
             </button>
           </div>
-          <img src="i1.jpg" alt="img" />
+          <img src="Multi-Lingual Education.jpg" alt="img" />
         </div>
         <div className="corporate">
           <div>
@@ -60,14 +62,14 @@ const ContactUs = () => {
               different languages across public and private systems.
             </p>
             <p className="m">
-              Contact :  
+              Contact : 
               <a href="imli.education@gmail.com">
                 
-                 imli.education@gmail.com
+                 &nbsp;imli.education@gmail.com
               </a>
             </p>
           </div>
-          <img src="i1.jpg" alt="img" />
+          <img src="careers.jpg" alt="img" />
         </div>
       </div>
       <div className="contact-us-container">
@@ -82,7 +84,7 @@ const ContactUs = () => {
             Reach us at{" "}
             <a href="imli.education@gmail.com">
               {" "}
-              <b>imli.education@gmail.com</b>
+              <b> imli.education@gmail.com</b>
             </a>
           </p>
         </div>
