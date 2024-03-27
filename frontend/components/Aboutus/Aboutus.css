@@ -46,12 +46,13 @@ h1 {
 .vision {
   margin-top: 4rem;
   background-color: #1683cb;
-  width: 100%;
+  width: 80%;
   color: white;
   text-align: center;
   font-size: 1.5rem;
   border: 2px solid black;
-  padding: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 20px;
 }
 
 .vision p {
@@ -103,6 +104,7 @@ h1 {
   }
   .vision h2{
     font-size: 1.5rem;
+    margin: 0;
   }
   .vision p{
     font-size: 0.9rem;
@@ -116,5 +118,12 @@ h1 {
 
   .about-imli-container {
     padding: 0 2%;
+  }
+  .vision{
+    width: 98%;
+   margin-top: 12px;
+  }
+  .about-us{
+    margin-top: 8px;
   }
 }
