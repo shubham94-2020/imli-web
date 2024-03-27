@@ -38,7 +38,7 @@ function Program2() {
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
-    setShowForm(false);
+    //setShowForm(false);
   };
 
   const addProgram = async () => {
@@ -95,7 +95,7 @@ function Program2() {
 
   return (
     <div className="ece-container">
-      <img src="/i3.jpg" alt="program2" className="image" />
+      <img src="/i2.jpg" alt="program2" className="image" />
       <h2>English Language Reading and Writing</h2>
       <p>
         English literacy presents a significant challenge in Indian classrooms,

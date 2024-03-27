@@ -2,6 +2,8 @@ import React from "react";
 import "./Program3.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PdfComp from "../PDF/PdfComp";
+
 
 function Program3() {
   const [showDetails, setShowDetails] = useState(false);
@@ -11,6 +13,7 @@ function Program3() {
   const [newProgramTitle, setNewProgramTitle] = useState("");
   const [newProgramDescription, setNewProgramDescription] = useState("");
   const [programs, setPrograms] = useState([]);
+  const [selectedPdf, setSelectedPdf] = useState(null);
   const [error, setError] = useState(false);
 
   // const navigate=useNavigate();
@@ -98,31 +101,32 @@ function Program3() {
       name: "आंब्याचं झाड ",
       name2: "मामडी माकं",
       url: "pdf1.jpg",
-      file: "/105764-ambyache-zaad-mamadi-makam.pdf",
+      file: "./105764-ambyache-zaad-mamadi-makam.pdf",
     },
+    
     {
       name: "मला खूप गोष्टी बनवता येतात!",
       name2: "आनुङ कुबी गोटकुल बेनाप वाव!",
       url: "pdf2.jpg",
-      file: "/105888-mala-khoop-goshti-banavta-yetat-aanun-kubee-goteekul-benaap-vaav.pdf",
+      file: "./105888-mala-khoop-goshti-banavta-yetat-aanun-kubee-goteekul-benaap-vaav.pdf",
     },
     {
       name: "कल्पनाची सायकल ",
       name2: "कल्पनाकनेत सायकल",
       url: "pdf3.jpg",
-      file: "/106243-kalpanachi-cycle-kalpanakaneth-cycle.pdf",
+      file: "./106243-kalpanachi-cycle-kalpanakaneth-cycle.pdf",
     },
     // Add more images here if needed
   ];
+
+  const openPdf = (file) => {
+    setSelectedPdf(file); // Set the selected PDF path
+  };
   const handleReadMore = () => {
     window.location.href =
       "https://storyweaver.org.in/en/stories?language=Marathi-Kolami&language=Kolami&language=Gondi&language=Pawari&level=1&query=&sort=Ratings";
   };
-   const openPdf = (f) => {
-    
-     const pdfUrl = `${f}`; // Replace with the path to your PDF file
-     window.location.href = pdfUrl; // Open the PDF URL in the same tab
-   };
+
 
   return (
     <div className="ece-container">
@@ -191,6 +195,7 @@ function Program3() {
                 Read More Stories
               </button>
             </div>
+            {selectedPdf && <PdfComp src={selectedPdf} />}
             <li>
               <span style={{ fontWeight: "bold" }}> IMLi Language Hub</span>–
               Explore our knowledge base on the why and how of Multi-lingual
@@ -207,6 +212,7 @@ function Program3() {
             </li>
           </ul>
         </div>
+
       )}
 
       <button onClick={toggleDetails}>
